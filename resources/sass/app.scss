@@ -1,0 +1,292 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+/**** Navbar css ****/
+
+.navbar-laravel {
+  	background-color: #6c3668;
+ 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.navbar{
+    width: 100%;
+    z-index: 11;
+    height:60px;
+    box-shadow: 0px 0px 10px 0px #050505
+}
+
+.container {
+    width: 80% !important;
+    min-width: 80% !important;
+    margin-left: 20% !important;
+    max-height:90vh;
+    overflow-y:auto
+}
+
+.login-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/**** Side bar css section ****/
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 20%;
+    max-width: 20%;
+    background: #6c366805;
+    color: #fff;
+    transition: all 0.3s;
+    float: left;
+    position: fixed;
+    z-index: 9;
+    border-right: 1px solid lightgrey;
+    border-bottom: 1px solid lightgray;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    margin-top: -60px
+}
+
+
+#sidebar.active {
+    margin-left: -20%;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    display: block;
+    color: grey;
+}
+
+#sidebar ul li.active>a,
+#sidebar .nav-link.active-sidemenu{
+    background: #a3c16b;
+    color: white;
+}
+
+.admin-dash{
+    padding: 20px;color:grey;
+    padding-top: 80px;
+    border-bottom: 1px solid #dddddd;
+}
+
+#sidebar.active {
+    position: absolute;
+    z-index: 9;
+}
+
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -260px;
+    }
+    .scroll{
+        overflow: hidden
+    }
+    #sidebar.active {
+        margin-left: 0;
+        max-width: 250px;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+
+    .container {
+        width: 100% !important;
+        margin-left: auto !important
+    }
+    .navbar {
+        height: unset;
+    }
+}
+
+
+#sidebar:hover {
+  overflow-y: auto;
+}
+
+#sidebar::-webkit-scrollbar {
+  width:6px;
+}
+
+/* Track */
+#sidebar::-webkit-scrollbar-track {
+  background: #dce9c3; 
+}
+
+/* Handle */
+#sidebar::-webkit-scrollbar-thumb {
+  background: #a3c16b; 
+}
+
+/* Handle on hover */
+#sidebar::-webkit-scrollbar-thumb:hover {
+  background: #92b05c; 
+}
+
+#sidebar .nav .nav-item a i {
+    width: 20px;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 24px;
+}
+
+.sidebar-section{
+    margin-left: 30px;
+    margin-top: 15px;
+    color: #6c3668;
+    font-weight: bold;
+}
+
+.seperate-line{
+    border-bottom: 1px solid #dddddd;    
+}
+
+#sidebar ul li a.active, #sidebar ul li a.active:hover, #sidebar ul li a.active:focus{
+	background: #6836647a;
+    color: white !important;
+}
+#sidebar ul li a:hover {
+    background:#eceeef
+}
+
+
+/*** Extra CSS ****/
+.card-header {
+    background-color: #727470;
+    color:white
+}
+.theme-btn, .theme-btn:hover, .theme-btn:focus, .theme-btn:active {
+    background:#6c3668;
+    color:white
+}
+.form-control, .btn {
+    border-radius:0px !important
+}
+
+.login-btn{
+    width:100%;
+    background: #75c675;
+    color: white;
+    border-radius: 0px;
+    font-size: 16px;
+}
+.login-card{
+    border-color:#6c4c6e;
+    margin-top:35%;
+    border-radius:0px !important
+}
+.login-header{
+    background: #6c4c6e;
+    text-align: center;
+    border-radius: 0px !important; 
+    border-color: #6c4c6e;
+    height: 60px;
+    font-size: 22px;
+}
+.button-card {
+    margin-top: 10px;
+    padding: 10px 15px;
+}
+.cancel-btn {
+    border: 1px solid lightgrey;
+    background: #f3f3f3;
+}
+
+
+
+
+
+
+
+/*
+T2
+    box-shadow: -5px 1px 50px 5px lightgrey;
+
+T2
+.login-card {
+    border-color: #6c4c6e;
+    margin-top: 35%;
+    border-radius: 0px !important;
+}
+.login-header {
+    background: #b1a9b2;
+    text-align: center;
+    border-radius: 0px !important;
+    border-color: #605961;
+    height: 60px;
+    font-size: 22px;
+    color: #645a5a;
+}
+body {
+    background: #615961;
+}
+
+T3
+.login-card {
+    border-color: #6c4c6e;
+    margin-top: 35%;
+    border-radius: 0px !important;
+}
+.login-header {
+    background: #3a2e3a;
+    text-align: center;
+    border-radius: 0px !important;
+    border-color: #6c4c6e;
+    height: 60px;
+    font-size: 22px;
+}
+body {
+    background: #e1e1e1;
+}
+*/

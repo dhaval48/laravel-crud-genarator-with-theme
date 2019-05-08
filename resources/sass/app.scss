@@ -8,6 +8,9 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+@import '~pretty-checkbox/src/pretty-checkbox.scss';    
+@import '~@mdi/font/scss/materialdesignicons';
 
 /**** Navbar css ****/
 
@@ -17,6 +20,7 @@
 }
 
 .navbar{
+    position: fixed;
     width: 100%;
     z-index: 11;
     height:60px;
@@ -73,7 +77,7 @@
     min-height: 100vh;
     max-height: 100vh;
     overflow: hidden;
-    margin-top: -60px
+    margin-top: -60px;
 }
 
 
@@ -166,12 +170,12 @@
 
 /* Handle */
 #sidebar::-webkit-scrollbar-thumb {
-  background: #a3c16b; 
+  background: #6c3668; 
 }
 
 /* Handle on hover */
 #sidebar::-webkit-scrollbar-thumb:hover {
-  background: #92b05c; 
+  background: #6c3668; 
 }
 
 #sidebar .nav .nav-item a i {
@@ -202,6 +206,19 @@
 
 
 /*** Extra CSS ****/
+
+#app {
+    padding-top: 60px;
+}
+
+.container > .row {
+  padding-top: 15px;
+}
+
+body {
+    overflow: hidden;
+}
+
 .card-header {
     background-color: #727470;
     color:white
@@ -290,3 +307,114 @@ body {
     background: #e1e1e1;
 }
 */
+
+
+/* ---------------------------------------------------
+    Theme Color red
+----------------------------------------------------- */
+
+.red .navbar-laravel {
+    background-color: #c33434;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.red #sidebar ul li a.active, .red #sidebar ul li a.active:hover, .red #sidebar ul li a.active:focus{
+    background: #cb9494;
+    color: white !important;
+}
+
+.red .theme-btn, .red .theme-btn:hover, .red .theme-btn:focus, .red .theme-btn:active {
+    background:#c33434;
+    color:white
+}
+
+.red .sidebar-section{
+    color: #c33434;
+}
+
+.red #sidebar::-webkit-scrollbar-thumb:hover, .red #sidebar::-webkit-scrollbar-thumb {
+  background: #c33434; 
+}
+
+
+/* ---------------------------------------------------
+    Theme Color green
+----------------------------------------------------- */
+
+.green .navbar-laravel {
+    background-color: #41ac41;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.green #sidebar ul li a.active, .green #sidebar ul li a.active:hover, .green #sidebar ul li a.active:focus{
+    background: #7acb7a;
+    color: white !important;
+}
+
+.green .theme-btn, .green .theme-btn:hover, .green .theme-btn:focus, .green .theme-btn:active {
+    background:#41ac41;
+    color:white
+}
+
+.green .sidebar-section{
+    color: #41ac41;
+}
+
+.green #sidebar::-webkit-scrollbar-thumb:hover, .green #sidebar::-webkit-scrollbar-thumb {
+  background: #41ac41; 
+}
+
+
+/* ---------------------------------------------------
+    Theme Color blue
+----------------------------------------------------- */
+
+.blue .navbar-laravel {
+    background-color: #59b2ff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.blue #sidebar ul li a.active, .blue #sidebar ul li a.active:hover, .blue #sidebar ul li a.active:focus{
+    background: #a0cef6;
+    color: white !important;
+}
+
+.blue .theme-btn, .blue .theme-btn:hover, .blue .theme-btn:focus, .blue .theme-btn:active {
+    background:#59b2ff;
+    color:white
+}
+
+.blue .sidebar-section{
+    color: #59b2ff;
+}
+
+.blue #sidebar::-webkit-scrollbar-thumb:hover, .blue #sidebar::-webkit-scrollbar-thumb {
+  background: #59b2ff; 
+}
+
+/* ---------------------------------------------------
+    Theme Color yellow
+----------------------------------------------------- */
+
+.yellow .navbar-laravel {
+    background-color: #baba27;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.yellow #sidebar ul li a.active, .yellow #sidebar ul li a.active:hover, .yellow #sidebar ul li a.active:focus{
+    background: #cbcb7a;
+    color: white !important;
+}
+
+.yellow .theme-btn, .yellow .theme-btn:hover, .yellow .theme-btn:focus, .yellow .theme-btn:active {
+    background:#baba27;
+    color:white
+}
+
+.yellow .sidebar-section{
+    color: #baba27;
+}
+
+.yellow #sidebar::-webkit-scrollbar-thumb:hover, .yellow #sidebar::-webkit-scrollbar-thumb {
+  background: #baba27; 
+}

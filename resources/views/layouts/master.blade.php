@@ -18,11 +18,12 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @yield('css')
 </head>
-<body>
+<body class="{{strtolower(App\Models\Themesetting::find(1)->color)}}">
+    @include('includes.header')
     <div id="app">
-        @include('includes.header')
-        @include('includes.side')
-        <main class="py-4">
+        <main>
+            @include('includes.side')
+
             @yield('content')
         </main>
     </div>

@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "19c8d5b38e7481a1fc4b6a6ef69f5405",
@@ -984,16 +984,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.8.15",
+            "version": "v5.8.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "8a34004aed6ff0aa4072360e3e5bd875edebc223"
+                "reference": "83d57f9f9162ab476c43b9ec00d463ff12c578fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/8a34004aed6ff0aa4072360e3e5bd875edebc223",
-                "reference": "8a34004aed6ff0aa4072360e3e5bd875edebc223",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/83d57f9f9162ab476c43b9ec00d463ff12c578fd",
+                "reference": "83d57f9f9162ab476c43b9ec00d463ff12c578fd",
                 "shasum": ""
             },
             "require": {
@@ -1127,7 +1127,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2019-04-30T14:05:03+00:00"
+            "time": "2019-05-07T14:37:11+00:00"
         },
         {
             "name": "laravel/passport",
@@ -1456,16 +1456,16 @@
         },
         {
             "name": "league/oauth2-server",
-            "version": "7.3.3",
+            "version": "7.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/oauth2-server.git",
-                "reference": "c7f499849704ebe2c60b45b6d6bb231df5601d4a"
+                "reference": "2eb1cf79e59d807d89c256e7ac5e2bf8bdbd4acf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/oauth2-server/zipball/c7f499849704ebe2c60b45b6d6bb231df5601d4a",
-                "reference": "c7f499849704ebe2c60b45b6d6bb231df5601d4a",
+                "url": "https://api.github.com/repos/thephpleague/oauth2-server/zipball/2eb1cf79e59d807d89c256e7ac5e2bf8bdbd4acf",
+                "reference": "2eb1cf79e59d807d89c256e7ac5e2bf8bdbd4acf",
                 "shasum": ""
             },
             "require": {
@@ -1529,7 +1529,7 @@
                 "secure",
                 "server"
             ],
-            "time": "2019-03-29T18:19:35+00:00"
+            "time": "2019-05-05T09:22:01+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1726,12 +1726,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dhaval48/laravel-autoengine.git",
-                "reference": "7ff5b957f444332db818e0d2b6e35ba192ac0444"
+                "reference": "74b6a26034897444295f282ea821fe8e257e9620"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dhaval48/laravel-autoengine/zipball/7ff5b957f444332db818e0d2b6e35ba192ac0444",
-                "reference": "7ff5b957f444332db818e0d2b6e35ba192ac0444",
+                "url": "https://api.github.com/repos/dhaval48/laravel-autoengine/zipball/74b6a26034897444295f282ea821fe8e257e9620",
+                "reference": "74b6a26034897444295f282ea821fe8e257e9620",
                 "shasum": ""
             },
             "require": {
@@ -1776,20 +1776,20 @@
                 "laravel",
                 "laravelcrud"
             ],
-            "time": "2019-05-03T09:24:26+00:00"
+            "time": "2019-05-08T08:55:20+00:00"
         },
         {
             "name": "opis/closure",
-            "version": "3.1.6",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opis/closure.git",
-                "reference": "ccb8e3928c5c8181c76cdd0ed9366c5bcaafd91b"
+                "reference": "09b4389715a7eec100176ea58286649181753508"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opis/closure/zipball/ccb8e3928c5c8181c76cdd0ed9366c5bcaafd91b",
-                "reference": "ccb8e3928c5c8181c76cdd0ed9366c5bcaafd91b",
+                "url": "https://api.github.com/repos/opis/closure/zipball/09b4389715a7eec100176ea58286649181753508",
+                "reference": "09b4389715a7eec100176ea58286649181753508",
                 "shasum": ""
             },
             "require": {
@@ -1802,7 +1802,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1.x-dev"
+                    "dev-master": "3.2.x-dev"
                 }
             },
             "autoload": {
@@ -1837,7 +1837,7 @@
                 "serialization",
                 "serialize"
             ],
-            "time": "2019-02-22T10:30:00+00:00"
+            "time": "2019-05-05T12:50:25+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -3080,7 +3080,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "BackEndTea@gmail.com"
+                    "email": "backendtea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -5109,16 +5109,16 @@
         },
         {
             "name": "sebastian/environment",
-            "version": "4.2.1",
+            "version": "4.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "3095910f0f0fb155ac4021fc51a4a7a39ac04e8a"
+                "reference": "f2a2c8e1c97c11ace607a7a667d73d47c19fe404"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/3095910f0f0fb155ac4021fc51a4a7a39ac04e8a",
-                "reference": "3095910f0f0fb155ac4021fc51a4a7a39ac04e8a",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/f2a2c8e1c97c11ace607a7a667d73d47c19fe404",
+                "reference": "f2a2c8e1c97c11ace607a7a667d73d47c19fe404",
                 "shasum": ""
             },
             "require": {
@@ -5158,7 +5158,7 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2019-04-25T07:55:20+00:00"
+            "time": "2019-05-05T09:05:15+00:00"
         },
         {
             "name": "sebastian/exporter",

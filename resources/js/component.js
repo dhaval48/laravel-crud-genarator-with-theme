@@ -23,4 +23,6 @@ Vue.component('tasks-view',require('./components/backend/task/view.vue').default
 Vue.component('location-view',require('./components/backend/location/view.vue').default);
 
 Vue.component('location-view',require('./components/backend/location/view.vue').default);
+
+Vue.component('theme_settings-view',require('./components/backend/themesetting/view.vue').default);
 // [VueComponent]

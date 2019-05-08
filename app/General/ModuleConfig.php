@@ -17,5 +17,8 @@ class ModuleConfig {
         return include 'ModuleConfig/location.php';
     }
 
+    public static function theme_settings() {
+        return include 'ModuleConfig/themesetting.php';
+    }
 	// [Moduleconfig]
 }

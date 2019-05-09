@@ -29,6 +29,19 @@
     </div>
 
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     @yield('js')
+
+    <script>        
+        $(document).on("click",".dropdown-btn",function() {
+            var dropdownContent = this.nextElementSibling;
+            $(".dropdown-container").css("display", "none");
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        });
+    </script>
 </body>
 </html>

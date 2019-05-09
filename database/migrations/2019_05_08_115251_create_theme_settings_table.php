@@ -77,30 +77,30 @@ class CreateThemeSettingsTable extends Migration
                     'description'=>'Permission to update themesetting',
                     'module_group_id' => $group_id
                 ],
-                [
-                    'name'=>'list_themesetting',
-                    'display_name'=>'List Theme Setting',
-                    'description'=>'Permission to list themesetting',
-                    'module_group_id' => $group_id
-                ],
-                [
-                    'name'=>'delete_themesetting',
-                    'display_name'=>'Delete Theme Setting',
-                    'description'=>'Permission to delete themesetting',
-                    'module_group_id' => $group_id
-                ],
-                [
-                    'name'=>'only_themesetting',
-                    'display_name'=>'Only If Creator',
-                    'description'=>'Permission to only creator themesetting',
-                    'module_group_id' => $group_id
-                ],
-                [
-                    'name'=>'activity_themesetting',
-                    'display_name'=>'Activity of Theme Setting',
-                    'description'=>'Permission to activity themesetting',
-                    'module_group_id' => $group_id
-                ]
+                // [
+                //     'name'=>'list_themesetting',
+                //     'display_name'=>'List Theme Setting',
+                //     'description'=>'Permission to list themesetting',
+                //     'module_group_id' => $group_id
+                // ],
+                // [
+                //     'name'=>'delete_themesetting',
+                //     'display_name'=>'Delete Theme Setting',
+                //     'description'=>'Permission to delete themesetting',
+                //     'module_group_id' => $group_id
+                // ],
+                // [
+                //     'name'=>'only_themesetting',
+                //     'display_name'=>'Only If Creator',
+                //     'description'=>'Permission to only creator themesetting',
+                //     'module_group_id' => $group_id
+                // ],
+                // [
+                //     'name'=>'activity_themesetting',
+                //     'display_name'=>'Activity of Theme Setting',
+                //     'description'=>'Permission to activity themesetting',
+                //     'module_group_id' => $group_id
+                // ]
             ];
             DB::table('permissions')->insert($permission);
 

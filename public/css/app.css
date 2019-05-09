@@ -29768,6 +29768,10 @@ a.text-dark:focus {
     SIDEBAR STYLE
 ----------------------------------------------------- */
 
+.dropdown-container {
+  display: none;
+}
+
 .wrapper {
   display: flex;
   width: 100%;
@@ -29921,6 +29925,10 @@ a.text-dark:focus {
 
 #sidebar ul li a:hover {
   background: #eceeef;
+}
+
+.active-parent {
+  background: #6836647a;
 }
 
 /*** Extra CSS ****/

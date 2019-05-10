@@ -25,4 +25,6 @@ Vue.component('location-view',require('./components/backend/location/view.vue').
 Vue.component('location-view',require('./components/backend/location/view.vue').default);
 
 Vue.component('theme_settings-view',require('./components/backend/themesetting/view.vue').default);
+
+Vue.component('todos-view',require('./components/backend/todo/view.vue').default);
 // [VueComponent]

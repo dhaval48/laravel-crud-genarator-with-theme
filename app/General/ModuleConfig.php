@@ -20,5 +20,9 @@ class ModuleConfig {
     public static function theme_settings() {
         return include 'ModuleConfig/themesetting.php';
     }
+
+    public static function todos() {
+        return include 'ModuleConfig/todo.php';
+    }
 	// [Moduleconfig]
 }

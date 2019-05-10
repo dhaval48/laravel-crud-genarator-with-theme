@@ -17,6 +17,7 @@
 
         @php
             $sidelinks = \Ongoingcloud\Laravelcrud\General\HandlePermission::getSideLinks();
+            $extrasidelinks = \Ongoingcloud\Laravelcrud\General\HandlePermission::extraSideLink();
         @endphp
 
         <li class="nav-item {{ request()->is('dashboard*') ? 'active-parent' : '' }}
@@ -50,6 +51,15 @@
                     @endif
                 @endforeach
             </div>
+        @endforeach
+
+        @foreach($extrasidelinks['module_groups'] as $link)
+            @if(in_array($link->permission, $sidelinks['permissions']))
+                <li class='{{ request()->is("$link->url*") ? "active" : ""  }}'>
+                    <a href='{{route($link->route)}}' style="text-decoration: none;">
+                    <i class="fa {{$link->icon}}"></i>  {{$link->display_name}}</a>
+                </li>
+            @endif
         @endforeach
     </ul>
 </nav>

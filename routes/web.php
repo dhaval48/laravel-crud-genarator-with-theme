@@ -84,4 +84,15 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'general'], function () {
 		// Route::post('themesetting/destroy', 'ThemesettingController@destroy')->name('themesetting.destroy');
 	});
 });
+
+Route::group(['namespace' => 'Backend'], function () {
+	Route::group(['middleware' => ['auth', 'locale:en']], function () {
+		Route::get('todos', 'TodoController@index')->name('todo.index');
+		Route::get('todos-paginate','TodoController@Paginate')->name('todo.paginate');
+		Route::get('todo/create', 'TodoController@create')->name('todo.create');
+		Route::post('todo/store', 'TodoController@store')->name('todo.store');
+		Route::get('todo/edit/{id}', 'TodoController@edit')->name('todo.edit');
+		Route::post('todo/destroy', 'TodoController@destroy')->name('todo.destroy');
+	});
+});
 // [RouteArray]

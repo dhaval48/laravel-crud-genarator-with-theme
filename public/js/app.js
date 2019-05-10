@@ -2326,6 +2326,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['formObj', 'module'],
@@ -2518,6 +2519,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _elements_list_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../.././elements/list_header */ "./resources/js/components/elements/list_header.vue");
+//
 //
 //
 //
@@ -3133,6 +3135,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['module'],
@@ -3315,6 +3318,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['formObj', 'module'],
@@ -3373,6 +3377,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _elements_list_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../.././elements/list_header */ "./resources/js/components/elements/list_header.vue");
+//
 //
 //
 //
@@ -3938,6 +3943,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['module'],
@@ -4394,6 +4400,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _elements_list_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../.././elements/list_header */ "./resources/js/components/elements/list_header.vue");
+//
 //
 //
 //
@@ -6138,6 +6145,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['module'],
@@ -6301,6 +6309,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_0__);
+//
 //
 //
 //
@@ -6573,6 +6582,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_0__);
+//
 //
 //
 //
@@ -61089,30 +61099,30 @@ var render = function() {
                               value == "date"
                                 ? [
                                     _vm._v(
-                                      "\n                        " +
+                                      "\n                            " +
                                         _vm._s(_vm._f("dmy")(list[value])) +
-                                        "\n                    "
+                                        "\n                        "
                                     )
                                   ]
                                 : value.indexOf(".") > 0
                                 ? [
                                     _vm._v(
-                                      "\n                        " +
+                                      "\n                            " +
                                         _vm._s(
                                           _vm._f("relation")(list, value)
                                         ) +
-                                        "\n                    "
+                                        "\n                        "
                                     )
                                   ]
                                 : [
                                     _vm._v(
-                                      "\n                        " +
+                                      "\n                            " +
                                         _vm._s(
                                           list[value] != null
                                             ? list[value]
                                             : "-"
                                         ) +
-                                        "                                           \n                    "
+                                        "                                           \n                        "
                                     )
                                   ]
                             ],
@@ -61137,7 +61147,7 @@ var render = function() {
                               },
                               [
                                 _vm._v(
-                                  "\n                            Action\n                        "
+                                  "\n                                Action\n                            "
                                 )
                               ]
                             ),
@@ -61219,9 +61229,9 @@ var render = function() {
                       { staticClass: "text-center", attrs: { colspan: "20" } },
                       [
                         _vm._v(
-                          "\n                    " +
+                          "\n                        " +
                             _vm._s(_vm.lists.common.no_data) +
-                            "\n                "
+                            "\n                    "
                         )
                       ]
                     )
@@ -61551,315 +61561,357 @@ var render = function() {
                     _vm._m(1),
                     _vm._v(" "),
                     _c("div", { staticClass: "col-md-12" }, [
-                      _c("table", { staticClass: "table table-bordered" }, [
-                        _vm._m(2),
-                        _vm._v(" "),
-                        _c(
-                          "tbody",
-                          _vm._l(_vm.rows.length, function(n, k) {
-                            return _c("tr", [
-                              _c(
-                                "td",
-                                [
-                                  _c(
-                                    "p-check",
-                                    {
-                                      staticClass: "p-icon p-rotate p-bigger",
-                                      attrs: { color: "primary" },
-                                      model: {
-                                        value: _vm.form.visible[k],
-                                        callback: function($$v) {
-                                          _vm.$set(_vm.form.visible, k, $$v)
+                      _c("div", { staticClass: "table-scroll" }, [
+                        _c("table", { staticClass: "table table-bordered" }, [
+                          _vm._m(2),
+                          _vm._v(" "),
+                          _c(
+                            "tbody",
+                            _vm._l(_vm.rows.length, function(n, k) {
+                              return _c("tr", [
+                                _c(
+                                  "td",
+                                  [
+                                    _c(
+                                      "p-check",
+                                      {
+                                        staticClass: "p-icon p-rotate p-bigger",
+                                        attrs: { color: "primary" },
+                                        model: {
+                                          value: _vm.form.visible[k],
+                                          callback: function($$v) {
+                                            _vm.$set(_vm.form.visible, k, $$v)
+                                          },
+                                          expression: "form.visible[k]"
+                                        }
+                                      },
+                                      [
+                                        _c("i", {
+                                          staticClass: "icon mdi mdi-check",
+                                          attrs: { slot: "extra" },
+                                          slot: "extra"
+                                        })
+                                      ]
+                                    )
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "td",
+                                  { staticStyle: { "min-width": "100px" } },
+                                  [
+                                    _c("input", {
+                                      directives: [
+                                        {
+                                          name: "model",
+                                          rawName: "v-model",
+                                          value: _vm.form.input_name[k],
+                                          expression: "form.input_name[k]"
+                                        }
+                                      ],
+                                      staticClass: "form-control",
+                                      attrs: {
+                                        type: "text",
+                                        name: "input_name"
+                                      },
+                                      domProps: {
+                                        value: _vm.form.input_name[k]
+                                      },
+                                      on: {
+                                        input: function($event) {
+                                          if ($event.target.composing) {
+                                            return
+                                          }
+                                          _vm.$set(
+                                            _vm.form.input_name,
+                                            k,
+                                            $event.target.value
+                                          )
+                                        }
+                                      }
+                                    })
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "td",
+                                  { staticStyle: { "min-width": "100px" } },
+                                  [
+                                    _c(
+                                      "select",
+                                      {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.form.input_type[k],
+                                            expression: "form.input_type[k]"
+                                          }
+                                        ],
+                                        ref: "input_type",
+                                        refInFor: true,
+                                        staticClass:
+                                          "form-control select-auto-grid",
+                                        attrs: {
+                                          name: "input_type",
+                                          position: k
                                         },
-                                        expression: "form.visible[k]"
-                                      }
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "icon mdi mdi-check",
-                                        attrs: { slot: "extra" },
-                                        slot: "extra"
-                                      })
-                                    ]
-                                  )
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c("td", [
-                                _c("input", {
-                                  directives: [
-                                    {
-                                      name: "model",
-                                      rawName: "v-model",
-                                      value: _vm.form.input_name[k],
-                                      expression: "form.input_name[k]"
-                                    }
-                                  ],
-                                  staticClass: "form-control",
-                                  attrs: { type: "text", name: "input_name" },
-                                  domProps: { value: _vm.form.input_name[k] },
-                                  on: {
-                                    input: function($event) {
-                                      if ($event.target.composing) {
-                                        return
-                                      }
-                                      _vm.$set(
-                                        _vm.form.input_name,
-                                        k,
-                                        $event.target.value
-                                      )
-                                    }
-                                  }
-                                })
-                              ]),
-                              _vm._v(" "),
-                              _c("td", { attrs: { width: "150px" } }, [
+                                        on: {
+                                          change: function($event) {
+                                            var $$selectedVal = Array.prototype.filter
+                                              .call(
+                                                $event.target.options,
+                                                function(o) {
+                                                  return o.selected
+                                                }
+                                              )
+                                              .map(function(o) {
+                                                var val =
+                                                  "_value" in o
+                                                    ? o._value
+                                                    : o.value
+                                                return val
+                                              })
+                                            _vm.$set(
+                                              _vm.form.input_type,
+                                              k,
+                                              $event.target.multiple
+                                                ? $$selectedVal
+                                                : $$selectedVal[0]
+                                            )
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _c("option", { attrs: { value: "" } }, [
+                                          _vm._v("Select Input Type")
+                                        ]),
+                                        _vm._v(" "),
+                                        _vm._l(_vm.input_type_array, function(
+                                          value,
+                                          key
+                                        ) {
+                                          return _c(
+                                            "option",
+                                            { domProps: { value: value } },
+                                            [_vm._v(_vm._s(value))]
+                                          )
+                                        })
+                                      ],
+                                      2
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
                                 _c(
-                                  "select",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "model",
-                                        rawName: "v-model",
-                                        value: _vm.form.input_type[k],
-                                        expression: "form.input_type[k]"
-                                      }
-                                    ],
-                                    ref: "input_type",
-                                    refInFor: true,
-                                    staticClass:
-                                      "form-control select-auto-grid",
-                                    attrs: { name: "input_type", position: k },
-                                    on: {
-                                      change: function($event) {
-                                        var $$selectedVal = Array.prototype.filter
-                                          .call($event.target.options, function(
-                                            o
-                                          ) {
-                                            return o.selected
-                                          })
-                                          .map(function(o) {
-                                            var val =
-                                              "_value" in o ? o._value : o.value
-                                            return val
-                                          })
-                                        _vm.$set(
-                                          _vm.form.input_type,
-                                          k,
-                                          $event.target.multiple
-                                            ? $$selectedVal
-                                            : $$selectedVal[0]
-                                        )
-                                      }
-                                    }
-                                  },
+                                  "td",
+                                  { staticStyle: { "min-width": "100px" } },
                                   [
-                                    _c("option", { attrs: { value: "" } }, [
-                                      _vm._v("Select Input Type")
-                                    ]),
-                                    _vm._v(" "),
-                                    _vm._l(_vm.input_type_array, function(
-                                      value,
-                                      key
-                                    ) {
-                                      return _c(
-                                        "option",
-                                        { domProps: { value: value } },
-                                        [_vm._v(_vm._s(value))]
-                                      )
-                                    })
-                                  ],
-                                  2
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("td", { attrs: { width: "150px" } }, [
+                                    _c(
+                                      "select",
+                                      {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.form.table[k],
+                                            expression: "form.table[k]"
+                                          }
+                                        ],
+                                        ref: "table",
+                                        refInFor: true,
+                                        staticClass:
+                                          "form-control select-auto-grid db-table",
+                                        attrs: {
+                                          name: "table",
+                                          position: k,
+                                          disabled: "disabled"
+                                        },
+                                        on: {
+                                          change: function($event) {
+                                            var $$selectedVal = Array.prototype.filter
+                                              .call(
+                                                $event.target.options,
+                                                function(o) {
+                                                  return o.selected
+                                                }
+                                              )
+                                              .map(function(o) {
+                                                var val =
+                                                  "_value" in o
+                                                    ? o._value
+                                                    : o.value
+                                                return val
+                                              })
+                                            _vm.$set(
+                                              _vm.form.table,
+                                              k,
+                                              $event.target.multiple
+                                                ? $$selectedVal
+                                                : $$selectedVal[0]
+                                            )
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _c("option", { attrs: { value: "" } }, [
+                                          _vm._v("Select Table")
+                                        ]),
+                                        _vm._v(" "),
+                                        _vm._l(_vm.table, function(value, key) {
+                                          return _c(
+                                            "option",
+                                            { domProps: { value: value } },
+                                            [_vm._v(_vm._s(value))]
+                                          )
+                                        })
+                                      ],
+                                      2
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
                                 _c(
-                                  "select",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "model",
-                                        rawName: "v-model",
-                                        value: _vm.form.table[k],
-                                        expression: "form.table[k]"
-                                      }
-                                    ],
-                                    ref: "table",
-                                    refInFor: true,
-                                    staticClass:
-                                      "form-control select-auto-grid db-table",
-                                    attrs: {
-                                      name: "table",
-                                      position: k,
-                                      disabled: "disabled"
-                                    },
-                                    on: {
-                                      change: function($event) {
-                                        var $$selectedVal = Array.prototype.filter
-                                          .call($event.target.options, function(
-                                            o
-                                          ) {
-                                            return o.selected
-                                          })
-                                          .map(function(o) {
-                                            var val =
-                                              "_value" in o ? o._value : o.value
-                                            return val
-                                          })
-                                        _vm.$set(
-                                          _vm.form.table,
-                                          k,
-                                          $event.target.multiple
-                                            ? $$selectedVal
-                                            : $$selectedVal[0]
-                                        )
-                                      }
-                                    }
-                                  },
+                                  "td",
+                                  { staticStyle: { "min-width": "100px" } },
                                   [
-                                    _c("option", { attrs: { value: "" } }, [
-                                      _vm._v("Select Table")
-                                    ]),
-                                    _vm._v(" "),
-                                    _vm._l(_vm.table, function(value, key) {
-                                      return _c(
-                                        "option",
-                                        { domProps: { value: value } },
-                                        [_vm._v(_vm._s(value))]
-                                      )
-                                    })
-                                  ],
-                                  2
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("td", { attrs: { width: "150px" } }, [
+                                    _c(
+                                      "select",
+                                      {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.form.value[k],
+                                            expression: "form.value[k]"
+                                          }
+                                        ],
+                                        ref: "value",
+                                        refInFor: true,
+                                        staticClass:
+                                          "form-control select-auto db-value",
+                                        attrs: {
+                                          name: "value",
+                                          position: k,
+                                          disabled: "disabled"
+                                        },
+                                        on: {
+                                          change: function($event) {
+                                            var $$selectedVal = Array.prototype.filter
+                                              .call(
+                                                $event.target.options,
+                                                function(o) {
+                                                  return o.selected
+                                                }
+                                              )
+                                              .map(function(o) {
+                                                var val =
+                                                  "_value" in o
+                                                    ? o._value
+                                                    : o.value
+                                                return val
+                                              })
+                                            _vm.$set(
+                                              _vm.form.value,
+                                              k,
+                                              $event.target.multiple
+                                                ? $$selectedVal
+                                                : $$selectedVal[0]
+                                            )
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _c("option", { attrs: { value: "" } }, [
+                                          _vm._v("Select Value")
+                                        ]),
+                                        _vm._v(" "),
+                                        _vm._l(_vm.value, function(v) {
+                                          return _c(
+                                            "option",
+                                            { domProps: { value: v } },
+                                            [_vm._v(_vm._s(v))]
+                                          )
+                                        })
+                                      ],
+                                      2
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
                                 _c(
-                                  "select",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "model",
-                                        rawName: "v-model",
-                                        value: _vm.form.value[k],
-                                        expression: "form.value[k]"
-                                      }
-                                    ],
-                                    ref: "value",
-                                    refInFor: true,
-                                    staticClass:
-                                      "form-control select-auto db-value",
-                                    attrs: {
-                                      name: "value",
-                                      position: k,
-                                      disabled: "disabled"
-                                    },
-                                    on: {
-                                      change: function($event) {
-                                        var $$selectedVal = Array.prototype.filter
-                                          .call($event.target.options, function(
-                                            o
-                                          ) {
-                                            return o.selected
-                                          })
-                                          .map(function(o) {
-                                            var val =
-                                              "_value" in o ? o._value : o.value
-                                            return val
-                                          })
-                                        _vm.$set(
-                                          _vm.form.value,
-                                          k,
-                                          $event.target.multiple
-                                            ? $$selectedVal
-                                            : $$selectedVal[0]
-                                        )
-                                      }
-                                    }
-                                  },
+                                  "td",
+                                  { staticStyle: { "min-width": "100px" } },
                                   [
-                                    _c("option", { attrs: { value: "" } }, [
-                                      _vm._v("Select Value")
-                                    ]),
-                                    _vm._v(" "),
-                                    _vm._l(_vm.value, function(v) {
-                                      return _c(
-                                        "option",
-                                        { domProps: { value: v } },
-                                        [_vm._v(_vm._s(v))]
-                                      )
-                                    })
-                                  ],
-                                  2
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("td", { attrs: { width: "150px" } }, [
-                                _c(
-                                  "select",
-                                  {
-                                    directives: [
+                                    _c(
+                                      "select",
                                       {
-                                        name: "model",
-                                        rawName: "v-model",
-                                        value: _vm.form.key[k],
-                                        expression: "form.key[k]"
-                                      }
-                                    ],
-                                    ref: "key",
-                                    refInFor: true,
-                                    staticClass:
-                                      "form-control select-auto db-key",
-                                    attrs: {
-                                      name: "key",
-                                      position: k,
-                                      disabled: "disabled"
-                                    },
-                                    on: {
-                                      change: function($event) {
-                                        var $$selectedVal = Array.prototype.filter
-                                          .call($event.target.options, function(
-                                            o
-                                          ) {
-                                            return o.selected
-                                          })
-                                          .map(function(o) {
-                                            var val =
-                                              "_value" in o ? o._value : o.value
-                                            return val
-                                          })
-                                        _vm.$set(
-                                          _vm.form.key,
-                                          k,
-                                          $event.target.multiple
-                                            ? $$selectedVal
-                                            : $$selectedVal[0]
-                                        )
-                                      }
-                                    }
-                                  },
-                                  [
-                                    _c("option", { attrs: { value: "" } }, [
-                                      _vm._v("Select Label")
-                                    ]),
-                                    _vm._v(" "),
-                                    _vm._l(_vm.key, function(v) {
-                                      return _c(
-                                        "option",
-                                        { domProps: { value: v } },
-                                        [_vm._v(_vm._s(v))]
-                                      )
-                                    })
-                                  ],
-                                  2
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.form.key[k],
+                                            expression: "form.key[k]"
+                                          }
+                                        ],
+                                        ref: "key",
+                                        refInFor: true,
+                                        staticClass:
+                                          "form-control select-auto db-key",
+                                        attrs: {
+                                          name: "key",
+                                          position: k,
+                                          disabled: "disabled"
+                                        },
+                                        on: {
+                                          change: function($event) {
+                                            var $$selectedVal = Array.prototype.filter
+                                              .call(
+                                                $event.target.options,
+                                                function(o) {
+                                                  return o.selected
+                                                }
+                                              )
+                                              .map(function(o) {
+                                                var val =
+                                                  "_value" in o
+                                                    ? o._value
+                                                    : o.value
+                                                return val
+                                              })
+                                            _vm.$set(
+                                              _vm.form.key,
+                                              k,
+                                              $event.target.multiple
+                                                ? $$selectedVal
+                                                : $$selectedVal[0]
+                                            )
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _c("option", { attrs: { value: "" } }, [
+                                          _vm._v("Select Label")
+                                        ]),
+                                        _vm._v(" "),
+                                        _vm._l(_vm.key, function(v) {
+                                          return _c(
+                                            "option",
+                                            { domProps: { value: v } },
+                                            [_vm._v(_vm._s(v))]
+                                          )
+                                        })
+                                      ],
+                                      2
+                                    )
+                                  ]
                                 )
                               ])
-                            ])
-                          }),
-                          0
-                        )
+                            }),
+                            0
+                          )
+                        ])
                       ])
                     ])
                   ])
@@ -61961,175 +62013,183 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "clearfix" }, [_vm._v(" ")]),
       _vm._v(" "),
-      _c(
-        "table",
-        {
-          staticClass: "table table-striped table-bordered table-sm",
-          attrs: { cellspacing: "0", width: "100%" }
-        },
-        [
-          _c("thead", { staticClass: "thead-dark" }, [
-            _c(
-              "tr",
-              [
-                _vm._l(_vm.lists.list_data, function(value, key) {
-                  return _c("th", [_vm._v(_vm._s(key))])
-                }),
-                _vm._v(" "),
-                _c("th", { attrs: { width: "100" } }, [_vm._v("Action")])
-              ],
-              2
-            )
-          ]),
-          _vm._v(" "),
-          _vm.lists.lists.data.length > 0
-            ? _c(
-                "tbody",
-                _vm._l(_vm.lists.lists.data, function(list) {
-                  return _c(
-                    "tr",
-                    [
-                      _vm._l(_vm.lists.list_data, function(value, key) {
-                        return _c(
-                          "td",
-                          [
-                            value == "date"
-                              ? [
-                                  _vm._v(
-                                    "\n                        " +
-                                      _vm._s(_vm._f("dmy")(list[value])) +
-                                      "\n                    "
-                                  )
-                                ]
-                              : value.indexOf(".") > 0
-                              ? [
-                                  _vm._v(
-                                    "\n                        " +
-                                      _vm._s(_vm._f("relation")(list, value)) +
-                                      "\n                    "
-                                  )
-                                ]
-                              : [
-                                  _vm._v(
-                                    "\n                        " +
-                                      _vm._s(
-                                        list[value] != null ? list[value] : "-"
-                                      ) +
-                                      "                                           \n                    "
-                                  )
-                                ]
-                          ],
-                          2
-                        )
-                      }),
-                      _vm._v(" "),
-                      _c("td", [
-                        _c("div", { staticClass: "btn-group" }, [
-                          _c(
-                            "button",
-                            {
-                              staticClass:
-                                "btn btn-default btn-sm btn-flat dropdown-toggle pull-right",
-                              attrs: {
-                                type: "button",
-                                "data-toggle": "dropdown",
-                                tabindex: "-1",
-                                "aria-haspopup": "true",
-                                "aria-expanded": "false"
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                            Action\n                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            {
-                              staticClass: "dropdown-menu dropdown-menu-right"
-                            },
-                            [
-                              _vm.lists.permissions["update_" + _vm.lists.dir]
-                                ? _c(
-                                    "a",
-                                    {
-                                      staticClass: "dropdown-item",
-                                      attrs: {
-                                        href:
-                                          _vm.module.edit_route + "/" + list.id
-                                      }
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "fa fa-edit",
-                                        staticStyle: { color: "green" },
-                                        attrs: {
-                                          "data-toggle": "tooltip",
-                                          "data-placement": "top",
-                                          "data-original-title": "Edit"
-                                        }
-                                      }),
-                                      _vm._v(_vm._s(_vm.lists.common.edit))
-                                    ]
-                                  )
-                                : _vm._e(),
-                              _vm._v(" "),
-                              _vm.lists.permissions["delete_" + _vm.lists.dir]
-                                ? _c(
-                                    "a",
-                                    {
-                                      staticClass: "dropdown-item",
-                                      attrs: { href: "javascript:void(0);" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.deleteRecord(list.id)
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "fa fa-trash",
-                                        staticStyle: { color: "red" },
-                                        attrs: {
-                                          "data-toggle": "tooltip",
-                                          "data-placement": "top",
-                                          title: "",
-                                          "data-original-title": "Delete"
-                                        }
-                                      }),
-                                      _vm._v(_vm._s(_vm.lists.common.delete))
-                                    ]
-                                  )
-                                : _vm._e()
-                            ]
-                          )
-                        ])
-                      ])
-                    ],
-                    2
-                  )
-                }),
-                0
+      _c("div", { staticClass: "table-scroll" }, [
+        _c(
+          "table",
+          {
+            staticClass: "table table-striped table-bordered table-sm",
+            attrs: { cellspacing: "0", width: "100%" }
+          },
+          [
+            _c("thead", { staticClass: "thead-dark" }, [
+              _c(
+                "tr",
+                [
+                  _vm._l(_vm.lists.list_data, function(value, key) {
+                    return _c("th", [_vm._v(_vm._s(key))])
+                  }),
+                  _vm._v(" "),
+                  _c("th", { attrs: { width: "100" } }, [_vm._v("Action")])
+                ],
+                2
               )
-            : _c("tbody", [
-                _c("tr", [
-                  _c(
-                    "td",
-                    { staticClass: "text-center", attrs: { colspan: "20" } },
-                    [
-                      _vm._v(
-                        "\n                    " +
-                          _vm._s(_vm.lists.common.no_data) +
-                          "\n                "
-                      )
-                    ]
-                  )
+            ]),
+            _vm._v(" "),
+            _vm.lists.lists.data.length > 0
+              ? _c(
+                  "tbody",
+                  _vm._l(_vm.lists.lists.data, function(list) {
+                    return _c(
+                      "tr",
+                      [
+                        _vm._l(_vm.lists.list_data, function(value, key) {
+                          return _c(
+                            "td",
+                            [
+                              value == "date"
+                                ? [
+                                    _vm._v(
+                                      "\n                            " +
+                                        _vm._s(_vm._f("dmy")(list[value])) +
+                                        "\n                        "
+                                    )
+                                  ]
+                                : value.indexOf(".") > 0
+                                ? [
+                                    _vm._v(
+                                      "\n                            " +
+                                        _vm._s(
+                                          _vm._f("relation")(list, value)
+                                        ) +
+                                        "\n                        "
+                                    )
+                                  ]
+                                : [
+                                    _vm._v(
+                                      "\n                            " +
+                                        _vm._s(
+                                          list[value] != null
+                                            ? list[value]
+                                            : "-"
+                                        ) +
+                                        "                                           \n                        "
+                                    )
+                                  ]
+                            ],
+                            2
+                          )
+                        }),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("div", { staticClass: "btn-group" }, [
+                            _c(
+                              "button",
+                              {
+                                staticClass:
+                                  "btn btn-default btn-sm btn-flat dropdown-toggle pull-right",
+                                attrs: {
+                                  type: "button",
+                                  "data-toggle": "dropdown",
+                                  tabindex: "-1",
+                                  "aria-haspopup": "true",
+                                  "aria-expanded": "false"
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                                Action\n                            "
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "dropdown-menu dropdown-menu-right"
+                              },
+                              [
+                                _vm.lists.permissions["update_" + _vm.lists.dir]
+                                  ? _c(
+                                      "a",
+                                      {
+                                        staticClass: "dropdown-item",
+                                        attrs: {
+                                          href:
+                                            _vm.module.edit_route +
+                                            "/" +
+                                            list.id
+                                        }
+                                      },
+                                      [
+                                        _c("i", {
+                                          staticClass: "fa fa-edit",
+                                          staticStyle: { color: "green" },
+                                          attrs: {
+                                            "data-toggle": "tooltip",
+                                            "data-placement": "top",
+                                            "data-original-title": "Edit"
+                                          }
+                                        }),
+                                        _vm._v(_vm._s(_vm.lists.common.edit))
+                                      ]
+                                    )
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.lists.permissions["delete_" + _vm.lists.dir]
+                                  ? _c(
+                                      "a",
+                                      {
+                                        staticClass: "dropdown-item",
+                                        attrs: { href: "javascript:void(0);" },
+                                        on: {
+                                          click: function($event) {
+                                            return _vm.deleteRecord(list.id)
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _c("i", {
+                                          staticClass: "fa fa-trash",
+                                          staticStyle: { color: "red" },
+                                          attrs: {
+                                            "data-toggle": "tooltip",
+                                            "data-placement": "top",
+                                            title: "",
+                                            "data-original-title": "Delete"
+                                          }
+                                        }),
+                                        _vm._v(_vm._s(_vm.lists.common.delete))
+                                      ]
+                                    )
+                                  : _vm._e()
+                              ]
+                            )
+                          ])
+                        ])
+                      ],
+                      2
+                    )
+                  }),
+                  0
+                )
+              : _c("tbody", [
+                  _c("tr", [
+                    _c(
+                      "td",
+                      { staticClass: "text-center", attrs: { colspan: "20" } },
+                      [
+                        _vm._v(
+                          "\n                        " +
+                            _vm._s(_vm.lists.common.no_data) +
+                            "\n                    "
+                        )
+                      ]
+                    )
+                  ])
                 ])
-              ])
-        ]
-      ),
+          ]
+        )
+      ]),
       _vm._v(" "),
       _c("paginate-links", { attrs: { lists: this.lists } })
     ],
@@ -62518,315 +62578,357 @@ var render = function() {
                     _vm._m(1),
                     _vm._v(" "),
                     _c("div", { staticClass: "col-md-12" }, [
-                      _c("table", { staticClass: "table table-bordered" }, [
-                        _vm._m(2),
-                        _vm._v(" "),
-                        _c(
-                          "tbody",
-                          _vm._l(_vm.rows.length, function(n, k) {
-                            return _c("tr", [
-                              _c(
-                                "td",
-                                [
-                                  _c(
-                                    "p-check",
-                                    {
-                                      staticClass: "p-icon p-rotate p-bigger",
-                                      attrs: { color: "primary" },
-                                      model: {
-                                        value: _vm.form.visible[k],
-                                        callback: function($$v) {
-                                          _vm.$set(_vm.form.visible, k, $$v)
+                      _c("div", { staticClass: "table-scroll" }, [
+                        _c("table", { staticClass: "table table-bordered" }, [
+                          _vm._m(2),
+                          _vm._v(" "),
+                          _c(
+                            "tbody",
+                            _vm._l(_vm.rows.length, function(n, k) {
+                              return _c("tr", [
+                                _c(
+                                  "td",
+                                  [
+                                    _c(
+                                      "p-check",
+                                      {
+                                        staticClass: "p-icon p-rotate p-bigger",
+                                        attrs: { color: "primary" },
+                                        model: {
+                                          value: _vm.form.visible[k],
+                                          callback: function($$v) {
+                                            _vm.$set(_vm.form.visible, k, $$v)
+                                          },
+                                          expression: "form.visible[k]"
+                                        }
+                                      },
+                                      [
+                                        _c("i", {
+                                          staticClass: "icon mdi mdi-check",
+                                          attrs: { slot: "extra" },
+                                          slot: "extra"
+                                        })
+                                      ]
+                                    )
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "td",
+                                  { staticStyle: { "min-width": "100px" } },
+                                  [
+                                    _c("input", {
+                                      directives: [
+                                        {
+                                          name: "model",
+                                          rawName: "v-model",
+                                          value: _vm.form.input_name[k],
+                                          expression: "form.input_name[k]"
+                                        }
+                                      ],
+                                      staticClass: "form-control",
+                                      attrs: {
+                                        type: "text",
+                                        name: "input_name"
+                                      },
+                                      domProps: {
+                                        value: _vm.form.input_name[k]
+                                      },
+                                      on: {
+                                        input: function($event) {
+                                          if ($event.target.composing) {
+                                            return
+                                          }
+                                          _vm.$set(
+                                            _vm.form.input_name,
+                                            k,
+                                            $event.target.value
+                                          )
+                                        }
+                                      }
+                                    })
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "td",
+                                  { staticStyle: { "min-width": "100px" } },
+                                  [
+                                    _c(
+                                      "select",
+                                      {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.form.input_type[k],
+                                            expression: "form.input_type[k]"
+                                          }
+                                        ],
+                                        ref: "input_type",
+                                        refInFor: true,
+                                        staticClass:
+                                          "form-control select-auto-grid",
+                                        attrs: {
+                                          name: "input_type",
+                                          position: k
                                         },
-                                        expression: "form.visible[k]"
-                                      }
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "icon mdi mdi-check",
-                                        attrs: { slot: "extra" },
-                                        slot: "extra"
-                                      })
-                                    ]
-                                  )
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c("td", [
-                                _c("input", {
-                                  directives: [
-                                    {
-                                      name: "model",
-                                      rawName: "v-model",
-                                      value: _vm.form.input_name[k],
-                                      expression: "form.input_name[k]"
-                                    }
-                                  ],
-                                  staticClass: "form-control",
-                                  attrs: { type: "text", name: "input_name" },
-                                  domProps: { value: _vm.form.input_name[k] },
-                                  on: {
-                                    input: function($event) {
-                                      if ($event.target.composing) {
-                                        return
-                                      }
-                                      _vm.$set(
-                                        _vm.form.input_name,
-                                        k,
-                                        $event.target.value
-                                      )
-                                    }
-                                  }
-                                })
-                              ]),
-                              _vm._v(" "),
-                              _c("td", { attrs: { width: "150px" } }, [
+                                        on: {
+                                          change: function($event) {
+                                            var $$selectedVal = Array.prototype.filter
+                                              .call(
+                                                $event.target.options,
+                                                function(o) {
+                                                  return o.selected
+                                                }
+                                              )
+                                              .map(function(o) {
+                                                var val =
+                                                  "_value" in o
+                                                    ? o._value
+                                                    : o.value
+                                                return val
+                                              })
+                                            _vm.$set(
+                                              _vm.form.input_type,
+                                              k,
+                                              $event.target.multiple
+                                                ? $$selectedVal
+                                                : $$selectedVal[0]
+                                            )
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _c("option", { attrs: { value: "" } }, [
+                                          _vm._v("Select Input Type")
+                                        ]),
+                                        _vm._v(" "),
+                                        _vm._l(_vm.input_type_array, function(
+                                          value,
+                                          key
+                                        ) {
+                                          return _c(
+                                            "option",
+                                            { domProps: { value: value } },
+                                            [_vm._v(_vm._s(value))]
+                                          )
+                                        })
+                                      ],
+                                      2
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
                                 _c(
-                                  "select",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "model",
-                                        rawName: "v-model",
-                                        value: _vm.form.input_type[k],
-                                        expression: "form.input_type[k]"
-                                      }
-                                    ],
-                                    ref: "input_type",
-                                    refInFor: true,
-                                    staticClass:
-                                      "form-control select-auto-grid",
-                                    attrs: { name: "input_type", position: k },
-                                    on: {
-                                      change: function($event) {
-                                        var $$selectedVal = Array.prototype.filter
-                                          .call($event.target.options, function(
-                                            o
-                                          ) {
-                                            return o.selected
-                                          })
-                                          .map(function(o) {
-                                            var val =
-                                              "_value" in o ? o._value : o.value
-                                            return val
-                                          })
-                                        _vm.$set(
-                                          _vm.form.input_type,
-                                          k,
-                                          $event.target.multiple
-                                            ? $$selectedVal
-                                            : $$selectedVal[0]
-                                        )
-                                      }
-                                    }
-                                  },
+                                  "td",
+                                  { staticStyle: { "min-width": "100px" } },
                                   [
-                                    _c("option", { attrs: { value: "" } }, [
-                                      _vm._v("Select Input Type")
-                                    ]),
-                                    _vm._v(" "),
-                                    _vm._l(_vm.input_type_array, function(
-                                      value,
-                                      key
-                                    ) {
-                                      return _c(
-                                        "option",
-                                        { domProps: { value: value } },
-                                        [_vm._v(_vm._s(value))]
-                                      )
-                                    })
-                                  ],
-                                  2
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("td", { attrs: { width: "150px" } }, [
+                                    _c(
+                                      "select",
+                                      {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.form.table[k],
+                                            expression: "form.table[k]"
+                                          }
+                                        ],
+                                        ref: "table",
+                                        refInFor: true,
+                                        staticClass:
+                                          "form-control  select-auto-grid db-table",
+                                        attrs: {
+                                          name: "table",
+                                          position: k,
+                                          disabled: "disabled"
+                                        },
+                                        on: {
+                                          change: function($event) {
+                                            var $$selectedVal = Array.prototype.filter
+                                              .call(
+                                                $event.target.options,
+                                                function(o) {
+                                                  return o.selected
+                                                }
+                                              )
+                                              .map(function(o) {
+                                                var val =
+                                                  "_value" in o
+                                                    ? o._value
+                                                    : o.value
+                                                return val
+                                              })
+                                            _vm.$set(
+                                              _vm.form.table,
+                                              k,
+                                              $event.target.multiple
+                                                ? $$selectedVal
+                                                : $$selectedVal[0]
+                                            )
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _c("option", { attrs: { value: "" } }, [
+                                          _vm._v("Select Table")
+                                        ]),
+                                        _vm._v(" "),
+                                        _vm._l(_vm.table, function(value, key) {
+                                          return _c(
+                                            "option",
+                                            { domProps: { value: value } },
+                                            [_vm._v(_vm._s(value))]
+                                          )
+                                        })
+                                      ],
+                                      2
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
                                 _c(
-                                  "select",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "model",
-                                        rawName: "v-model",
-                                        value: _vm.form.table[k],
-                                        expression: "form.table[k]"
-                                      }
-                                    ],
-                                    ref: "table",
-                                    refInFor: true,
-                                    staticClass:
-                                      "form-control  select-auto-grid db-table",
-                                    attrs: {
-                                      name: "table",
-                                      position: k,
-                                      disabled: "disabled"
-                                    },
-                                    on: {
-                                      change: function($event) {
-                                        var $$selectedVal = Array.prototype.filter
-                                          .call($event.target.options, function(
-                                            o
-                                          ) {
-                                            return o.selected
-                                          })
-                                          .map(function(o) {
-                                            var val =
-                                              "_value" in o ? o._value : o.value
-                                            return val
-                                          })
-                                        _vm.$set(
-                                          _vm.form.table,
-                                          k,
-                                          $event.target.multiple
-                                            ? $$selectedVal
-                                            : $$selectedVal[0]
-                                        )
-                                      }
-                                    }
-                                  },
+                                  "td",
+                                  { staticStyle: { "min-width": "100px" } },
                                   [
-                                    _c("option", { attrs: { value: "" } }, [
-                                      _vm._v("Select Table")
-                                    ]),
-                                    _vm._v(" "),
-                                    _vm._l(_vm.table, function(value, key) {
-                                      return _c(
-                                        "option",
-                                        { domProps: { value: value } },
-                                        [_vm._v(_vm._s(value))]
-                                      )
-                                    })
-                                  ],
-                                  2
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("td", { attrs: { width: "150px" } }, [
+                                    _c(
+                                      "select",
+                                      {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.form.value[k],
+                                            expression: "form.value[k]"
+                                          }
+                                        ],
+                                        ref: "value",
+                                        refInFor: true,
+                                        staticClass:
+                                          "form-control select-auto db-value",
+                                        attrs: {
+                                          name: "value",
+                                          position: k,
+                                          disabled: "disabled"
+                                        },
+                                        on: {
+                                          change: function($event) {
+                                            var $$selectedVal = Array.prototype.filter
+                                              .call(
+                                                $event.target.options,
+                                                function(o) {
+                                                  return o.selected
+                                                }
+                                              )
+                                              .map(function(o) {
+                                                var val =
+                                                  "_value" in o
+                                                    ? o._value
+                                                    : o.value
+                                                return val
+                                              })
+                                            _vm.$set(
+                                              _vm.form.value,
+                                              k,
+                                              $event.target.multiple
+                                                ? $$selectedVal
+                                                : $$selectedVal[0]
+                                            )
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _c("option", { attrs: { value: "" } }, [
+                                          _vm._v("Select Value")
+                                        ]),
+                                        _vm._v(" "),
+                                        _vm._l(_vm.value, function(v) {
+                                          return _c(
+                                            "option",
+                                            { domProps: { value: v } },
+                                            [_vm._v(_vm._s(v))]
+                                          )
+                                        })
+                                      ],
+                                      2
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
                                 _c(
-                                  "select",
-                                  {
-                                    directives: [
-                                      {
-                                        name: "model",
-                                        rawName: "v-model",
-                                        value: _vm.form.value[k],
-                                        expression: "form.value[k]"
-                                      }
-                                    ],
-                                    ref: "value",
-                                    refInFor: true,
-                                    staticClass:
-                                      "form-control select-auto db-value",
-                                    attrs: {
-                                      name: "value",
-                                      position: k,
-                                      disabled: "disabled"
-                                    },
-                                    on: {
-                                      change: function($event) {
-                                        var $$selectedVal = Array.prototype.filter
-                                          .call($event.target.options, function(
-                                            o
-                                          ) {
-                                            return o.selected
-                                          })
-                                          .map(function(o) {
-                                            var val =
-                                              "_value" in o ? o._value : o.value
-                                            return val
-                                          })
-                                        _vm.$set(
-                                          _vm.form.value,
-                                          k,
-                                          $event.target.multiple
-                                            ? $$selectedVal
-                                            : $$selectedVal[0]
-                                        )
-                                      }
-                                    }
-                                  },
+                                  "td",
+                                  { staticStyle: { "min-width": "100px" } },
                                   [
-                                    _c("option", { attrs: { value: "" } }, [
-                                      _vm._v("Select Value")
-                                    ]),
-                                    _vm._v(" "),
-                                    _vm._l(_vm.value, function(v) {
-                                      return _c(
-                                        "option",
-                                        { domProps: { value: v } },
-                                        [_vm._v(_vm._s(v))]
-                                      )
-                                    })
-                                  ],
-                                  2
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("td", { attrs: { width: "150px" } }, [
-                                _c(
-                                  "select",
-                                  {
-                                    directives: [
+                                    _c(
+                                      "select",
                                       {
-                                        name: "model",
-                                        rawName: "v-model",
-                                        value: _vm.form.key[k],
-                                        expression: "form.key[k]"
-                                      }
-                                    ],
-                                    ref: "key",
-                                    refInFor: true,
-                                    staticClass:
-                                      "form-control select-auto db-key",
-                                    attrs: {
-                                      name: "key",
-                                      position: k,
-                                      disabled: "disabled"
-                                    },
-                                    on: {
-                                      change: function($event) {
-                                        var $$selectedVal = Array.prototype.filter
-                                          .call($event.target.options, function(
-                                            o
-                                          ) {
-                                            return o.selected
-                                          })
-                                          .map(function(o) {
-                                            var val =
-                                              "_value" in o ? o._value : o.value
-                                            return val
-                                          })
-                                        _vm.$set(
-                                          _vm.form.key,
-                                          k,
-                                          $event.target.multiple
-                                            ? $$selectedVal
-                                            : $$selectedVal[0]
-                                        )
-                                      }
-                                    }
-                                  },
-                                  [
-                                    _c("option", { attrs: { value: "" } }, [
-                                      _vm._v("Select Label")
-                                    ]),
-                                    _vm._v(" "),
-                                    _vm._l(_vm.key, function(v) {
-                                      return _c(
-                                        "option",
-                                        { domProps: { value: v } },
-                                        [_vm._v(_vm._s(v))]
-                                      )
-                                    })
-                                  ],
-                                  2
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.form.key[k],
+                                            expression: "form.key[k]"
+                                          }
+                                        ],
+                                        ref: "key",
+                                        refInFor: true,
+                                        staticClass:
+                                          "form-control select-auto db-key",
+                                        attrs: {
+                                          name: "key",
+                                          position: k,
+                                          disabled: "disabled"
+                                        },
+                                        on: {
+                                          change: function($event) {
+                                            var $$selectedVal = Array.prototype.filter
+                                              .call(
+                                                $event.target.options,
+                                                function(o) {
+                                                  return o.selected
+                                                }
+                                              )
+                                              .map(function(o) {
+                                                var val =
+                                                  "_value" in o
+                                                    ? o._value
+                                                    : o.value
+                                                return val
+                                              })
+                                            _vm.$set(
+                                              _vm.form.key,
+                                              k,
+                                              $event.target.multiple
+                                                ? $$selectedVal
+                                                : $$selectedVal[0]
+                                            )
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _c("option", { attrs: { value: "" } }, [
+                                          _vm._v("Select Label")
+                                        ]),
+                                        _vm._v(" "),
+                                        _vm._l(_vm.key, function(v) {
+                                          return _c(
+                                            "option",
+                                            { domProps: { value: v } },
+                                            [_vm._v(_vm._s(v))]
+                                          )
+                                        })
+                                      ],
+                                      2
+                                    )
+                                  ]
                                 )
                               ])
-                            ])
-                          }),
-                          0
-                        )
+                            }),
+                            0
+                          )
+                        ])
                       ])
                     ])
                   ])
@@ -62928,175 +63030,183 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "clearfix" }, [_vm._v(" ")]),
       _vm._v(" "),
-      _c(
-        "table",
-        {
-          staticClass: "table table-striped table-bordered table-sm",
-          attrs: { cellspacing: "0", width: "100%" }
-        },
-        [
-          _c("thead", { staticClass: "thead-dark" }, [
-            _c(
-              "tr",
-              [
-                _vm._l(_vm.lists.list_data, function(value, key) {
-                  return _c("th", [_vm._v(_vm._s(key))])
-                }),
-                _vm._v(" "),
-                _c("th", { attrs: { width: "100" } }, [_vm._v("Action")])
-              ],
-              2
-            )
-          ]),
-          _vm._v(" "),
-          _vm.lists.lists.data.length > 0
-            ? _c(
-                "tbody",
-                _vm._l(_vm.lists.lists.data, function(list) {
-                  return _c(
-                    "tr",
-                    [
-                      _vm._l(_vm.lists.list_data, function(value, key) {
-                        return _c(
-                          "td",
-                          [
-                            value == "date"
-                              ? [
-                                  _vm._v(
-                                    "\n                        " +
-                                      _vm._s(_vm._f("dmy")(list[value])) +
-                                      "\n                    "
-                                  )
-                                ]
-                              : value.indexOf(".") > 0
-                              ? [
-                                  _vm._v(
-                                    "\n                        " +
-                                      _vm._s(_vm._f("relation")(list, value)) +
-                                      "\n                    "
-                                  )
-                                ]
-                              : [
-                                  _vm._v(
-                                    "\n                        " +
-                                      _vm._s(
-                                        list[value] != null ? list[value] : "-"
-                                      ) +
-                                      "                                           \n                    "
-                                  )
-                                ]
-                          ],
-                          2
-                        )
-                      }),
-                      _vm._v(" "),
-                      _c("td", [
-                        _c("div", { staticClass: "btn-group" }, [
-                          _c(
-                            "button",
-                            {
-                              staticClass:
-                                "btn btn-default btn-sm btn-flat dropdown-toggle pull-right",
-                              attrs: {
-                                type: "button",
-                                "data-toggle": "dropdown",
-                                tabindex: "-1",
-                                "aria-haspopup": "true",
-                                "aria-expanded": "false"
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                            Action\n                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            {
-                              staticClass: "dropdown-menu dropdown-menu-right"
-                            },
-                            [
-                              _vm.lists.permissions["update_" + _vm.lists.dir]
-                                ? _c(
-                                    "a",
-                                    {
-                                      staticClass: "dropdown-item",
-                                      attrs: {
-                                        href:
-                                          _vm.module.edit_route + "/" + list.id
-                                      }
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "fa fa-edit",
-                                        staticStyle: { color: "green" },
-                                        attrs: {
-                                          "data-toggle": "tooltip",
-                                          "data-placement": "top",
-                                          "data-original-title": "Edit"
-                                        }
-                                      }),
-                                      _vm._v(_vm._s(_vm.lists.common.edit))
-                                    ]
-                                  )
-                                : _vm._e(),
-                              _vm._v(" "),
-                              _vm.lists.permissions["delete_" + _vm.lists.dir]
-                                ? _c(
-                                    "a",
-                                    {
-                                      staticClass: "dropdown-item",
-                                      attrs: { href: "javascript:void(0);" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.deleteRecord(list.id)
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "fa fa-trash",
-                                        staticStyle: { color: "red" },
-                                        attrs: {
-                                          "data-toggle": "tooltip",
-                                          "data-placement": "top",
-                                          title: "",
-                                          "data-original-title": "Delete"
-                                        }
-                                      }),
-                                      _vm._v(_vm._s(_vm.lists.common.delete))
-                                    ]
-                                  )
-                                : _vm._e()
-                            ]
-                          )
-                        ])
-                      ])
-                    ],
-                    2
-                  )
-                }),
-                0
+      _c("div", { staticClass: "table-scroll" }, [
+        _c(
+          "table",
+          {
+            staticClass: "table table-striped table-bordered table-sm",
+            attrs: { cellspacing: "0", width: "100%" }
+          },
+          [
+            _c("thead", { staticClass: "thead-dark" }, [
+              _c(
+                "tr",
+                [
+                  _vm._l(_vm.lists.list_data, function(value, key) {
+                    return _c("th", [_vm._v(_vm._s(key))])
+                  }),
+                  _vm._v(" "),
+                  _c("th", { attrs: { width: "100" } }, [_vm._v("Action")])
+                ],
+                2
               )
-            : _c("tbody", [
-                _c("tr", [
-                  _c(
-                    "td",
-                    { staticClass: "text-center", attrs: { colspan: "20" } },
-                    [
-                      _vm._v(
-                        "\n                    " +
-                          _vm._s(_vm.lists.common.no_data) +
-                          "\n                "
-                      )
-                    ]
-                  )
+            ]),
+            _vm._v(" "),
+            _vm.lists.lists.data.length > 0
+              ? _c(
+                  "tbody",
+                  _vm._l(_vm.lists.lists.data, function(list) {
+                    return _c(
+                      "tr",
+                      [
+                        _vm._l(_vm.lists.list_data, function(value, key) {
+                          return _c(
+                            "td",
+                            [
+                              value == "date"
+                                ? [
+                                    _vm._v(
+                                      "\n                            " +
+                                        _vm._s(_vm._f("dmy")(list[value])) +
+                                        "\n                        "
+                                    )
+                                  ]
+                                : value.indexOf(".") > 0
+                                ? [
+                                    _vm._v(
+                                      "\n                            " +
+                                        _vm._s(
+                                          _vm._f("relation")(list, value)
+                                        ) +
+                                        "\n                        "
+                                    )
+                                  ]
+                                : [
+                                    _vm._v(
+                                      "\n                            " +
+                                        _vm._s(
+                                          list[value] != null
+                                            ? list[value]
+                                            : "-"
+                                        ) +
+                                        "                                           \n                        "
+                                    )
+                                  ]
+                            ],
+                            2
+                          )
+                        }),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("div", { staticClass: "btn-group" }, [
+                            _c(
+                              "button",
+                              {
+                                staticClass:
+                                  "btn btn-default btn-sm btn-flat dropdown-toggle pull-right",
+                                attrs: {
+                                  type: "button",
+                                  "data-toggle": "dropdown",
+                                  tabindex: "-1",
+                                  "aria-haspopup": "true",
+                                  "aria-expanded": "false"
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                                Action\n                            "
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "dropdown-menu dropdown-menu-right"
+                              },
+                              [
+                                _vm.lists.permissions["update_" + _vm.lists.dir]
+                                  ? _c(
+                                      "a",
+                                      {
+                                        staticClass: "dropdown-item",
+                                        attrs: {
+                                          href:
+                                            _vm.module.edit_route +
+                                            "/" +
+                                            list.id
+                                        }
+                                      },
+                                      [
+                                        _c("i", {
+                                          staticClass: "fa fa-edit",
+                                          staticStyle: { color: "green" },
+                                          attrs: {
+                                            "data-toggle": "tooltip",
+                                            "data-placement": "top",
+                                            "data-original-title": "Edit"
+                                          }
+                                        }),
+                                        _vm._v(_vm._s(_vm.lists.common.edit))
+                                      ]
+                                    )
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.lists.permissions["delete_" + _vm.lists.dir]
+                                  ? _c(
+                                      "a",
+                                      {
+                                        staticClass: "dropdown-item",
+                                        attrs: { href: "javascript:void(0);" },
+                                        on: {
+                                          click: function($event) {
+                                            return _vm.deleteRecord(list.id)
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _c("i", {
+                                          staticClass: "fa fa-trash",
+                                          staticStyle: { color: "red" },
+                                          attrs: {
+                                            "data-toggle": "tooltip",
+                                            "data-placement": "top",
+                                            title: "",
+                                            "data-original-title": "Delete"
+                                          }
+                                        }),
+                                        _vm._v(_vm._s(_vm.lists.common.delete))
+                                      ]
+                                    )
+                                  : _vm._e()
+                              ]
+                            )
+                          ])
+                        ])
+                      ],
+                      2
+                    )
+                  }),
+                  0
+                )
+              : _c("tbody", [
+                  _c("tr", [
+                    _c(
+                      "td",
+                      { staticClass: "text-center", attrs: { colspan: "20" } },
+                      [
+                        _vm._v(
+                          "\n                        " +
+                            _vm._s(_vm.lists.common.no_data) +
+                            "\n                    "
+                        )
+                      ]
+                    )
+                  ])
                 ])
-              ])
-        ]
-      ),
+          ]
+        )
+      ]),
       _vm._v(" "),
       _c("paginate-links", { attrs: { lists: this.lists } })
     ],
@@ -63256,126 +63366,128 @@ var render = function() {
             _vm._m(0),
             _vm._v(" "),
             _c("div", { staticClass: "col-sm-12" }, [
-              _c("table", { staticClass: "table table-bordered" }, [
-                _vm._m(1),
+              _c("div", { staticClass: "table-scroll" }, [
+                _c("table", { staticClass: "table table-bordered" }, [
+                  _vm._m(1),
+                  _vm._v(" "),
+                  _c(
+                    "tbody",
+                    _vm._l(_vm.lang_value_pagination, function(n, k) {
+                      return _c("tr", [
+                        _c("td", [_vm._v(" " + _vm._s(n) + " ")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.form.translation[n],
+                                expression: "form.translation[n]"
+                              }
+                            ],
+                            staticClass: "form-control",
+                            attrs: { type: "text", name: "translation" },
+                            domProps: { value: _vm.form.translation[n] },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.form.translation,
+                                  n,
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ])
+                      ])
+                    }),
+                    0
+                  )
+                ]),
                 _vm._v(" "),
                 _c(
-                  "tbody",
-                  _vm._l(_vm.lang_value_pagination, function(n, k) {
-                    return _c("tr", [
-                      _c("td", [_vm._v(" " + _vm._s(n) + " ")]),
-                      _vm._v(" "),
-                      _c("td", [
-                        _c("input", {
-                          directives: [
+                  "ul",
+                  { staticClass: "pagination" },
+                  [
+                    _vm.page > 1
+                      ? _c("li", { staticClass: "page-item" }, [
+                          _c(
+                            "a",
                             {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.form.translation[n],
-                              expression: "form.translation[n]"
-                            }
-                          ],
-                          staticClass: "form-control",
-                          attrs: { type: "text", name: "translation" },
-                          domProps: { value: _vm.form.translation[n] },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
+                              staticClass: "page-link",
+                              attrs: {
+                                href: "javascript:void(0);",
+                                "aria-label": "Previous"
+                              },
+                              on: {
+                                click: function($event) {
+                                  return _vm.getPageData(this.module.page - 1)
+                                }
                               }
-                              _vm.$set(
-                                _vm.form.translation,
-                                n,
-                                $event.target.value
-                              )
-                            }
-                          }
-                        })
-                      ])
-                    ])
-                  }),
-                  0
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "ul",
-                { staticClass: "pagination" },
-                [
-                  _vm.page > 1
-                    ? _c("li", { staticClass: "page-item" }, [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "page-link",
-                            attrs: {
-                              href: "javascript:void(0);",
-                              "aria-label": "Previous"
                             },
-                            on: {
-                              click: function($event) {
-                                return _vm.getPageData(this.module.page - 1)
+                            [
+                              _c("span", { attrs: { "aria-hidden": "true" } }, [
+                                _vm._v("Previous")
+                              ])
+                            ]
+                          )
+                        ])
+                      : _vm._e(),
+                    _vm._v(" "),
+                    _vm._l(_vm.total_pages, function(p) {
+                      return _c(
+                        "li",
+                        {
+                          staticClass: "page-item",
+                          class: [p == _vm.page ? "active" : ""]
+                        },
+                        [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "page-link",
+                              attrs: { href: "javascript:void(0);" },
+                              on: {
+                                click: function($event) {
+                                  return _vm.getPageData(p)
+                                }
                               }
-                            }
-                          },
-                          [
-                            _c("span", { attrs: { "aria-hidden": "true" } }, [
-                              _vm._v("Previous")
-                            ])
-                          ]
-                        )
-                      ])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  _vm._l(_vm.total_pages, function(p) {
-                    return _c(
-                      "li",
-                      {
-                        staticClass: "page-item",
-                        class: [p == _vm.page ? "active" : ""]
-                      },
-                      [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "page-link",
-                            attrs: { href: "javascript:void(0);" },
-                            on: {
-                              click: function($event) {
-                                return _vm.getPageData(p)
+                            },
+                            [_vm._v(_vm._s(p))]
+                          )
+                        ]
+                      )
+                    }),
+                    _vm._v(" "),
+                    _vm.page < _vm.total_pages
+                      ? _c("li", { staticClass: "page-item" }, [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "page-link",
+                              attrs: { href: "javascript:void(0);" },
+                              on: {
+                                click: function($event) {
+                                  return _vm.getPageData(_vm.page + 1)
+                                }
                               }
-                            }
-                          },
-                          [_vm._v(_vm._s(p))]
-                        )
-                      ]
-                    )
-                  }),
-                  _vm._v(" "),
-                  _vm.page < _vm.total_pages
-                    ? _c("li", { staticClass: "page-item" }, [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "page-link",
-                            attrs: { href: "javascript:void(0);" },
-                            on: {
-                              click: function($event) {
-                                return _vm.getPageData(_vm.page + 1)
-                              }
-                            }
-                          },
-                          [
-                            _c("span", { attrs: { "aria-hidden": "true" } }, [
-                              _vm._v("Next")
-                            ])
-                          ]
-                        )
-                      ])
-                    : _vm._e()
-                ],
-                2
-              )
+                            },
+                            [
+                              _c("span", { attrs: { "aria-hidden": "true" } }, [
+                                _vm._v("Next")
+                              ])
+                            ]
+                          )
+                        ])
+                      : _vm._e()
+                  ],
+                  2
+                )
+              ])
             ])
           ]),
           _vm._v(" "),
@@ -63446,175 +63558,183 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "clearfix" }, [_vm._v(" ")]),
       _vm._v(" "),
-      _c(
-        "table",
-        {
-          staticClass: "table table-striped table-bordered table-sm",
-          attrs: { cellspacing: "0", width: "100%" }
-        },
-        [
-          _c("thead", { staticClass: "thead-dark" }, [
-            _c(
-              "tr",
-              [
-                _vm._l(_vm.lists.list_data, function(value, key) {
-                  return _c("th", [_vm._v(_vm._s(key))])
-                }),
-                _vm._v(" "),
-                _c("th", { attrs: { width: "100" } }, [_vm._v("Action")])
-              ],
-              2
-            )
-          ]),
-          _vm._v(" "),
-          _vm.lists.lists.data.length > 0
-            ? _c(
-                "tbody",
-                _vm._l(_vm.lists.lists.data, function(list) {
-                  return _c(
-                    "tr",
-                    [
-                      _vm._l(_vm.lists.list_data, function(value, key) {
-                        return _c(
-                          "td",
-                          [
-                            value == "date"
-                              ? [
-                                  _vm._v(
-                                    "\n                        " +
-                                      _vm._s(_vm._f("dmy")(list[value])) +
-                                      "\n                    "
-                                  )
-                                ]
-                              : value.indexOf(".") > 0
-                              ? [
-                                  _vm._v(
-                                    "\n                        " +
-                                      _vm._s(_vm._f("relation")(list, value)) +
-                                      "\n                    "
-                                  )
-                                ]
-                              : [
-                                  _vm._v(
-                                    "\n                        " +
-                                      _vm._s(
-                                        list[value] != null ? list[value] : "-"
-                                      ) +
-                                      "                                           \n                    "
-                                  )
-                                ]
-                          ],
-                          2
-                        )
-                      }),
-                      _vm._v(" "),
-                      _c("td", [
-                        _c("div", { staticClass: "btn-group" }, [
-                          _c(
-                            "button",
-                            {
-                              staticClass:
-                                "btn btn-default btn-sm btn-flat dropdown-toggle pull-right",
-                              attrs: {
-                                type: "button",
-                                "data-toggle": "dropdown",
-                                tabindex: "-1",
-                                "aria-haspopup": "true",
-                                "aria-expanded": "false"
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                            Action\n                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            {
-                              staticClass: "dropdown-menu dropdown-menu-right"
-                            },
-                            [
-                              _vm.lists.permissions["update_" + _vm.lists.dir]
-                                ? _c(
-                                    "a",
-                                    {
-                                      staticClass: "dropdown-item",
-                                      attrs: {
-                                        href:
-                                          _vm.module.edit_route + "/" + list.id
-                                      }
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "fa fa-edit",
-                                        staticStyle: { color: "green" },
-                                        attrs: {
-                                          "data-toggle": "tooltip",
-                                          "data-placement": "top",
-                                          "data-original-title": "Edit"
-                                        }
-                                      }),
-                                      _vm._v(_vm._s(_vm.lists.common.edit))
-                                    ]
-                                  )
-                                : _vm._e(),
-                              _vm._v(" "),
-                              _vm.lists.permissions["delete_" + _vm.lists.dir]
-                                ? _c(
-                                    "a",
-                                    {
-                                      staticClass: "dropdown-item",
-                                      attrs: { href: "javascript:void(0);" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.deleteRecord(list.id)
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "fa fa-trash",
-                                        staticStyle: { color: "red" },
-                                        attrs: {
-                                          "data-toggle": "tooltip",
-                                          "data-placement": "top",
-                                          title: "",
-                                          "data-original-title": "Delete"
-                                        }
-                                      }),
-                                      _vm._v(_vm._s(_vm.lists.common.delete))
-                                    ]
-                                  )
-                                : _vm._e()
-                            ]
-                          )
-                        ])
-                      ])
-                    ],
-                    2
-                  )
-                }),
-                0
+      _c("div", { staticClass: "table-scroll" }, [
+        _c(
+          "table",
+          {
+            staticClass: "table table-striped table-bordered table-sm",
+            attrs: { cellspacing: "0", width: "100%" }
+          },
+          [
+            _c("thead", { staticClass: "thead-dark" }, [
+              _c(
+                "tr",
+                [
+                  _vm._l(_vm.lists.list_data, function(value, key) {
+                    return _c("th", [_vm._v(_vm._s(key))])
+                  }),
+                  _vm._v(" "),
+                  _c("th", { attrs: { width: "100" } }, [_vm._v("Action")])
+                ],
+                2
               )
-            : _c("tbody", [
-                _c("tr", [
-                  _c(
-                    "td",
-                    { staticClass: "text-center", attrs: { colspan: "20" } },
-                    [
-                      _vm._v(
-                        "\n                    " +
-                          _vm._s(_vm.lists.common.no_data) +
-                          "\n                "
-                      )
-                    ]
-                  )
+            ]),
+            _vm._v(" "),
+            _vm.lists.lists.data.length > 0
+              ? _c(
+                  "tbody",
+                  _vm._l(_vm.lists.lists.data, function(list) {
+                    return _c(
+                      "tr",
+                      [
+                        _vm._l(_vm.lists.list_data, function(value, key) {
+                          return _c(
+                            "td",
+                            [
+                              value == "date"
+                                ? [
+                                    _vm._v(
+                                      "\n                            " +
+                                        _vm._s(_vm._f("dmy")(list[value])) +
+                                        "\n                        "
+                                    )
+                                  ]
+                                : value.indexOf(".") > 0
+                                ? [
+                                    _vm._v(
+                                      "\n                            " +
+                                        _vm._s(
+                                          _vm._f("relation")(list, value)
+                                        ) +
+                                        "\n                        "
+                                    )
+                                  ]
+                                : [
+                                    _vm._v(
+                                      "\n                            " +
+                                        _vm._s(
+                                          list[value] != null
+                                            ? list[value]
+                                            : "-"
+                                        ) +
+                                        "                                           \n                        "
+                                    )
+                                  ]
+                            ],
+                            2
+                          )
+                        }),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("div", { staticClass: "btn-group" }, [
+                            _c(
+                              "button",
+                              {
+                                staticClass:
+                                  "btn btn-default btn-sm btn-flat dropdown-toggle pull-right",
+                                attrs: {
+                                  type: "button",
+                                  "data-toggle": "dropdown",
+                                  tabindex: "-1",
+                                  "aria-haspopup": "true",
+                                  "aria-expanded": "false"
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                                Action\n                            "
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "dropdown-menu dropdown-menu-right"
+                              },
+                              [
+                                _vm.lists.permissions["update_" + _vm.lists.dir]
+                                  ? _c(
+                                      "a",
+                                      {
+                                        staticClass: "dropdown-item",
+                                        attrs: {
+                                          href:
+                                            _vm.module.edit_route +
+                                            "/" +
+                                            list.id
+                                        }
+                                      },
+                                      [
+                                        _c("i", {
+                                          staticClass: "fa fa-edit",
+                                          staticStyle: { color: "green" },
+                                          attrs: {
+                                            "data-toggle": "tooltip",
+                                            "data-placement": "top",
+                                            "data-original-title": "Edit"
+                                          }
+                                        }),
+                                        _vm._v(_vm._s(_vm.lists.common.edit))
+                                      ]
+                                    )
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.lists.permissions["delete_" + _vm.lists.dir]
+                                  ? _c(
+                                      "a",
+                                      {
+                                        staticClass: "dropdown-item",
+                                        attrs: { href: "javascript:void(0);" },
+                                        on: {
+                                          click: function($event) {
+                                            return _vm.deleteRecord(list.id)
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _c("i", {
+                                          staticClass: "fa fa-trash",
+                                          staticStyle: { color: "red" },
+                                          attrs: {
+                                            "data-toggle": "tooltip",
+                                            "data-placement": "top",
+                                            title: "",
+                                            "data-original-title": "Delete"
+                                          }
+                                        }),
+                                        _vm._v(_vm._s(_vm.lists.common.delete))
+                                      ]
+                                    )
+                                  : _vm._e()
+                              ]
+                            )
+                          ])
+                        ])
+                      ],
+                      2
+                    )
+                  }),
+                  0
+                )
+              : _c("tbody", [
+                  _c("tr", [
+                    _c(
+                      "td",
+                      { staticClass: "text-center", attrs: { colspan: "20" } },
+                      [
+                        _vm._v(
+                          "\n                        " +
+                            _vm._s(_vm.lists.common.no_data) +
+                            "\n                    "
+                        )
+                      ]
+                    )
+                  ])
                 ])
-              ])
-        ]
-      ),
+          ]
+        )
+      ]),
       _vm._v(" "),
       _c("paginate-links", { attrs: { lists: this.lists } })
     ],
@@ -64278,175 +64398,183 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "clearfix" }, [_vm._v(" ")]),
       _vm._v(" "),
-      _c(
-        "table",
-        {
-          staticClass: "table table-striped table-bordered table-sm",
-          attrs: { cellspacing: "0", width: "100%" }
-        },
-        [
-          _c("thead", { staticClass: "thead-dark" }, [
-            _c(
-              "tr",
-              [
-                _vm._l(_vm.lists.list_data, function(value, key) {
-                  return _c("th", [_vm._v(_vm._s(key))])
-                }),
-                _vm._v(" "),
-                _c("th", { attrs: { width: "100" } }, [_vm._v("Action")])
-              ],
-              2
-            )
-          ]),
-          _vm._v(" "),
-          _vm.lists.lists.data.length > 0
-            ? _c(
-                "tbody",
-                _vm._l(_vm.lists.lists.data, function(list) {
-                  return _c(
-                    "tr",
-                    [
-                      _vm._l(_vm.lists.list_data, function(value, key) {
-                        return _c(
-                          "td",
-                          [
-                            value == "date"
-                              ? [
-                                  _vm._v(
-                                    "\n                        " +
-                                      _vm._s(_vm._f("dmy")(list[value])) +
-                                      "\n                    "
-                                  )
-                                ]
-                              : value.indexOf(".") > 0
-                              ? [
-                                  _vm._v(
-                                    "\n                        " +
-                                      _vm._s(_vm._f("relation")(list, value)) +
-                                      "\n                    "
-                                  )
-                                ]
-                              : [
-                                  _vm._v(
-                                    "\n                        " +
-                                      _vm._s(
-                                        list[value] != null ? list[value] : "-"
-                                      ) +
-                                      "                                           \n                    "
-                                  )
-                                ]
-                          ],
-                          2
-                        )
-                      }),
-                      _vm._v(" "),
-                      _c("td", [
-                        _c("div", { staticClass: "btn-group" }, [
-                          _c(
-                            "button",
-                            {
-                              staticClass:
-                                "btn btn-default btn-sm btn-flat dropdown-toggle pull-right",
-                              attrs: {
-                                type: "button",
-                                "data-toggle": "dropdown",
-                                tabindex: "-1",
-                                "aria-haspopup": "true",
-                                "aria-expanded": "false"
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                            Action\n                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            {
-                              staticClass: "dropdown-menu dropdown-menu-right"
-                            },
-                            [
-                              _vm.lists.permissions["update_" + _vm.lists.dir]
-                                ? _c(
-                                    "a",
-                                    {
-                                      staticClass: "dropdown-item",
-                                      attrs: {
-                                        href:
-                                          _vm.module.edit_route + "/" + list.id
-                                      }
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "fa fa-edit",
-                                        staticStyle: { color: "green" },
-                                        attrs: {
-                                          "data-toggle": "tooltip",
-                                          "data-placement": "top",
-                                          "data-original-title": "Edit"
-                                        }
-                                      }),
-                                      _vm._v(_vm._s(_vm.lists.common.edit))
-                                    ]
-                                  )
-                                : _vm._e(),
-                              _vm._v(" "),
-                              _vm.lists.permissions["delete_" + _vm.lists.dir]
-                                ? _c(
-                                    "a",
-                                    {
-                                      staticClass: "dropdown-item",
-                                      attrs: { href: "javascript:void(0);" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.deleteRecord(list.id)
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "fa fa-trash",
-                                        staticStyle: { color: "red" },
-                                        attrs: {
-                                          "data-toggle": "tooltip",
-                                          "data-placement": "top",
-                                          title: "",
-                                          "data-original-title": "Delete"
-                                        }
-                                      }),
-                                      _vm._v(_vm._s(_vm.lists.common.delete))
-                                    ]
-                                  )
-                                : _vm._e()
-                            ]
-                          )
-                        ])
-                      ])
-                    ],
-                    2
-                  )
-                }),
-                0
+      _c("div", { staticClass: "table-scroll" }, [
+        _c(
+          "table",
+          {
+            staticClass: "table table-striped table-bordered table-sm",
+            attrs: { cellspacing: "0", width: "100%" }
+          },
+          [
+            _c("thead", { staticClass: "thead-dark" }, [
+              _c(
+                "tr",
+                [
+                  _vm._l(_vm.lists.list_data, function(value, key) {
+                    return _c("th", [_vm._v(_vm._s(key))])
+                  }),
+                  _vm._v(" "),
+                  _c("th", { attrs: { width: "100" } }, [_vm._v("Action")])
+                ],
+                2
               )
-            : _c("tbody", [
-                _c("tr", [
-                  _c(
-                    "td",
-                    { staticClass: "text-center", attrs: { colspan: "20" } },
-                    [
-                      _vm._v(
-                        "\n                    " +
-                          _vm._s(_vm.lists.common.no_data) +
-                          "\n                "
-                      )
-                    ]
-                  )
+            ]),
+            _vm._v(" "),
+            _vm.lists.lists.data.length > 0
+              ? _c(
+                  "tbody",
+                  _vm._l(_vm.lists.lists.data, function(list) {
+                    return _c(
+                      "tr",
+                      [
+                        _vm._l(_vm.lists.list_data, function(value, key) {
+                          return _c(
+                            "td",
+                            [
+                              value == "date"
+                                ? [
+                                    _vm._v(
+                                      "\n                            " +
+                                        _vm._s(_vm._f("dmy")(list[value])) +
+                                        "\n                        "
+                                    )
+                                  ]
+                                : value.indexOf(".") > 0
+                                ? [
+                                    _vm._v(
+                                      "\n                            " +
+                                        _vm._s(
+                                          _vm._f("relation")(list, value)
+                                        ) +
+                                        "\n                        "
+                                    )
+                                  ]
+                                : [
+                                    _vm._v(
+                                      "\n                            " +
+                                        _vm._s(
+                                          list[value] != null
+                                            ? list[value]
+                                            : "-"
+                                        ) +
+                                        "                                           \n                        "
+                                    )
+                                  ]
+                            ],
+                            2
+                          )
+                        }),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("div", { staticClass: "btn-group" }, [
+                            _c(
+                              "button",
+                              {
+                                staticClass:
+                                  "btn btn-default btn-sm btn-flat dropdown-toggle pull-right",
+                                attrs: {
+                                  type: "button",
+                                  "data-toggle": "dropdown",
+                                  tabindex: "-1",
+                                  "aria-haspopup": "true",
+                                  "aria-expanded": "false"
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                                Action\n                            "
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "dropdown-menu dropdown-menu-right"
+                              },
+                              [
+                                _vm.lists.permissions["update_" + _vm.lists.dir]
+                                  ? _c(
+                                      "a",
+                                      {
+                                        staticClass: "dropdown-item",
+                                        attrs: {
+                                          href:
+                                            _vm.module.edit_route +
+                                            "/" +
+                                            list.id
+                                        }
+                                      },
+                                      [
+                                        _c("i", {
+                                          staticClass: "fa fa-edit",
+                                          staticStyle: { color: "green" },
+                                          attrs: {
+                                            "data-toggle": "tooltip",
+                                            "data-placement": "top",
+                                            "data-original-title": "Edit"
+                                          }
+                                        }),
+                                        _vm._v(_vm._s(_vm.lists.common.edit))
+                                      ]
+                                    )
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.lists.permissions["delete_" + _vm.lists.dir]
+                                  ? _c(
+                                      "a",
+                                      {
+                                        staticClass: "dropdown-item",
+                                        attrs: { href: "javascript:void(0);" },
+                                        on: {
+                                          click: function($event) {
+                                            return _vm.deleteRecord(list.id)
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _c("i", {
+                                          staticClass: "fa fa-trash",
+                                          staticStyle: { color: "red" },
+                                          attrs: {
+                                            "data-toggle": "tooltip",
+                                            "data-placement": "top",
+                                            title: "",
+                                            "data-original-title": "Delete"
+                                          }
+                                        }),
+                                        _vm._v(_vm._s(_vm.lists.common.delete))
+                                      ]
+                                    )
+                                  : _vm._e()
+                              ]
+                            )
+                          ])
+                        ])
+                      ],
+                      2
+                    )
+                  }),
+                  0
+                )
+              : _c("tbody", [
+                  _c("tr", [
+                    _c(
+                      "td",
+                      { staticClass: "text-center", attrs: { colspan: "20" } },
+                      [
+                        _vm._v(
+                          "\n                        " +
+                            _vm._s(_vm.lists.common.no_data) +
+                            "\n                    "
+                        )
+                      ]
+                    )
+                  ])
                 ])
-              ])
-        ]
-      ),
+          ]
+        )
+      ]),
       _vm._v(" "),
       _c("paginate-links", { attrs: { lists: this.lists } })
     ],
@@ -64899,175 +65027,183 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "clearfix" }, [_vm._v(" ")]),
       _vm._v(" "),
-      _c(
-        "table",
-        {
-          staticClass: "table table-striped table-bordered table-sm",
-          attrs: { cellspacing: "0", width: "100%" }
-        },
-        [
-          _c("thead", { staticClass: "thead-dark" }, [
-            _c(
-              "tr",
-              [
-                _vm._l(_vm.lists.list_data, function(value, key) {
-                  return _c("th", [_vm._v(_vm._s(key))])
-                }),
-                _vm._v(" "),
-                _c("th", { attrs: { width: "100" } }, [_vm._v("Action")])
-              ],
-              2
-            )
-          ]),
-          _vm._v(" "),
-          _vm.lists.lists.data.length > 0
-            ? _c(
-                "tbody",
-                _vm._l(_vm.lists.lists.data, function(list) {
-                  return _c(
-                    "tr",
-                    [
-                      _vm._l(_vm.lists.list_data, function(value, key) {
-                        return _c(
-                          "td",
-                          [
-                            value == "date"
-                              ? [
-                                  _vm._v(
-                                    "\n                        " +
-                                      _vm._s(_vm._f("dmy")(list[value])) +
-                                      "\n                    "
-                                  )
-                                ]
-                              : value.indexOf(".") > 0
-                              ? [
-                                  _vm._v(
-                                    "\n                        " +
-                                      _vm._s(_vm._f("relation")(list, value)) +
-                                      "\n                    "
-                                  )
-                                ]
-                              : [
-                                  _vm._v(
-                                    "\n                        " +
-                                      _vm._s(
-                                        list[value] != null ? list[value] : "-"
-                                      ) +
-                                      "                                           \n                    "
-                                  )
-                                ]
-                          ],
-                          2
-                        )
-                      }),
-                      _vm._v(" "),
-                      _c("td", [
-                        _c("div", { staticClass: "btn-group" }, [
-                          _c(
-                            "button",
-                            {
-                              staticClass:
-                                "btn btn-default btn-sm btn-flat dropdown-toggle pull-right",
-                              attrs: {
-                                type: "button",
-                                "data-toggle": "dropdown",
-                                tabindex: "-1",
-                                "aria-haspopup": "true",
-                                "aria-expanded": "false"
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                            Action\n                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            {
-                              staticClass: "dropdown-menu dropdown-menu-right"
-                            },
-                            [
-                              _vm.lists.permissions["update_" + _vm.lists.dir]
-                                ? _c(
-                                    "a",
-                                    {
-                                      staticClass: "dropdown-item",
-                                      attrs: {
-                                        href:
-                                          _vm.module.edit_route + "/" + list.id
-                                      }
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "fa fa-edit",
-                                        staticStyle: { color: "green" },
-                                        attrs: {
-                                          "data-toggle": "tooltip",
-                                          "data-placement": "top",
-                                          "data-original-title": "Edit"
-                                        }
-                                      }),
-                                      _vm._v(_vm._s(_vm.lists.common.edit))
-                                    ]
-                                  )
-                                : _vm._e(),
-                              _vm._v(" "),
-                              _vm.lists.permissions["delete_" + _vm.lists.dir]
-                                ? _c(
-                                    "a",
-                                    {
-                                      staticClass: "dropdown-item",
-                                      attrs: { href: "javascript:void(0);" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.deleteRecord(list.id)
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "fa fa-trash",
-                                        staticStyle: { color: "red" },
-                                        attrs: {
-                                          "data-toggle": "tooltip",
-                                          "data-placement": "top",
-                                          title: "",
-                                          "data-original-title": "Delete"
-                                        }
-                                      }),
-                                      _vm._v(_vm._s(_vm.lists.common.delete))
-                                    ]
-                                  )
-                                : _vm._e()
-                            ]
-                          )
-                        ])
-                      ])
-                    ],
-                    2
-                  )
-                }),
-                0
+      _c("div", { staticClass: "table-scroll" }, [
+        _c(
+          "table",
+          {
+            staticClass: "table table-striped table-bordered table-sm",
+            attrs: { cellspacing: "0", width: "100%" }
+          },
+          [
+            _c("thead", { staticClass: "thead-dark" }, [
+              _c(
+                "tr",
+                [
+                  _vm._l(_vm.lists.list_data, function(value, key) {
+                    return _c("th", [_vm._v(_vm._s(key))])
+                  }),
+                  _vm._v(" "),
+                  _c("th", { attrs: { width: "100" } }, [_vm._v("Action")])
+                ],
+                2
               )
-            : _c("tbody", [
-                _c("tr", [
-                  _c(
-                    "td",
-                    { staticClass: "text-center", attrs: { colspan: "20" } },
-                    [
-                      _vm._v(
-                        "\n                    " +
-                          _vm._s(_vm.lists.common.no_data) +
-                          "\n                "
-                      )
-                    ]
-                  )
+            ]),
+            _vm._v(" "),
+            _vm.lists.lists.data.length > 0
+              ? _c(
+                  "tbody",
+                  _vm._l(_vm.lists.lists.data, function(list) {
+                    return _c(
+                      "tr",
+                      [
+                        _vm._l(_vm.lists.list_data, function(value, key) {
+                          return _c(
+                            "td",
+                            [
+                              value == "date"
+                                ? [
+                                    _vm._v(
+                                      "\n                            " +
+                                        _vm._s(_vm._f("dmy")(list[value])) +
+                                        "\n                        "
+                                    )
+                                  ]
+                                : value.indexOf(".") > 0
+                                ? [
+                                    _vm._v(
+                                      "\n                            " +
+                                        _vm._s(
+                                          _vm._f("relation")(list, value)
+                                        ) +
+                                        "\n                        "
+                                    )
+                                  ]
+                                : [
+                                    _vm._v(
+                                      "\n                            " +
+                                        _vm._s(
+                                          list[value] != null
+                                            ? list[value]
+                                            : "-"
+                                        ) +
+                                        "                                           \n                        "
+                                    )
+                                  ]
+                            ],
+                            2
+                          )
+                        }),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("div", { staticClass: "btn-group" }, [
+                            _c(
+                              "button",
+                              {
+                                staticClass:
+                                  "btn btn-default btn-sm btn-flat dropdown-toggle pull-right",
+                                attrs: {
+                                  type: "button",
+                                  "data-toggle": "dropdown",
+                                  tabindex: "-1",
+                                  "aria-haspopup": "true",
+                                  "aria-expanded": "false"
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                                Action\n                            "
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "dropdown-menu dropdown-menu-right"
+                              },
+                              [
+                                _vm.lists.permissions["update_" + _vm.lists.dir]
+                                  ? _c(
+                                      "a",
+                                      {
+                                        staticClass: "dropdown-item",
+                                        attrs: {
+                                          href:
+                                            _vm.module.edit_route +
+                                            "/" +
+                                            list.id
+                                        }
+                                      },
+                                      [
+                                        _c("i", {
+                                          staticClass: "fa fa-edit",
+                                          staticStyle: { color: "green" },
+                                          attrs: {
+                                            "data-toggle": "tooltip",
+                                            "data-placement": "top",
+                                            "data-original-title": "Edit"
+                                          }
+                                        }),
+                                        _vm._v(_vm._s(_vm.lists.common.edit))
+                                      ]
+                                    )
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.lists.permissions["delete_" + _vm.lists.dir]
+                                  ? _c(
+                                      "a",
+                                      {
+                                        staticClass: "dropdown-item",
+                                        attrs: { href: "javascript:void(0);" },
+                                        on: {
+                                          click: function($event) {
+                                            return _vm.deleteRecord(list.id)
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _c("i", {
+                                          staticClass: "fa fa-trash",
+                                          staticStyle: { color: "red" },
+                                          attrs: {
+                                            "data-toggle": "tooltip",
+                                            "data-placement": "top",
+                                            title: "",
+                                            "data-original-title": "Delete"
+                                          }
+                                        }),
+                                        _vm._v(_vm._s(_vm.lists.common.delete))
+                                      ]
+                                    )
+                                  : _vm._e()
+                              ]
+                            )
+                          ])
+                        ])
+                      ],
+                      2
+                    )
+                  }),
+                  0
+                )
+              : _c("tbody", [
+                  _c("tr", [
+                    _c(
+                      "td",
+                      { staticClass: "text-center", attrs: { colspan: "20" } },
+                      [
+                        _vm._v(
+                          "\n                        " +
+                            _vm._s(_vm.lists.common.no_data) +
+                            "\n                    "
+                        )
+                      ]
+                    )
+                  ])
                 ])
-              ])
-        ]
-      ),
+          ]
+        )
+      ]),
       _vm._v(" "),
       _c("paginate-links", { attrs: { lists: this.lists } })
     ],
@@ -67820,147 +67956,151 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "clearfix" }, [_vm._v(" ")]),
       _vm._v(" "),
-      _c(
-        "table",
-        {
-          staticClass: "table table-striped table-bordered table-sm",
-          attrs: { cellspacing: "0", width: "100%" }
-        },
-        [
-          _c("thead", { staticClass: "thead-dark" }, [
-            _c(
-              "tr",
-              [
-                _vm._l(_vm.lists.list_data, function(value, key) {
-                  return _c("th", [_vm._v(_vm._s(key))])
-                }),
-                _vm._v(" "),
-                _c("th", [_vm._v(_vm._s(this.module.common.date))]),
-                _vm._v(" "),
-                _c("th", { attrs: { width: "100" } }, [_vm._v("Action")])
-              ],
-              2
-            )
-          ]),
-          _vm._v(" "),
-          _vm.lists.lists.data.length > 0
-            ? _c(
-                "tbody",
-                _vm._l(_vm.lists.lists.data, function(list) {
-                  return _c(
-                    "tr",
-                    [
-                      _vm._l(_vm.lists.list_data, function(value, key) {
-                        return _c("td", [
-                          _vm._v(
-                            "\n                    " +
-                              _vm._s(list[value] ? list[value] : "-") +
-                              "\n                "
-                          )
-                        ])
-                      }),
-                      _vm._v(" "),
-                      _c("td", [
-                        _vm._v(
-                          "\n                    " +
-                            _vm._s(_vm._f("dmy")(list.created_at)) +
-                            "\n                "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("td", [
-                        _c("div", { staticClass: "btn-group" }, [
-                          _c(
-                            "button",
-                            {
-                              staticClass:
-                                "btn btn-default btn-sm btn-flat dropdown-toggle pull-right",
-                              attrs: {
-                                type: "button",
-                                "data-toggle": "dropdown",
-                                tabindex: "-1",
-                                "aria-haspopup": "true",
-                                "aria-expanded": "false"
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                            Action\n                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            {
-                              staticClass: "dropdown-menu dropdown-menu-right"
-                            },
-                            [
-                              _vm.lists.permissions["update_" + _vm.lists.dir]
-                                ? _c(
-                                    "a",
-                                    {
-                                      staticClass: "dropdown-item",
-                                      attrs: {
-                                        href:
-                                          _vm.module.edit_route + "/" + list.id
-                                      }
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "fa fa-edit",
-                                        staticStyle: { color: "green" },
-                                        attrs: {
-                                          "data-toggle": "tooltip",
-                                          "data-placement": "top",
-                                          "data-original-title": "Edit"
-                                        }
-                                      }),
-                                      _vm._v(_vm._s(_vm.lists.common.edit))
-                                    ]
-                                  )
-                                : _vm._e(),
-                              _vm._v(" "),
-                              _vm.lists.permissions["delete_" + _vm.lists.dir]
-                                ? _c(
-                                    "a",
-                                    {
-                                      staticClass: "dropdown-item",
-                                      attrs: { href: "javascript:void(0);" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.deleteRecord(list.id)
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "fa fa-trash",
-                                        staticStyle: { color: "red" },
-                                        attrs: {
-                                          "data-toggle": "tooltip",
-                                          "data-placement": "top",
-                                          title: "",
-                                          "data-original-title": "Delete"
-                                        }
-                                      }),
-                                      _vm._v(_vm._s(_vm.lists.common.delete))
-                                    ]
-                                  )
-                                : _vm._e()
-                            ]
-                          )
-                        ])
-                      ])
-                    ],
-                    2
-                  )
-                }),
-                0
+      _c("div", { staticClass: "table-scroll" }, [
+        _c(
+          "table",
+          {
+            staticClass: "table table-striped table-bordered table-sm",
+            attrs: { cellspacing: "0", width: "100%" }
+          },
+          [
+            _c("thead", { staticClass: "thead-dark" }, [
+              _c(
+                "tr",
+                [
+                  _vm._l(_vm.lists.list_data, function(value, key) {
+                    return _c("th", [_vm._v(_vm._s(key))])
+                  }),
+                  _vm._v(" "),
+                  _c("th", [_vm._v(_vm._s(this.module.common.date))]),
+                  _vm._v(" "),
+                  _c("th", { attrs: { width: "100" } }, [_vm._v("Action")])
+                ],
+                2
               )
-            : _c("tbody", [_vm._m(0)])
-        ]
-      ),
+            ]),
+            _vm._v(" "),
+            _vm.lists.lists.data.length > 0
+              ? _c(
+                  "tbody",
+                  _vm._l(_vm.lists.lists.data, function(list) {
+                    return _c(
+                      "tr",
+                      [
+                        _vm._l(_vm.lists.list_data, function(value, key) {
+                          return _c("td", [
+                            _vm._v(
+                              "\n                        " +
+                                _vm._s(list[value] ? list[value] : "-") +
+                                "\n                    "
+                            )
+                          ])
+                        }),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm._f("dmy")(list.created_at)) +
+                              "\n                    "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("div", { staticClass: "btn-group" }, [
+                            _c(
+                              "button",
+                              {
+                                staticClass:
+                                  "btn btn-default btn-sm btn-flat dropdown-toggle pull-right",
+                                attrs: {
+                                  type: "button",
+                                  "data-toggle": "dropdown",
+                                  tabindex: "-1",
+                                  "aria-haspopup": "true",
+                                  "aria-expanded": "false"
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                                Action\n                            "
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "dropdown-menu dropdown-menu-right"
+                              },
+                              [
+                                _vm.lists.permissions["update_" + _vm.lists.dir]
+                                  ? _c(
+                                      "a",
+                                      {
+                                        staticClass: "dropdown-item",
+                                        attrs: {
+                                          href:
+                                            _vm.module.edit_route +
+                                            "/" +
+                                            list.id
+                                        }
+                                      },
+                                      [
+                                        _c("i", {
+                                          staticClass: "fa fa-edit",
+                                          staticStyle: { color: "green" },
+                                          attrs: {
+                                            "data-toggle": "tooltip",
+                                            "data-placement": "top",
+                                            "data-original-title": "Edit"
+                                          }
+                                        }),
+                                        _vm._v(_vm._s(_vm.lists.common.edit))
+                                      ]
+                                    )
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.lists.permissions["delete_" + _vm.lists.dir]
+                                  ? _c(
+                                      "a",
+                                      {
+                                        staticClass: "dropdown-item",
+                                        attrs: { href: "javascript:void(0);" },
+                                        on: {
+                                          click: function($event) {
+                                            return _vm.deleteRecord(list.id)
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _c("i", {
+                                          staticClass: "fa fa-trash",
+                                          staticStyle: { color: "red" },
+                                          attrs: {
+                                            "data-toggle": "tooltip",
+                                            "data-placement": "top",
+                                            title: "",
+                                            "data-original-title": "Delete"
+                                          }
+                                        }),
+                                        _vm._v(_vm._s(_vm.lists.common.delete))
+                                      ]
+                                    )
+                                  : _vm._e()
+                              ]
+                            )
+                          ])
+                        ])
+                      ],
+                      2
+                    )
+                  }),
+                  0
+                )
+              : _c("tbody", [_vm._m(0)])
+          ]
+        )
+      ]),
       _vm._v(" "),
       _c("paginate-links", { attrs: { lists: this.lists } })
     ],
@@ -67974,7 +68114,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("tr", [
       _c("td", { staticClass: "text-center", attrs: { colspan: "6" } }, [
-        _vm._v("\n                    No data found.\n                ")
+        _vm._v("\n                        No data found.\n                    ")
       ])
     ])
   }
@@ -68101,142 +68241,60 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "col-md-12" }, [
-    _c("table", { staticClass: "table table-bordered" }, [
-      _c("thead", [
-        _c(
-          "tr",
-          [
-            _c("th", [_vm._v("#")]),
-            _vm._v(" "),
-            _vm._l(this.elementdata, function(value, k) {
-              return _c("th", [
-                _vm._v(
-                  "\n                    " + _vm._s(k) + "\n                "
-                )
-              ])
-            })
-          ],
-          2
-        )
-      ]),
-      _vm._v(" "),
-      _c(
-        "tbody",
-        _vm._l(_vm.rows.length, function(n, k) {
-          return _c(
+    _c("div", { staticClass: "table-scroll" }, [
+      _c("table", { staticClass: "table table-bordered" }, [
+        _c("thead", [
+          _c(
             "tr",
             [
-              _c("td", [
-                _c(
-                  "a",
-                  {
-                    staticClass: "btn btn-flat",
-                    on: {
-                      click: function($event) {
-                        $event.preventDefault()
-                        return _vm.deleteRow(k, _vm.grid)
-                      }
-                    }
-                  },
-                  [
-                    _c("i", {
-                      staticClass: "fa fa-trash",
-                      staticStyle: { color: "red" }
-                    })
-                  ]
-                )
-              ]),
+              _c("th", [_vm._v("#")]),
               _vm._v(" "),
-              _vm._l(_vm.grid, function(list, index) {
-                return [
-                  list.type == "input"
-                    ? _c("td", [
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.form[list.name][k],
-                              expression: "form[list.name][k]"
-                            }
-                          ],
-                          staticClass: "form-control",
-                          attrs: { type: "text", name: list.name },
-                          domProps: { value: _vm.form[list.name][k] },
-                          on: {
-                            input: [
-                              function($event) {
-                                if ($event.target.composing) {
-                                  return
-                                }
-                                _vm.$set(
-                                  _vm.form[list.name],
-                                  k,
-                                  $event.target.value
-                                )
-                              },
-                              function($event) {
-                                return _vm.autoFill(k)
-                              }
-                            ]
-                          }
-                        })
-                      ])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  list.type == "date"
-                    ? _c(
-                        "td",
-                        [
-                          _c("datepicker", {
-                            attrs: {
-                              "input-class": "form-control",
-                              "calendar-button-icon": "fa fa-calendar",
-                              format: "dd/MM/yyyy",
-                              name: "list.name"
-                            },
-                            model: {
-                              value: _vm.form[list.name][k],
-                              callback: function($$v) {
-                                _vm.$set(_vm.form[list.name], k, $$v)
-                              },
-                              expression: "form[list.name][k]"
-                            }
-                          })
-                        ],
-                        1
-                      )
-                    : _vm._e(),
-                  _vm._v(" "),
-                  list.type == "checkbox"
-                    ? _c(
-                        "td",
-                        [
-                          _c("datepicker", {
-                            attrs: {
-                              "input-class": "form-control",
-                              "calendar-button-icon": "fa fa-calendar",
-                              format: "dd/MM/yyyy",
-                              name: "list.name"
-                            },
-                            model: {
-                              value: _vm.form[list.name][k],
-                              callback: function($$v) {
-                                _vm.$set(_vm.form[list.name], k, $$v)
-                              },
-                              expression: "form[list.name][k]"
-                            }
-                          })
-                        ],
-                        1
-                      )
-                    : _vm._e(),
-                  _vm._v(" "),
-                  list.type == "dropdown"
-                    ? _c("td", { attrs: { width: "200px" } }, [
-                        _c(
-                          "select",
-                          {
+              _vm._l(this.elementdata, function(value, k) {
+                return _c("th", [
+                  _vm._v(
+                    "\n                        " +
+                      _vm._s(k) +
+                      "\n                    "
+                  )
+                ])
+              })
+            ],
+            2
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "tbody",
+          _vm._l(_vm.rows.length, function(n, k) {
+            return _c(
+              "tr",
+              [
+                _c("td", [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "btn btn-flat",
+                      on: {
+                        click: function($event) {
+                          $event.preventDefault()
+                          return _vm.deleteRow(k, _vm.grid)
+                        }
+                      }
+                    },
+                    [
+                      _c("i", {
+                        staticClass: "fa fa-trash",
+                        staticStyle: { color: "red" }
+                      })
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _vm._l(_vm.grid, function(list, index) {
+                  return [
+                    list.type == "input"
+                      ? _c("td", { staticStyle: { "min-width": "100px" } }, [
+                          _c("input", {
                             directives: [
                               {
                                 name: "model",
@@ -68245,62 +68303,128 @@ var render = function() {
                                 expression: "form[list.name][k]"
                               }
                             ],
-                            staticClass: "form-control select-grid",
-                            attrs: { name: [list.name], position: k },
+                            staticClass: "form-control",
+                            attrs: { type: "text", name: list.name },
+                            domProps: { value: _vm.form[list.name][k] },
                             on: {
-                              change: function($event) {
-                                var $$selectedVal = Array.prototype.filter
-                                  .call($event.target.options, function(o) {
-                                    return o.selected
-                                  })
-                                  .map(function(o) {
-                                    var val = "_value" in o ? o._value : o.value
-                                    return val
-                                  })
-                                _vm.$set(
-                                  _vm.form[list.name],
-                                  k,
-                                  $event.target.multiple
-                                    ? $$selectedVal
-                                    : $$selectedVal[0]
-                                )
-                              }
+                              input: [
+                                function($event) {
+                                  if ($event.target.composing) {
+                                    return
+                                  }
+                                  _vm.$set(
+                                    _vm.form[list.name],
+                                    k,
+                                    $event.target.value
+                                  )
+                                },
+                                function($event) {
+                                  return _vm.autoFill(k)
+                                }
+                              ]
                             }
-                          },
+                          })
+                        ])
+                      : _vm._e(),
+                    _vm._v(" "),
+                    list.type == "date"
+                      ? _c(
+                          "td",
+                          { staticStyle: { "min-width": "100px" } },
                           [
-                            _c("option", { attrs: { value: "" } }, [
-                              _vm._v("Select " + _vm._s(index))
-                            ]),
-                            _vm._v(" "),
-                            _vm._l(_vm.$data[list.name], function(value) {
-                              return list.empty
-                                ? _c("option", { domProps: { value: value } }, [
-                                    _vm._v(_vm._s(value))
-                                  ])
-                                : _vm._l(_vm.$data[list.name], function(
-                                    value,
-                                    key
-                                  ) {
-                                    return _c(
-                                      "option",
-                                      { domProps: { value: key } },
-                                      [_vm._v(_vm._s(value))]
-                                    )
-                                  })
+                            _c("datepicker", {
+                              attrs: {
+                                "input-class": "form-control",
+                                "calendar-button-icon": "fa fa-calendar",
+                                format: "dd/MM/yyyy",
+                                name: "list.name"
+                              },
+                              model: {
+                                value: _vm.form[list.name][k],
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form[list.name], k, $$v)
+                                },
+                                expression: "form[list.name][k]"
+                              }
                             })
                           ],
-                          2
+                          1
                         )
-                      ])
-                    : _vm._e()
-                ]
-              })
-            ],
-            2
-          )
-        }),
-        0
-      )
+                      : _vm._e(),
+                    _vm._v(" "),
+                    list.type == "dropdown"
+                      ? _c("td", { staticStyle: { "min-width": "200px" } }, [
+                          _c(
+                            "select",
+                            {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.form[list.name][k],
+                                  expression: "form[list.name][k]"
+                                }
+                              ],
+                              staticClass: "form-control select-grid",
+                              attrs: { name: [list.name], position: k },
+                              on: {
+                                change: function($event) {
+                                  var $$selectedVal = Array.prototype.filter
+                                    .call($event.target.options, function(o) {
+                                      return o.selected
+                                    })
+                                    .map(function(o) {
+                                      var val =
+                                        "_value" in o ? o._value : o.value
+                                      return val
+                                    })
+                                  _vm.$set(
+                                    _vm.form[list.name],
+                                    k,
+                                    $event.target.multiple
+                                      ? $$selectedVal
+                                      : $$selectedVal[0]
+                                  )
+                                }
+                              }
+                            },
+                            [
+                              _c("option", { attrs: { value: "" } }, [
+                                _vm._v("Select " + _vm._s(index))
+                              ]),
+                              _vm._v(" "),
+                              _vm._l(_vm.$data[list.name], function(value) {
+                                return list.empty
+                                  ? _c(
+                                      "option",
+                                      { domProps: { value: value } },
+                                      [_vm._v(_vm._s(value))]
+                                    )
+                                  : _vm._l(_vm.$data[list.name], function(
+                                      value,
+                                      key
+                                    ) {
+                                      return _c(
+                                        "option",
+                                        { domProps: { value: key } },
+                                        [_vm._v(_vm._s(value))]
+                                      )
+                                    })
+                              })
+                            ],
+                            2
+                          )
+                        ])
+                      : _vm._e()
+                  ]
+                })
+              ],
+              2
+            )
+          }),
+          0
+        )
+      ])
     ]),
     _vm._v(" "),
     _c(
@@ -68503,113 +68627,60 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "col-md-12" }, [
-    _c("table", { staticClass: "table table-bordered" }, [
-      _c("thead", [
-        _c(
-          "tr",
-          [
-            _c("th", { attrs: { width: "10" } }, [_vm._v("#")]),
-            _vm._v(" "),
-            _vm._l(this.elementdata, function(value, key) {
-              return _c("th", [
-                _vm._v(
-                  "\n                    " + _vm._s(key) + "\n                "
-                )
-              ])
-            })
-          ],
-          2
-        )
-      ]),
-      _vm._v(" "),
-      _c(
-        "tbody",
-        _vm._l(_vm.rows.length, function(n, key) {
-          return _c(
+    _c("div", { staticClass: "table-scroll" }, [
+      _c("table", { staticClass: "table table-bordered" }, [
+        _c("thead", [
+          _c(
             "tr",
             [
-              _c("td", [
-                _c(
-                  "a",
-                  {
-                    staticClass: "btn btn-flat",
-                    on: {
-                      click: function($event) {
-                        $event.preventDefault()
-                        return _vm.deleteRow(key, _vm.grid)
-                      }
-                    }
-                  },
-                  [
-                    _c("i", {
-                      staticClass: "fa fa-trash",
-                      staticStyle: { color: "red" }
-                    })
-                  ]
-                )
-              ]),
+              _c("th", { attrs: { width: "10" } }, [_vm._v("#")]),
               _vm._v(" "),
-              _vm._l(_vm.grid, function(list, index) {
-                return [
-                  list.type == "input"
-                    ? _c("td", [
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.form[list.name][key],
-                              expression: "form[list.name][key]"
-                            }
-                          ],
-                          staticClass: "form-control",
-                          attrs: { type: "text", name: list.name },
-                          domProps: { value: _vm.form[list.name][key] },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.$set(
-                                _vm.form[list.name],
-                                key,
-                                $event.target.value
-                              )
-                            }
-                          }
-                        })
-                      ])
-                    : _vm._e(),
-                  _vm._v(" "),
-                  list.type == "date"
-                    ? _c(
-                        "td",
-                        [
-                          _c("datepicker", {
-                            attrs: {
-                              "input-class": "form-control",
-                              "calendar-button-icon": "fa fa-calendar",
-                              format: "dd/MM/yyyy",
-                              name: "list.name"
-                            },
-                            model: {
-                              value: _vm.form[list.name][key],
-                              callback: function($$v) {
-                                _vm.$set(_vm.form[list.name], key, $$v)
-                              },
-                              expression: "form[list.name][key]"
-                            }
-                          })
-                        ],
-                        1
-                      )
-                    : _vm._e(),
-                  _vm._v(" "),
-                  list.type == "dropdown"
-                    ? _c("td", { attrs: { width: "200px" } }, [
-                        _c(
-                          "select",
-                          {
+              _vm._l(this.elementdata, function(value, key) {
+                return _c("th", [
+                  _vm._v(
+                    "\n                        " +
+                      _vm._s(key) +
+                      "\n                    "
+                  )
+                ])
+              })
+            ],
+            2
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "tbody",
+          _vm._l(_vm.rows.length, function(n, key) {
+            return _c(
+              "tr",
+              [
+                _c("td", [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "btn btn-flat",
+                      on: {
+                        click: function($event) {
+                          $event.preventDefault()
+                          return _vm.deleteRow(key, _vm.grid)
+                        }
+                      }
+                    },
+                    [
+                      _c("i", {
+                        staticClass: "fa fa-trash",
+                        staticStyle: { color: "red" }
+                      })
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _vm._l(_vm.grid, function(list, index) {
+                  return [
+                    list.type == "input"
+                      ? _c("td", { staticStyle: { "min-width": "100px" } }, [
+                          _c("input", {
                             directives: [
                               {
                                 name: "model",
@@ -68618,62 +68689,123 @@ var render = function() {
                                 expression: "form[list.name][key]"
                               }
                             ],
-                            staticClass: "form-control select-grid",
-                            attrs: { name: [list.name], position: key },
+                            staticClass: "form-control",
+                            attrs: { type: "text", name: list.name },
+                            domProps: { value: _vm.form[list.name][key] },
                             on: {
-                              change: function($event) {
-                                var $$selectedVal = Array.prototype.filter
-                                  .call($event.target.options, function(o) {
-                                    return o.selected
-                                  })
-                                  .map(function(o) {
-                                    var val = "_value" in o ? o._value : o.value
-                                    return val
-                                  })
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
                                 _vm.$set(
                                   _vm.form[list.name],
                                   key,
-                                  $event.target.multiple
-                                    ? $$selectedVal
-                                    : $$selectedVal[0]
+                                  $event.target.value
                                 )
                               }
                             }
-                          },
+                          })
+                        ])
+                      : _vm._e(),
+                    _vm._v(" "),
+                    list.type == "date"
+                      ? _c(
+                          "td",
+                          { staticStyle: { "min-width": "100px" } },
                           [
-                            _c("option", { attrs: { value: "" } }, [
-                              _vm._v("Select " + _vm._s(index))
-                            ]),
-                            _vm._v(" "),
-                            _vm._l(_vm.$data[list.name], function(value) {
-                              return list.empty
-                                ? _c("option", { domProps: { value: value } }, [
-                                    _vm._v(_vm._s(value))
-                                  ])
-                                : _vm._l(_vm.$data[list.name], function(
-                                    value,
-                                    k
-                                  ) {
-                                    return _c(
-                                      "option",
-                                      { domProps: { value: k } },
-                                      [_vm._v(_vm._s(value))]
-                                    )
-                                  })
+                            _c("datepicker", {
+                              attrs: {
+                                "input-class": "form-control",
+                                "calendar-button-icon": "fa fa-calendar",
+                                format: "dd/MM/yyyy",
+                                name: "list.name"
+                              },
+                              model: {
+                                value: _vm.form[list.name][key],
+                                callback: function($$v) {
+                                  _vm.$set(_vm.form[list.name], key, $$v)
+                                },
+                                expression: "form[list.name][key]"
+                              }
                             })
                           ],
-                          2
+                          1
                         )
-                      ])
-                    : _vm._e()
-                ]
-              })
-            ],
-            2
-          )
-        }),
-        0
-      )
+                      : _vm._e(),
+                    _vm._v(" "),
+                    list.type == "dropdown"
+                      ? _c("td", { staticStyle: { "min-width": "200px" } }, [
+                          _c(
+                            "select",
+                            {
+                              directives: [
+                                {
+                                  name: "model",
+                                  rawName: "v-model",
+                                  value: _vm.form[list.name][key],
+                                  expression: "form[list.name][key]"
+                                }
+                              ],
+                              staticClass: "form-control select-grid",
+                              attrs: { name: [list.name], position: key },
+                              on: {
+                                change: function($event) {
+                                  var $$selectedVal = Array.prototype.filter
+                                    .call($event.target.options, function(o) {
+                                      return o.selected
+                                    })
+                                    .map(function(o) {
+                                      var val =
+                                        "_value" in o ? o._value : o.value
+                                      return val
+                                    })
+                                  _vm.$set(
+                                    _vm.form[list.name],
+                                    key,
+                                    $event.target.multiple
+                                      ? $$selectedVal
+                                      : $$selectedVal[0]
+                                  )
+                                }
+                              }
+                            },
+                            [
+                              _c("option", { attrs: { value: "" } }, [
+                                _vm._v("Select " + _vm._s(index))
+                              ]),
+                              _vm._v(" "),
+                              _vm._l(_vm.$data[list.name], function(value) {
+                                return list.empty
+                                  ? _c(
+                                      "option",
+                                      { domProps: { value: value } },
+                                      [_vm._v(_vm._s(value))]
+                                    )
+                                  : _vm._l(_vm.$data[list.name], function(
+                                      value,
+                                      k
+                                    ) {
+                                      return _c(
+                                        "option",
+                                        { domProps: { value: k } },
+                                        [_vm._v(_vm._s(value))]
+                                      )
+                                    })
+                              })
+                            ],
+                            2
+                          )
+                        ])
+                      : _vm._e()
+                  ]
+                })
+              ],
+              2
+            )
+          }),
+          0
+        )
+      ])
     ]),
     _vm._v(" "),
     this.module.dir != "languagetranslet"

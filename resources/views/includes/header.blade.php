@@ -1,5 +1,10 @@
 <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
     <div class="container-fluid">
+
+        <button type="button" id="sidebarCollapse" class="btn theme-btn hidden-md-up">
+            <i class="fa fa-align-left"></i>
+        </button>
+
         <a class="navbar-brand text-white" href="{{ url('/') }}">
             {{ config('app.name', 'Laravel') }}
         </a>

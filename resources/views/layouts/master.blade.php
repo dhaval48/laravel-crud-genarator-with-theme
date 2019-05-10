@@ -42,6 +42,13 @@
                 dropdownContent.style.display = "block";
             }
         });
+
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+            $('.container').toggleClass('update-container');
+            $('body').toggleClass('scroll');
+            $("#sidebar").attr('style','');
+        });
     </script>
 </body>
 </html>

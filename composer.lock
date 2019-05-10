@@ -1726,12 +1726,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dhaval48/laravel-autoengine.git",
-                "reference": "dd304e6645f36ccdefea99e0b20dbdf97e8ff531"
+                "reference": "f054ac5d97fcecc09ef462377f5f050e9f05c776"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dhaval48/laravel-autoengine/zipball/dd304e6645f36ccdefea99e0b20dbdf97e8ff531",
-                "reference": "dd304e6645f36ccdefea99e0b20dbdf97e8ff531",
+                "url": "https://api.github.com/repos/dhaval48/laravel-autoengine/zipball/f054ac5d97fcecc09ef462377f5f050e9f05c776",
+                "reference": "f054ac5d97fcecc09ef462377f5f050e9f05c776",
                 "shasum": ""
             },
             "require": {
@@ -1769,7 +1769,7 @@
                 "laravel",
                 "laravelcrud"
             ],
-            "time": "2019-05-09T11:56:45+00:00"
+            "time": "2019-05-10T04:44:09+00:00"
         },
         {
             "name": "opis/closure",

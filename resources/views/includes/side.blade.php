@@ -34,18 +34,22 @@
             @endphp
 
             <li class="nav-item dropdown-btn {{ request()->is("$module->url*") ? "active-parent" : ""  }}">
-                <h6 class="sidebar-section">
+                {{-- <h6 class="sidebar-section"> --}}
+                <a href="javascript:void(0)" class="nav-link">
                     <i class="fa {{$module->icon}}"></i> 
                     <span>{{$module->name}}</span>
-                    <i class="fa fa-angle-left pull-right"></i>
-                </h6>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                {{-- </h6> --}}
             </li>
 
             <div class="dropdown-container" style="display: {{ request()->is("$module->url*") ? "block" : "none"  }}">
                 @foreach($groups as $group)
                     @if(in_array($group->permission, $sidelinks['permissions']))
                         <li class='{{ request()->is("$module->url/$group->url**") ? "active" : ""  }}'>
-                            <a href='{{route($group->route)}}' style="text-decoration: none;">
+                            <a href='{{route($group->route)}}' style="padding-left: 35px; text-decoration: none;">
                             <i class="fa {{$group->icon}}"></i>  {{$group->display_name}}</a>
                         </li>
                     @endif

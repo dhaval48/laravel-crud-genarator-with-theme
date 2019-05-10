@@ -6,15 +6,16 @@
         <div class="col-md-12 mtop-10">
             <div class="card">
             
-            @if(!isset($data['lists'])) 
+            @if(!isset($data['lists']))
+                <h5>
+             
                 <div class="card-header">
-                    <h5>
-                        <a class="card-title" href="{{ $data['list_route'] }}"> 
+                        <a style="text-decoration:none" href="{{ $data['list_route'] }}"> 
                         {{ $data['id'] != 0 ? $data['lang']['edit_title'] : $data['lang']['create_title'] }}
                         </a>
-                    </h5>
                 </div>
-
+                    </h5>
+                
             @else
 
                 <h5><div class="card-header">{{ $data['lang']['list'] }}</div></h5>                   

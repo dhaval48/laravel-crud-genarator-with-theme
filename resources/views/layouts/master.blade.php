@@ -35,10 +35,11 @@
     <script>        
         $(document).on("click",".dropdown-btn",function() {
             var dropdownContent = this.nextElementSibling;
-            $(".dropdown-container").css("display", "none");
+            
             if (dropdownContent.style.display === "block") {
                 dropdownContent.style.display = "none";
             } else {
+                $(".dropdown-container").css("display", "none");
                 dropdownContent.style.display = "block";
             }
         });

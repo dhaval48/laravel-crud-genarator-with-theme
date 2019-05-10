@@ -29872,6 +29872,12 @@ a.text-dark:focus {
   }
 }
 
+@media (max-width: 768px) and (max-width: 1100px) {
+  .table-scroll {
+    overflow-x: scroll;
+  }
+}
+
 #sidebar:hover {
   overflow-y: auto;
 }
@@ -29932,6 +29938,14 @@ a.text-dark:focus {
 }
 
 /*** Extra CSS ****/
+
+.update-container {
+  width: 100% !important;
+  margin-left: auto !important;
+  overflow: hidden;
+  max-height: unset;
+  padding-bottom: 30px;
+}
 
 #app {
   padding-top: 60px;

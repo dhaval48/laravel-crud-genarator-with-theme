@@ -3,7 +3,7 @@
         <list_header :lists='this.module'></list_header>
         
         <div class="clearfix">&nbsp;</div>
-        
+        <div class="table-scroll">
         <table class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
             <thead class="thead-dark">
                 <tr>
@@ -49,6 +49,7 @@
                 </tr>
             </tbody>
         </table>
+        </div>
         <paginate-links :lists='this.lists'></paginate-links>
     </div>
 </template>

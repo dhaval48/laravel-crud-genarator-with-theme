@@ -157,6 +157,13 @@
     .navbar {
         height: unset;
     }
+
+    @media(max-width: 1100px){
+
+    .table-scroll{
+        overflow-x: scroll;
+    }
+}
 }
 
 
@@ -215,6 +222,10 @@
 
 
 /*** Extra CSS ****/
+
+.update-container{
+    width: 100% !important;margin-left: auto !important;overflow: hidden;max-height:unset ;padding-bottom:30px 
+}
 
 #app {
     padding-top: 60px;

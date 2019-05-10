@@ -2068,6 +2068,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['module'],
@@ -61052,175 +61053,183 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "clearfix" }, [_vm._v(" ")]),
       _vm._v(" "),
-      _c(
-        "table",
-        {
-          staticClass: "table table-striped table-bordered table-sm",
-          attrs: { cellspacing: "0", width: "100%" }
-        },
-        [
-          _c("thead", { staticClass: "thead-dark" }, [
-            _c(
-              "tr",
-              [
-                _vm._l(_vm.lists.list_data, function(value, key) {
-                  return _c("th", [_vm._v(_vm._s(key))])
-                }),
-                _vm._v(" "),
-                _c("th", { attrs: { width: "100" } }, [_vm._v("Action")])
-              ],
-              2
-            )
-          ]),
-          _vm._v(" "),
-          _vm.lists.lists.data.length > 0
-            ? _c(
-                "tbody",
-                _vm._l(_vm.lists.lists.data, function(list) {
-                  return _c(
-                    "tr",
-                    [
-                      _vm._l(_vm.lists.list_data, function(value, key) {
-                        return _c(
-                          "td",
-                          [
-                            value == "date"
-                              ? [
-                                  _vm._v(
-                                    "\n                        " +
-                                      _vm._s(_vm._f("dmy")(list[value])) +
-                                      "\n                    "
-                                  )
-                                ]
-                              : value.indexOf(".") > 0
-                              ? [
-                                  _vm._v(
-                                    "\n                        " +
-                                      _vm._s(_vm._f("relation")(list, value)) +
-                                      "\n                    "
-                                  )
-                                ]
-                              : [
-                                  _vm._v(
-                                    "\n                        " +
-                                      _vm._s(
-                                        list[value] != null ? list[value] : "-"
-                                      ) +
-                                      "                                           \n                    "
-                                  )
-                                ]
-                          ],
-                          2
-                        )
-                      }),
-                      _vm._v(" "),
-                      _c("td", [
-                        _c("div", { staticClass: "btn-group" }, [
-                          _c(
-                            "button",
-                            {
-                              staticClass:
-                                "btn btn-default btn-sm btn-flat dropdown-toggle pull-right",
-                              attrs: {
-                                type: "button",
-                                "data-toggle": "dropdown",
-                                tabindex: "-1",
-                                "aria-haspopup": "true",
-                                "aria-expanded": "false"
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                            Action\n                        "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            {
-                              staticClass: "dropdown-menu dropdown-menu-right"
-                            },
-                            [
-                              _vm.lists.permissions["update_" + _vm.lists.dir]
-                                ? _c(
-                                    "a",
-                                    {
-                                      staticClass: "dropdown-item",
-                                      attrs: {
-                                        href:
-                                          _vm.module.edit_route + "/" + list.id
-                                      }
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "fa fa-edit",
-                                        staticStyle: { color: "green" },
-                                        attrs: {
-                                          "data-toggle": "tooltip",
-                                          "data-placement": "top",
-                                          "data-original-title": "Edit"
-                                        }
-                                      }),
-                                      _vm._v(_vm._s(_vm.lists.common.edit))
-                                    ]
-                                  )
-                                : _vm._e(),
-                              _vm._v(" "),
-                              _vm.lists.permissions["delete_" + _vm.lists.dir]
-                                ? _c(
-                                    "a",
-                                    {
-                                      staticClass: "dropdown-item",
-                                      attrs: { href: "javascript:void(0);" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.deleteRecord(list.id)
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "fa fa-trash",
-                                        staticStyle: { color: "red" },
-                                        attrs: {
-                                          "data-toggle": "tooltip",
-                                          "data-placement": "top",
-                                          title: "",
-                                          "data-original-title": "Delete"
-                                        }
-                                      }),
-                                      _vm._v(_vm._s(_vm.lists.common.delete))
-                                    ]
-                                  )
-                                : _vm._e()
-                            ]
-                          )
-                        ])
-                      ])
-                    ],
-                    2
-                  )
-                }),
-                0
+      _c("div", { staticClass: "table-scroll" }, [
+        _c(
+          "table",
+          {
+            staticClass: "table table-striped table-bordered table-sm",
+            attrs: { cellspacing: "0", width: "100%" }
+          },
+          [
+            _c("thead", { staticClass: "thead-dark" }, [
+              _c(
+                "tr",
+                [
+                  _vm._l(_vm.lists.list_data, function(value, key) {
+                    return _c("th", [_vm._v(_vm._s(key))])
+                  }),
+                  _vm._v(" "),
+                  _c("th", { attrs: { width: "100" } }, [_vm._v("Action")])
+                ],
+                2
               )
-            : _c("tbody", [
-                _c("tr", [
-                  _c(
-                    "td",
-                    { staticClass: "text-center", attrs: { colspan: "20" } },
-                    [
-                      _vm._v(
-                        "\n                    " +
-                          _vm._s(_vm.lists.common.no_data) +
-                          "\n                "
-                      )
-                    ]
-                  )
+            ]),
+            _vm._v(" "),
+            _vm.lists.lists.data.length > 0
+              ? _c(
+                  "tbody",
+                  _vm._l(_vm.lists.lists.data, function(list) {
+                    return _c(
+                      "tr",
+                      [
+                        _vm._l(_vm.lists.list_data, function(value, key) {
+                          return _c(
+                            "td",
+                            [
+                              value == "date"
+                                ? [
+                                    _vm._v(
+                                      "\n                        " +
+                                        _vm._s(_vm._f("dmy")(list[value])) +
+                                        "\n                    "
+                                    )
+                                  ]
+                                : value.indexOf(".") > 0
+                                ? [
+                                    _vm._v(
+                                      "\n                        " +
+                                        _vm._s(
+                                          _vm._f("relation")(list, value)
+                                        ) +
+                                        "\n                    "
+                                    )
+                                  ]
+                                : [
+                                    _vm._v(
+                                      "\n                        " +
+                                        _vm._s(
+                                          list[value] != null
+                                            ? list[value]
+                                            : "-"
+                                        ) +
+                                        "                                           \n                    "
+                                    )
+                                  ]
+                            ],
+                            2
+                          )
+                        }),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("div", { staticClass: "btn-group" }, [
+                            _c(
+                              "button",
+                              {
+                                staticClass:
+                                  "btn btn-default btn-sm btn-flat dropdown-toggle pull-right",
+                                attrs: {
+                                  type: "button",
+                                  "data-toggle": "dropdown",
+                                  tabindex: "-1",
+                                  "aria-haspopup": "true",
+                                  "aria-expanded": "false"
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                            Action\n                        "
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "dropdown-menu dropdown-menu-right"
+                              },
+                              [
+                                _vm.lists.permissions["update_" + _vm.lists.dir]
+                                  ? _c(
+                                      "a",
+                                      {
+                                        staticClass: "dropdown-item",
+                                        attrs: {
+                                          href:
+                                            _vm.module.edit_route +
+                                            "/" +
+                                            list.id
+                                        }
+                                      },
+                                      [
+                                        _c("i", {
+                                          staticClass: "fa fa-edit",
+                                          staticStyle: { color: "green" },
+                                          attrs: {
+                                            "data-toggle": "tooltip",
+                                            "data-placement": "top",
+                                            "data-original-title": "Edit"
+                                          }
+                                        }),
+                                        _vm._v(_vm._s(_vm.lists.common.edit))
+                                      ]
+                                    )
+                                  : _vm._e(),
+                                _vm._v(" "),
+                                _vm.lists.permissions["delete_" + _vm.lists.dir]
+                                  ? _c(
+                                      "a",
+                                      {
+                                        staticClass: "dropdown-item",
+                                        attrs: { href: "javascript:void(0);" },
+                                        on: {
+                                          click: function($event) {
+                                            return _vm.deleteRecord(list.id)
+                                          }
+                                        }
+                                      },
+                                      [
+                                        _c("i", {
+                                          staticClass: "fa fa-trash",
+                                          staticStyle: { color: "red" },
+                                          attrs: {
+                                            "data-toggle": "tooltip",
+                                            "data-placement": "top",
+                                            title: "",
+                                            "data-original-title": "Delete"
+                                          }
+                                        }),
+                                        _vm._v(_vm._s(_vm.lists.common.delete))
+                                      ]
+                                    )
+                                  : _vm._e()
+                              ]
+                            )
+                          ])
+                        ])
+                      ],
+                      2
+                    )
+                  }),
+                  0
+                )
+              : _c("tbody", [
+                  _c("tr", [
+                    _c(
+                      "td",
+                      { staticClass: "text-center", attrs: { colspan: "20" } },
+                      [
+                        _vm._v(
+                          "\n                    " +
+                            _vm._s(_vm.lists.common.no_data) +
+                            "\n                "
+                        )
+                      ]
+                    )
+                  ])
                 ])
-              ])
-        ]
-      ),
+          ]
+        )
+      ]),
       _vm._v(" "),
       _c("paginate-links", { attrs: { lists: this.lists } })
     ],

@@ -18,13 +18,5 @@ Vue.component('language_translets-view',require('./components/backend/languagetr
 
 Vue.component('status-view',require('./components/backend/status/view.vue').default);
 
-Vue.component('tasks-view',require('./components/backend/task/view.vue').default);
-
-Vue.component('location-view',require('./components/backend/location/view.vue').default);
-
-Vue.component('location-view',require('./components/backend/location/view.vue').default);
-
 Vue.component('theme_settings-view',require('./components/backend/themesetting/view.vue').default);
-
-Vue.component('todos-view',require('./components/backend/todo/view.vue').default);
 // [VueComponent]

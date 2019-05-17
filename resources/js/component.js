@@ -16,7 +16,5 @@ Vue.component('settings-view',require('./components/backend/setting/view.vue').d
 
 Vue.component('language_translets-view',require('./components/backend/languagetranslet/view.vue').default);
 
-Vue.component('status-view',require('./components/backend/status/view.vue').default);
-
 Vue.component('theme_settings-view',require('./components/backend/themesetting/view.vue').default);
 // [VueComponent]

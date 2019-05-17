@@ -32,23 +32,8 @@ Route::group(['namespace' => 'Backend'], function () {
 
 Route::group(['namespace' => 'Backend', 'prefix' => 'general'], function () {
 	Route::group(['middleware' => ['auth', 'locale:en']], function () {
-		Route::get('statuss', 'StatusController@index')->name('status.index');
-		Route::get('statuss-paginate','StatusController@Paginate')->name('status.paginate');
-		Route::get('status/create', 'StatusController@create')->name('status.create');
-		Route::post('status/store', 'StatusController@store')->name('status.store');
-		Route::get('status/edit/{id}', 'StatusController@edit')->name('status.edit');
-		Route::post('status/destroy', 'StatusController@destroy')->name('status.destroy');
-	});
-});
-
-Route::group(['namespace' => 'Backend', 'prefix' => 'general'], function () {
-	Route::group(['middleware' => ['auth', 'locale:en']], function () {
-		Route::get('themesettings', 'ThemesettingController@edit')->name('themesetting.index');
-		// Route::get('themesettings-paginate','ThemesettingController@Paginate')->name('themesetting.paginate');
-		// Route::get('themesetting/create', 'ThemesettingController@create')->name('themesetting.create');
+		Route::get('themesettings', 'ThemesettingController@edit')->name('themesetting.index');		
 		Route::post('themesetting/store', 'ThemesettingController@store')->name('themesetting.store');
-		// Route::get('themesetting/edit/{id}', 'ThemesettingController@edit')->name('themesetting.edit');
-		// Route::post('themesetting/destroy', 'ThemesettingController@destroy')->name('themesetting.destroy');
 	});
 });
 // [RouteArray]

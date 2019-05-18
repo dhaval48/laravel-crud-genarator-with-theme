@@ -8,7 +8,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
+    @php $setting = \App\Models\Setting::first(); @endphp
 
+    <link rel="shortcut icon" href="{{ asset("$setting->favicon") }}">
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">

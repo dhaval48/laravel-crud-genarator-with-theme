@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Requests\Themesetting;
+namespace App\Http\Requests\Setting;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Ongoingcloud\Laravelcrud\General\HandlePermission;
 
-class ListThemesettingRequest extends FormRequest
+class StoreSettingRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -14,7 +14,7 @@ class ListThemesettingRequest extends FormRequest
      */
     public function authorize()
     {        
-        return HandlePermission::authorize('list_themesetting');
+        return HandlePermission::authorize('store_setting');
     }
 
     /**

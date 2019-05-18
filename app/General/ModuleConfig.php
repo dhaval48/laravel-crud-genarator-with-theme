@@ -8,5 +8,10 @@ class ModuleConfig {
         return include 'ModuleConfig/themesetting.php';
     }
 
+    public static function settings() {
+        return include 'ModuleConfig/setting.php';
+    }
+
+
 	// [Moduleconfig]
 }

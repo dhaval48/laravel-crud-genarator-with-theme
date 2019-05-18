@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Requests\Themesetting;
+namespace App\Http\Requests\Setting;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Ongoingcloud\Laravelcrud\General\HandlePermission;
 
-class DeleteThemesettingRequest extends FormRequest
+class UpdateSettingRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -14,7 +14,7 @@ class DeleteThemesettingRequest extends FormRequest
      */
     public function authorize()
     {        
-        return HandlePermission::authorize('delete_themesetting');
+        return HandlePermission::authorize('update_setting');
     }
 
     /**

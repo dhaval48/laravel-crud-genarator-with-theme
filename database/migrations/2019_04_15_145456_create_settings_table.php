@@ -47,7 +47,7 @@ class CreateSettingsTable extends Migration
                     'display_name' => 'Setting',
                     'description'=>'Manage the Setting',
                     'module_id'=> null,
-                    'status' => 0,
+                    'status' => 1,
                     'icon' => 'fa-500px',
                     'permission' => 'update_setting',
                     'url' => 'setting',

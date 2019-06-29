@@ -39,10 +39,16 @@
             var dropdownContent = this.nextElementSibling;
             
             if (dropdownContent.style.display === "block") {
-                dropdownContent.style.display = "none";
+                //dropdownContent.style.display = "none";
+                $(dropdownContent).fadeOut();
+                $(this).find('a').find('i.angle-icon').removeClass('fa-angle-down')
+                $(this).find('a').find('i.angle-icon').addClass('fa-angle-left')
             } else {
                 $(".dropdown-container").css("display", "none");
-                dropdownContent.style.display = "block";
+                //dropdownContent.style.display = "block";
+                $(dropdownContent).fadeIn();
+                $(this).find('a').find('i.angle-icon').removeClass('fa-angle-left')
+                $(this).find('a').find('i.angle-icon').addClass('fa-angle-down')
             }
         });
 

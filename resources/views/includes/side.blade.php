@@ -20,8 +20,8 @@
             $extrasidelinks = \Ongoingcloud\Laravelcrud\General\HandlePermission::extraSideLink();
         @endphp
 
-        <li class="nav-item {{ request()->is('dashboard*') ? 'active-parent' : '' }}
-            {{ request()->is('home*') ? 'active-parent' : '' }}">
+        <li class="nav-item {{ request()->is('dashboard*') ? 'active-parent active' : '' }}
+            {{ request()->is('home*') ? 'active-parent active' : '' }}">
             <a class="nav-link" href="/home">
                 <i class="fa fa-dashboard"></i> Dashboard
             </a>
@@ -33,16 +33,18 @@
                 $group_id = $module->id;
             @endphp
 
-            <li class="nav-item dropdown-btn {{ request()->is("$module->url*") ? "active-parent" : ""  }}">
-                {{-- <h6 class="sidebar-section"> --}}
+            <li class="nav-item dropdown-btn {{ request()->is("$module->url*") ? "active-parent" : ""  }}">                
                 <a href="javascript:void(0)" class="nav-link">
                     <i class="fa {{$module->icon}}"></i> 
                     <span>{{$module->name}}</span>
                     <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
+                        @if(request()->is("$module->url*"))
+                            <i class="fa fa-angle-down angle-icon pull-right"></i>
+                        @else
+                            <i class="fa fa-angle-left angle-icon pull-right"></i>
+                        @endif
                     </span>
-                </a>
-                {{-- </h6> --}}
+                </a>                
             </li>
 
             <div class="dropdown-container" style="display: {{ request()->is("$module->url*") ? "block" : "none"  }}">
@@ -59,7 +61,7 @@
 
         @foreach($extrasidelinks['module_groups'] as $link)
             @if(in_array($link->permission, $sidelinks['permissions']))
-                <li class='{{ request()->is("$link->url*") ? "active" : ""  }}'>
+                <li class='nav-item {{ request()->is("$link->url*") ? "active-parent active" : ""  }}'>
                     <a href='{{route($link->route)}}' style="text-decoration: none;">
                     <i class="fa {{$link->icon}}"></i>  {{$link->display_name}}</a>
                 </li>

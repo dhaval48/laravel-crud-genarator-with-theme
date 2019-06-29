@@ -15,6 +15,7 @@
                             
 
                             <div class="col-md-12">
+                                <label>Enter Username</label>
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                 @error('email')
@@ -28,6 +29,7 @@
                         <div class="form-group row">
                             
                             <div class="col-md-12">
+                                <label>Enter Password</label>
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                                 @error('password')
@@ -72,4 +74,10 @@
         </div>
     </div>
 </div>
+@endsection
+
+@section('js')
+<script type="text/javascript">
+    $("#app").css('padding-top','0px');
+</script>
 @endsection

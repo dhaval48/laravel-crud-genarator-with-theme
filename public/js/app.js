@@ -5748,6 +5748,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['lists'],
   data: function data() {
@@ -65302,12 +65303,9 @@ var render = function() {
       _c("div", { staticClass: "table-scroll" }, [
         _c(
           "table",
-          {
-            staticClass: "table table-striped table-bordered table-sm",
-            attrs: { cellspacing: "0", width: "100%" }
-          },
+          { staticClass: "table", attrs: { cellspacing: "0", width: "100%" } },
           [
-            _c("thead", { staticClass: "thead-dark" }, [
+            _c("thead", [
               _c(
                 "tr",
                 [
@@ -66302,11 +66300,25 @@ var render = function() {
   return _c("div", { staticClass: "row padding-lr-0" }, [
     _c("div", { staticClass: "col-sm-6 py-1" }, [
       _c("div", { staticClass: "input-group" }, [
+        _c(
+          "span",
+          {
+            staticClass: "btn search-icon",
+            on: {
+              click: function($event) {
+                $event.preventDefault()
+                return _vm.filterList($event)
+              }
+            }
+          },
+          [_c("i", { staticClass: "fa fa-search" })]
+        ),
+        _vm._v(" "),
         _c("input", {
           directives: [
             { name: "model", rawName: "v-model", value: _vm.q, expression: "q" }
           ],
-          staticClass: "form-control",
+          staticClass: "filte-input form-control",
           attrs: { type: "text", id: "q", placeholder: "Search" },
           domProps: { value: _vm.q },
           on: {
@@ -66327,21 +66339,7 @@ var render = function() {
               _vm.q = $event.target.value
             }
           }
-        }),
-        _vm._v(" "),
-        _c(
-          "span",
-          {
-            staticClass: "btn btn-default btn-flat input-group-btn",
-            on: {
-              click: function($event) {
-                $event.preventDefault()
-                return _vm.filterList($event)
-              }
-            }
-          },
-          [_c("i", { staticClass: "fa fa-search" })]
-        )
+        })
       ])
     ]),
     _vm._v(" "),
@@ -66354,8 +66352,7 @@ var render = function() {
               _c(
                 "button",
                 {
-                  staticClass:
-                    "btn btn-primary btn-sm btn-flat dropdown-toggle pull-right",
+                  staticClass: "btn theme-btn dropdown-toggle pull-right",
                   attrs: {
                     type: "button",
                     "data-toggle": "dropdown",
@@ -66406,7 +66403,7 @@ var render = function() {
         ? _c(
             "a",
             {
-              staticClass: "btn btn-primary btn-flat btn-sm pull-right",
+              staticClass: "btn theme-btn",
               staticStyle: { float: "right", "margin-right": "5px" },
               attrs: { href: this.lists.create_route }
             },

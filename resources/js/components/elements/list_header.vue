@@ -4,7 +4,7 @@
         <div class="col-sm-6 py-1">
             <div class='input-group'>
                 <span class='btn search-icon' v-on:click.prevent="filterList"><i class='fa fa-search'></i></span>
-                <input type="text" id="q" placeholder="Search" v-on:keyup.enter.prevent="filterList" v-model="q" class="filte-input form-control">
+                <input type="text" id="q" placeholder="Search" v-on:keyup.enter.prevent="filterList" v-model="q" class="filter-input form-control">
                 
             </div>
         </div>

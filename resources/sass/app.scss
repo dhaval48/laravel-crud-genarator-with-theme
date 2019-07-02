@@ -139,8 +139,8 @@
 }
 
 .pull-right-container {
-    position: absolute;
-    right: -10px;
+    /*position: absolute;
+    right: -10px;*/
 }
 
 .active-parent {
@@ -210,7 +210,6 @@
     width: 20px;
     font-size: 16px;
     text-align: center;
-    margin-right: 24px;
 }
 
 .sidebar-section{
@@ -262,7 +261,8 @@ body {
 
 .card-header {
     background-color: #f2f3f2;
-    color: grey;
+    color: #4a616d;
+    font-size: 14px;
     font-weight: bold;
 }
 .theme-btn, .theme-btn:hover, .theme-btn:focus, .theme-btn:active {
@@ -310,10 +310,17 @@ body {
     background: #f3f3f3;
 }
 
+.theme-color {
+    color:#4a616d
+}
+a.theme-color, a.theme-color:hover {
+    text-decoration:none;
+    color:#4a616d !important
+}
 
-
-
-
+.card-header-text{
+    margin-left:8px;
+}
 
 
 /*
@@ -485,7 +492,7 @@ table tr td, table tr th {
     position: absolute;
     z-index: 9;
 }
-.filte-input{
+.filter-input{
     padding-left: 40px;
     background: #f3f4f2;
 }
@@ -493,4 +500,11 @@ table tr td, table tr th {
     background: #3d515c;
     color: white;
     margin-right:10px
+}
+.back-arrow {
+    font-size: 30px;
+    position: absolute;
+    float: left;
+    top: -3px;
+    left: 10px;
 }

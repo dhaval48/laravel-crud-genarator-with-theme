@@ -71,7 +71,7 @@
                 <div class="card-actionbar-row">
                     <button 
                         type="submit"
-                        class="btn btn-flat btn-primary btn-loading-state" 
+                        class="btn theme-btn btn-loading-state" 
                         data-loading-text="<i class='fa fa-spinner fa-spin'></i> Saving..."
                         :disabled="form.errors.any()">{{this.module.common.save}}</button>
                 </div>

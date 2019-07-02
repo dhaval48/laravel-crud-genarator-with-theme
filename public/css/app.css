@@ -29848,8 +29848,8 @@ a.text-dark:focus {
 }
 
 .pull-right-container {
-  position: absolute;
-  right: -10px;
+  /*position: absolute;
+  right: -10px;*/
 }
 
 .active-parent {
@@ -29925,7 +29925,6 @@ a.text-dark:focus {
   width: 20px;
   font-size: 16px;
   text-align: center;
-  margin-right: 24px;
 }
 
 .sidebar-section {
@@ -29979,7 +29978,8 @@ body {
 
 .card-header {
   background-color: #f2f3f2;
-  color: grey;
+  color: #4a616d;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -30035,6 +30035,20 @@ body {
 .cancel-btn {
   border: 1px solid lightgrey;
   background: #f3f3f3;
+}
+
+.theme-color {
+  color: #4a616d;
+}
+
+a.theme-color,
+a.theme-color:hover {
+  text-decoration: none;
+  color: #4a616d !important;
+}
+
+.card-header-text {
+  margin-left: 8px;
 }
 
 /*
@@ -30230,7 +30244,7 @@ table tr th {
   z-index: 9;
 }
 
-.filte-input {
+.filter-input {
   padding-left: 40px;
   background: #f3f4f2;
 }
@@ -30242,5 +30256,13 @@ table tr th {
   background: #3d515c;
   color: white;
   margin-right: 10px;
+}
+
+.back-arrow {
+  font-size: 30px;
+  position: absolute;
+  float: left;
+  top: -3px;
+  left: 10px;
 }
 

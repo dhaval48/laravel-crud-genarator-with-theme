@@ -7,12 +7,13 @@
             <div class="card">
             
             @if(!isset($data['lists'])) 
-                <div class="card-header">
-                    <h5>
-                        <a class="card-title" href="{{ $data['list_route'] }}"> 
+                <div class="card-header">                    
+                    <a class="card-title theme-color" href="{{ $data['list_route'] }}"> 
+                    <div class="back-arrow theme-color">&lsaquo;</div>
+                    <div class="card-header-text">
                         {{ $data['id'] != 0 ? $data['lang']['edit_title'] : $data['lang']['create_title'] }}
-                        </a>
-                    </h5>
+                    </div>
+                    </a>                    
                 </div>
 
             @else

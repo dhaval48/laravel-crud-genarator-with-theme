@@ -1,0 +1,510 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+@import '~pretty-checkbox/src/pretty-checkbox.scss';    
+@import '~@mdi/font/scss/materialdesignicons';
+
+/**** Navbar css ****/
+
+.navbar-laravel {
+  	background-color: #4a616d;
+ 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+    height:60px;
+    box-shadow: 0px 0px 5px 0px #1d1e1e
+}
+
+.container {
+    width: 80% !important;
+    min-width: 80% !important;
+    margin-left: 20% !important;
+    max-height:90vh;
+    overflow-y:auto
+}
+
+.login-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/**** Side bar css section ****/
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.dropdown-container {
+    display: none;
+    background: #313131;
+}
+
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 18%;
+    max-width: 18%;
+    background: #1c1d1d;
+    color: #fff;
+    transition: all 0.3s;
+    float: left;
+    position: fixed;
+    z-index: 9;
+    border-right: 1px solid lightgrey;
+    border-bottom: 1px solid lightgray;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    margin-top: -60px;
+}
+
+
+#sidebar.active {
+    margin-left: -20%;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px 20px;
+    font-size: 12px;
+    display: block;
+    color: grey;
+}
+
+#sidebar ul li.active>a,
+#sidebar ul li.active>a:hover
+#sidebar .nav-link.active-sidemenu{
+    background: #242e33;
+    color: white;
+}
+
+#sidebar ul .dropdown-container li.active>a,
+#sidebar ul .dropdown-container li.active>a:hover
+#sidebar .nav-link.active-sidemenu{
+    background: none;
+    color: white;
+}
+
+.admin-dash{
+    padding: 20px;color:grey;
+    padding-top: 80px;
+    border-bottom: 1px solid #49545a;
+}
+
+#sidebar.active {
+    position: absolute;
+    z-index: 9;
+}
+
+.pull-right-container {
+    /*position: absolute;
+    right: -10px;*/
+}
+
+.active-parent {
+    background:#242e33;
+    border-left:5px solid #4a616d
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -260px;
+    }
+    .scroll{
+        overflow: hidden
+    }
+    #sidebar.active {
+        margin-left: 0;
+        max-width: 250px;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+
+    .container {
+        width: 100% !important;
+        margin-left: auto !important
+    }
+    .navbar {
+        height: unset;
+    }
+}
+
+@media(max-width: 1100px){
+    .table-scroll{
+        overflow-x: scroll;
+    }
+}
+
+
+#sidebar:hover {
+  overflow-y: auto;
+}
+
+#sidebar::-webkit-scrollbar {
+  width:6px;
+}
+
+/* Track */
+#sidebar::-webkit-scrollbar-track {
+  background: #dce9c3; 
+}
+
+/* Handle */
+#sidebar::-webkit-scrollbar-thumb {
+  background: #6c3668; 
+}
+
+/* Handle on hover */
+#sidebar::-webkit-scrollbar-thumb:hover {
+  background: #6c3668; 
+}
+
+#sidebar .nav .nav-item a i {
+    width: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.sidebar-section{
+    margin-left: 30px;
+    margin-top: 15px;
+    color: #6c3668;
+    font-weight: bold;
+}
+
+.seperate-line{
+    border-bottom: 1px solid #dddddd;    
+}
+
+#sidebar ul li:hover {
+    background:#1e282d
+}
+#sidebar ul .dropdown-container li:hover {
+    background:#353535
+}
+
+#sidebar ul li a.active, #sidebar ul li a.active:hover, #sidebar ul li a.active:focus{
+    background: #6836647a;
+    color: white !important;
+}
+
+
+/*** Extra CSS ****/
+
+.update-container{
+    width: 100% !important;
+    margin-left: auto !important;
+    overflow: hidden;
+    max-height:unset;
+    padding-bottom:30px 
+}
+
+#app {
+    padding-top: 60px;
+}
+
+.container > .row {
+  padding-top: 15px;
+}
+
+body {
+    overflow: hidden;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+
+.card-header {
+    background-color: #f2f3f2;
+    color: #4a616d;
+    font-size: 14px;
+    font-weight: bold;
+}
+.theme-btn, .theme-btn:hover, .theme-btn:focus, .theme-btn:active {
+    background: #4a616d;
+    padding: 5px 15px;
+    text-shadow: 1px 1px 1px #313131;
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0px 0px 4px 0px #313131;
+}
+.form-control, .btn {
+    border-radius:0px !important
+}
+
+.login-btn{
+    width:100%;
+    background: #75c675;
+    color: white;
+    border-radius: 0px;
+    font-size: 16px;
+}
+.login-card{
+    border-color:#4a616d;    
+    border-radius:0px !important;
+    position:relative;
+    background:#f6f6f6;
+    top:40%;
+    box-shadow:0px 0px 16px 0px lightgrey
+}
+.login-header{
+    background: #4a616d;
+    text-align: center;
+    border-radius: 0px !important; 
+    border-color: #4a616d;
+    height: 60px;
+    color:white;
+    font-size: 22px;
+}
+.button-card {
+    margin-top: 10px;
+    padding: 10px 15px;
+}
+.cancel-btn {
+    border: 1px solid lightgrey;
+    background: #f3f3f3;
+}
+
+.theme-color {
+    color:#4a616d
+}
+a.theme-color, a.theme-color:hover {
+    text-decoration:none;
+    color:#4a616d !important
+}
+
+.card-header-text{
+    margin-left:8px;
+}
+
+
+/*
+T2
+    box-shadow: -5px 1px 50px 5px lightgrey;
+
+T2
+.login-card {
+    border-color: #6c4c6e;
+    margin-top: 35%;
+    border-radius: 0px !important;
+}
+.login-header {
+    background: #b1a9b2;
+    text-align: center;
+    border-radius: 0px !important;
+    border-color: #605961;
+    height: 60px;
+    font-size: 22px;
+    color: #645a5a;
+}
+body {
+    background: #615961;
+}
+
+T3
+.login-card {
+    border-color: #6c4c6e;
+    margin-top: 35%;
+    border-radius: 0px !important;
+}
+.login-header {
+    background: #3a2e3a;
+    text-align: center;
+    border-radius: 0px !important;
+    border-color: #6c4c6e;
+    height: 60px;
+    font-size: 22px;
+}
+body {
+    background: #e1e1e1;
+}
+*/
+
+
+/* ---------------------------------------------------
+    Theme Color red
+----------------------------------------------------- */
+
+.red .navbar-laravel {
+    background-color: #c33434;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.red #sidebar ul li a.active, .red #sidebar ul li a.active:hover, .red #sidebar ul li a.active:focus{
+    background: #cb9494;
+    color: white !important;
+}
+
+.red .theme-btn, .red .theme-btn:hover, .red .theme-btn:focus, .red .theme-btn:active {
+    background:#c33434;
+    color:white
+}
+
+.red .sidebar-section{
+    color: #c33434;
+}
+
+.red #sidebar::-webkit-scrollbar-thumb:hover, .red #sidebar::-webkit-scrollbar-thumb {
+  background: #c33434; 
+}
+
+
+/* ---------------------------------------------------
+    Theme Color green
+----------------------------------------------------- */
+
+.green .navbar-laravel {
+    background-color: #41ac41;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.green #sidebar ul li a.active, .green #sidebar ul li a.active:hover, .green #sidebar ul li a.active:focus{
+    background: #7acb7a;
+    color: white !important;
+}
+
+.green .theme-btn, .green .theme-btn:hover, .green .theme-btn:focus, .green .theme-btn:active {
+    background:#41ac41;
+    color:white
+}
+
+.green .sidebar-section{
+    color: #41ac41;
+}
+
+.green #sidebar::-webkit-scrollbar-thumb:hover, .green #sidebar::-webkit-scrollbar-thumb {
+  background: #41ac41; 
+}
+
+
+/* ---------------------------------------------------
+    Theme Color blue
+----------------------------------------------------- */
+
+.blue .navbar-laravel {
+    background-color: #59b2ff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.blue #sidebar ul li a.active, .blue #sidebar ul li a.active:hover, .blue #sidebar ul li a.active:focus{
+    background: #a0cef6;
+    color: white !important;
+}
+
+.blue .theme-btn, .blue .theme-btn:hover, .blue .theme-btn:focus, .blue .theme-btn:active {
+    background:#59b2ff;
+    color:white
+}
+
+.blue .sidebar-section{
+    color: #59b2ff;
+}
+
+.blue #sidebar::-webkit-scrollbar-thumb:hover, .blue #sidebar::-webkit-scrollbar-thumb {
+  background: #59b2ff; 
+}
+
+/* ---------------------------------------------------
+    Theme Color yellow
+----------------------------------------------------- */
+
+.yellow .navbar-laravel {
+    background-color: #baba27;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.yellow #sidebar ul li a.active, .yellow #sidebar ul li a.active:hover, .yellow #sidebar ul li a.active:focus{
+    background: #cbcb7a;
+    color: white !important;
+}
+
+.yellow .theme-btn, .yellow .theme-btn:hover, .yellow .theme-btn:focus, .yellow .theme-btn:active {
+    background:#baba27;
+    color:white
+}
+
+.yellow .sidebar-section{
+    color: #baba27;
+}
+
+.yellow #sidebar::-webkit-scrollbar-thumb:hover, .yellow #sidebar::-webkit-scrollbar-thumb {
+  background: #baba27; 
+}
+
+table tr td, table tr th {
+    padding:10px !important;
+}
+
+.page-item.active .page-link{
+    z-index: 1;
+    padding: 2px 6px;
+    border-radius: 0px;
+    color: #fff;
+    background-color: #808e95;
+    border-color: #4a616d;
+}
+.search-icon{
+    position: absolute;
+    z-index: 9;
+}
+.filter-input{
+    padding-left: 40px;
+    background: #f3f4f2;
+}
+.collapse-btn, .collapse-btn:focus, .collapse-btn:hover, .collapse-btn:active{
+    background: #3d515c;
+    color: white;
+    margin-right:10px
+}
+.back-arrow {
+    font-size: 30px;
+    position: absolute;
+    float: left;
+    top: -3px;
+    left: 10px;
+}

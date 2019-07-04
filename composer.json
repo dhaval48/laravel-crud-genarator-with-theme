@@ -14,7 +14,8 @@
         "laravel/framework": "5.8.*",
         "laravel/passport": "^7.2",
         "laravel/tinker": "^1.0",
-        "ongoingcloud/laravelcrud": "dev-master"
+        "ongoingcloud/laravelcrud": "dev-master",
+        "tumainimosha/laravel-coming-soon": "^1.4"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

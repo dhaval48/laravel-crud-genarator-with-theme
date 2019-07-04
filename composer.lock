@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "19c8d5b38e7481a1fc4b6a6ef69f5405",
+    "content-hash": "28352cc77bb3c7e7f9b810cd470a5f16",
     "packages": [
         {
             "name": "defuse/php-encryption",
@@ -1725,12 +1725,12 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/dhaval48/laravel-crud-generator.git",
+                "url": "https://github.com/dhaval48/laravel-autoengine.git",
                 "reference": "f6d551e8fb9bad2a6ea5f76a6c4305fe607c8ca2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dhaval48/laravel-crud-generator/zipball/f6d551e8fb9bad2a6ea5f76a6c4305fe607c8ca2",
+                "url": "https://api.github.com/repos/dhaval48/laravel-autoengine/zipball/f6d551e8fb9bad2a6ea5f76a6c4305fe607c8ca2",
                 "reference": "f6d551e8fb9bad2a6ea5f76a6c4305fe607c8ca2",
                 "shasum": ""
             },
@@ -3711,6 +3711,55 @@
             "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
             "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
             "time": "2017-11-27T11:13:29+00:00"
+        },
+        {
+            "name": "tumainimosha/laravel-coming-soon",
+            "version": "1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tumainimosha/laravel-coming-soon.git",
+                "reference": "7143987849b4e865561f3e395fee2dafe5c4d42a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tumainimosha/laravel-coming-soon/zipball/7143987849b4e865561f3e395fee2dafe5c4d42a",
+                "reference": "7143987849b4e865561f3e395fee2dafe5c4d42a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.7.0|~5.8.0",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.13",
+                "orchestra/testbench": "~3.7.0",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "snw\\ComingSoon\\ComingSoonServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "snw\\ComingSoon\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tumaini Mosha",
+                    "email": "princeton.mosha@gmail.com"
+                }
+            ],
+            "description": "Simple Comming Soon page",
+            "time": "2019-04-24T11:25:56+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

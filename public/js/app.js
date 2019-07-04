@@ -82824,7 +82824,7 @@ function () {
   }, {
     key: "post",
     value: function post(url) {
-      return this.submit('post', url, this.originalData);
+      return this.submit('post', url, this.data());
     }
     /**
     * Send a POST request with file to the given URL.

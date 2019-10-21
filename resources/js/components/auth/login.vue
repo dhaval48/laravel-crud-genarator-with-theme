@@ -20,14 +20,14 @@
         </div>
         <div class="row">
           <div class="col-xs-8">
-            <p-check class="p-icon p-rotate p-bigger" color="primary" v-on:change="check">
+            <p-check class="p-icon p-rotate p-bigger" color="info" v-on:change="check">
                 <i slot="extra" class="icon mdi mdi-check"></i>
                 Remember Me
             </p-check>
           </div>
           <!-- /.col -->
           <div class="col-xs-4">
-            <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+            <button type="submit" class="btn btn-info">Sign In</button>
           </div>
           <!-- /.col -->
         </div>

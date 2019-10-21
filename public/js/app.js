@@ -2069,6 +2069,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['module'],
@@ -2519,6 +2525,12 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _elements_list_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../.././elements/list_header */ "./resources/js/components/elements/list_header.vue");
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3136,6 +3148,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['module'],
@@ -3614,6 +3632,12 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _elements_list_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../.././elements/list_header */ "./resources/js/components/elements/list_header.vue");
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -5720,6 +5744,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -59523,7 +59548,7 @@ var render = function() {
                   "p-check",
                   {
                     staticClass: "p-icon p-rotate p-bigger",
-                    attrs: { color: "primary" },
+                    attrs: { color: "info" },
                     on: { change: _vm.check }
                   },
                   [
@@ -59559,14 +59584,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-xs-4" }, [
-      _c(
-        "button",
-        {
-          staticClass: "btn btn-primary btn-block btn-flat",
-          attrs: { type: "submit" }
-        },
-        [_vm._v("Sign In")]
-      )
+      _c("button", { staticClass: "btn btn-info", attrs: { type: "submit" } }, [
+        _vm._v("Sign In")
+      ])
     ])
   },
   function() {
@@ -59602,8 +59622,8 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "col-md-12" }, [
+  return _c("div", { staticClass: "card-body" }, [
+    _c("div", [
       _c(
         "form",
         {
@@ -59630,11 +59650,7 @@ var render = function() {
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-md-12" }, [
               _c("div", { staticClass: "card" }, [
-                _c(
-                  "div",
-                  { staticClass: "card-header bg-primary text-white" },
-                  [_vm._v("General")]
-                ),
+                _c("div", { staticClass: "card-header" }, [_vm._v("General")]),
                 _vm._v(" "),
                 _c("div", { staticClass: "card-body" }, [
                   _c("div", { staticClass: "row" }, [
@@ -59777,7 +59793,7 @@ var render = function() {
                               staticClass: "p-icon p-rotate p-bigger",
                               attrs: {
                                 type: "checkbox",
-                                color: "primary",
+                                color: "info",
                                 "true-value": 1,
                                 "false-value": 0
                               },
@@ -59832,7 +59848,7 @@ var render = function() {
                               staticClass: "p-icon p-rotate p-bigger",
                               attrs: {
                                 type: "checkbox",
-                                color: "primary",
+                                color: "info",
                                 "true-value": 1,
                                 "false-value": 0
                               },
@@ -59874,11 +59890,9 @@ var render = function() {
               _c("div", { staticClass: "clearfix" }, [_vm._v(" ")]),
               _vm._v(" "),
               _c("div", { staticClass: "card" }, [
-                _c(
-                  "div",
-                  { staticClass: "card-header bg-primary text-white" },
-                  [_vm._v("Database table settings")]
-                ),
+                _c("div", { staticClass: "card-header" }, [
+                  _vm._v("Database table settings")
+                ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "card-body" }, [
                   _c(
@@ -59964,7 +59978,7 @@ var render = function() {
               _c(
                 "button",
                 {
-                  staticClass: "btn btn-flat btn-primary",
+                  staticClass: "btn btn-info",
                   attrs: { type: "submit", disabled: _vm.form.errors.any() }
                 },
                 [_vm._v(_vm._s(this.module.common.save))]
@@ -60016,17 +60030,15 @@ var render = function() {
     [
       _c("list_header", { attrs: { lists: this.module } }),
       _vm._v(" "),
-      _c("div", { staticClass: "clearfix" }, [_vm._v(" ")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "table-scroll" }, [
+      _c("div", { staticClass: "card-body table-responsive p-0" }, [
         _c(
           "table",
           {
-            staticClass: "table table-striped table-bordered table-sm",
+            staticClass: "table table-hover",
             attrs: { cellspacing: "0", width: "100%" }
           },
           [
-            _c("thead", { staticClass: "thead-dark" }, [
+            _c("thead", [
               _c(
                 "tr",
                 [
@@ -60077,7 +60089,7 @@ var render = function() {
                                             ? list[value]
                                             : "-"
                                         ) +
-                                        "                                           \n                        "
+                                        "\n                        "
                                     )
                                   ]
                             ],
@@ -60090,83 +60102,96 @@ var render = function() {
                             _c(
                               "button",
                               {
+                                staticClass: "btn btn-default btn-sm",
+                                attrs: { type: "button" }
+                              },
+                              [_vm._v("Action")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "button",
+                              {
                                 staticClass:
-                                  "btn btn-default btn-sm btn-flat dropdown-toggle pull-right",
+                                  "btn btn-default btn-sm dropdown-toggle dropdown-icon",
                                 attrs: {
                                   type: "button",
                                   "data-toggle": "dropdown",
-                                  tabindex: "-1",
-                                  "aria-haspopup": "true",
                                   "aria-expanded": "false"
                                 }
                               },
                               [
-                                _vm._v(
-                                  "\n                                Action\n                            "
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass: "dropdown-menu dropdown-menu-right"
-                              },
-                              [
-                                _vm.lists.permissions["update_" + _vm.lists.dir]
-                                  ? _c(
-                                      "a",
-                                      {
-                                        staticClass: "dropdown-item",
-                                        attrs: {
-                                          href:
-                                            _vm.module.edit_route +
-                                            "/" +
-                                            list.id
-                                        }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass: "fa fa-edit",
-                                          staticStyle: { color: "green" },
-                                          attrs: {
-                                            "data-toggle": "tooltip",
-                                            "data-placement": "top",
-                                            "data-original-title": "Edit"
-                                          }
-                                        }),
-                                        _vm._v(_vm._s(_vm.lists.common.edit))
-                                      ]
-                                    )
-                                  : _vm._e(),
+                                _c("span", { staticClass: "sr-only" }, [
+                                  _vm._v("Toggle Dropdown")
+                                ]),
                                 _vm._v(" "),
-                                _vm.lists.permissions["delete_" + _vm.lists.dir]
-                                  ? _c(
-                                      "a",
-                                      {
-                                        staticClass: "dropdown-item",
-                                        attrs: { href: "javascript:void(0);" },
-                                        on: {
-                                          click: function($event) {
-                                            return _vm.deleteRecord(list.id)
-                                          }
-                                        }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass: "fa fa-trash",
-                                          staticStyle: { color: "red" },
-                                          attrs: {
-                                            "data-toggle": "tooltip",
-                                            "data-placement": "top",
-                                            title: "",
-                                            "data-original-title": "Delete"
-                                          }
-                                        }),
-                                        _vm._v(_vm._s(_vm.lists.common.delete))
-                                      ]
-                                    )
-                                  : _vm._e()
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "dropdown-menu",
+                                    attrs: {
+                                      role: "menu",
+                                      "x-placement": "top-start"
+                                    }
+                                  },
+                                  [
+                                    _vm.lists.permissions[
+                                      "update_" + _vm.lists.dir
+                                    ]
+                                      ? _c(
+                                          "a",
+                                          {
+                                            staticClass: "dropdown-item",
+                                            attrs: {
+                                              href:
+                                                _vm.module.edit_route +
+                                                "/" +
+                                                list.id
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                        " +
+                                                _vm._s(_vm.lists.common.edit) +
+                                                "\n                                    "
+                                            )
+                                          ]
+                                        )
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _c("div", {
+                                      staticClass: "dropdown-divider"
+                                    }),
+                                    _vm._v(" "),
+                                    _vm.lists.permissions[
+                                      "delete_" + _vm.lists.dir
+                                    ]
+                                      ? _c(
+                                          "a",
+                                          {
+                                            staticClass:
+                                              "dropdown-item text-danger",
+                                            attrs: {
+                                              href: "javascript:void(0);"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.deleteRecord(list.id)
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                        " +
+                                                _vm._s(
+                                                  _vm.lists.common.delete
+                                                ) +
+                                                "\n                                    "
+                                            )
+                                          ]
+                                        )
+                                      : _vm._e()
+                                  ]
+                                )
                               ]
                             )
                           ])
@@ -60259,8 +60284,8 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "col-md-12" }, [
+  return _c("div", { staticClass: "card-body" }, [
+    _c("div", [
       _c(
         "form",
         {
@@ -60287,11 +60312,7 @@ var render = function() {
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-md-12" }, [
               _c("div", { staticClass: "card" }, [
-                _c(
-                  "div",
-                  { staticClass: "card-header bg-primary text-white" },
-                  [_vm._v("General")]
-                ),
+                _c("div", { staticClass: "card-header" }, [_vm._v("General")]),
                 _vm._v(" "),
                 _c("div", { staticClass: "card-body" }, [
                   _c("div", { staticClass: "row" }, [
@@ -60421,11 +60442,9 @@ var render = function() {
               _c("div", { staticClass: "clearfix" }, [_vm._v(" ")]),
               _vm._v(" "),
               _c("div", { staticClass: "card" }, [
-                _c(
-                  "div",
-                  { staticClass: "card-header bg-primary text-white" },
-                  [_vm._v("Database table settings")]
-                ),
+                _c("div", { staticClass: "card-header" }, [
+                  _vm._v("Database table settings")
+                ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "card-body" }, [
                   _c(
@@ -60505,11 +60524,9 @@ var render = function() {
               _c("div", { staticClass: "clearfix" }, [_vm._v(" ")]),
               _vm._v(" "),
               _c("div", { staticClass: "card" }, [
-                _c(
-                  "div",
-                  { staticClass: "card-header bg-primary text-white" },
-                  [_vm._v("Input field settings")]
-                ),
+                _c("div", { staticClass: "card-header" }, [
+                  _vm._v("Input field settings")
+                ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "card-body" }, [
                   _c("div", { staticClass: "row" }, [
@@ -60531,7 +60548,7 @@ var render = function() {
                                       "p-check",
                                       {
                                         staticClass: "p-icon p-rotate p-bigger",
-                                        attrs: { color: "primary" },
+                                        attrs: { color: "info" },
                                         model: {
                                           value: _vm.form.visible[k],
                                           callback: function($$v) {
@@ -60882,7 +60899,7 @@ var render = function() {
               _c(
                 "button",
                 {
-                  staticClass: "btn btn-flat btn-primary",
+                  staticClass: "btn btn-info",
                   attrs: { type: "submit", disabled: _vm.form.errors.any() }
                 },
                 [_vm._v(_vm._s(this.module.common.save))]
@@ -60966,17 +60983,15 @@ var render = function() {
     [
       _c("list_header", { attrs: { lists: this.module } }),
       _vm._v(" "),
-      _c("div", { staticClass: "clearfix" }, [_vm._v(" ")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "table-scroll" }, [
+      _c("div", { staticClass: "card-body table-responsive p-0" }, [
         _c(
           "table",
           {
-            staticClass: "table table-striped table-bordered table-sm",
+            staticClass: "table table-hover",
             attrs: { cellspacing: "0", width: "100%" }
           },
           [
-            _c("thead", { staticClass: "thead-dark" }, [
+            _c("thead", [
               _c(
                 "tr",
                 [
@@ -61027,7 +61042,7 @@ var render = function() {
                                             ? list[value]
                                             : "-"
                                         ) +
-                                        "                                           \n                        "
+                                        "\n                        "
                                     )
                                   ]
                             ],
@@ -61040,83 +61055,96 @@ var render = function() {
                             _c(
                               "button",
                               {
+                                staticClass: "btn btn-default btn-sm",
+                                attrs: { type: "button" }
+                              },
+                              [_vm._v("Action")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "button",
+                              {
                                 staticClass:
-                                  "btn btn-default btn-sm btn-flat dropdown-toggle pull-right",
+                                  "btn btn-default btn-sm dropdown-toggle dropdown-icon",
                                 attrs: {
                                   type: "button",
                                   "data-toggle": "dropdown",
-                                  tabindex: "-1",
-                                  "aria-haspopup": "true",
                                   "aria-expanded": "false"
                                 }
                               },
                               [
-                                _vm._v(
-                                  "\n                                Action\n                            "
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass: "dropdown-menu dropdown-menu-right"
-                              },
-                              [
-                                _vm.lists.permissions["update_" + _vm.lists.dir]
-                                  ? _c(
-                                      "a",
-                                      {
-                                        staticClass: "dropdown-item",
-                                        attrs: {
-                                          href:
-                                            _vm.module.edit_route +
-                                            "/" +
-                                            list.id
-                                        }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass: "fa fa-edit",
-                                          staticStyle: { color: "green" },
-                                          attrs: {
-                                            "data-toggle": "tooltip",
-                                            "data-placement": "top",
-                                            "data-original-title": "Edit"
-                                          }
-                                        }),
-                                        _vm._v(_vm._s(_vm.lists.common.edit))
-                                      ]
-                                    )
-                                  : _vm._e(),
+                                _c("span", { staticClass: "sr-only" }, [
+                                  _vm._v("Toggle Dropdown")
+                                ]),
                                 _vm._v(" "),
-                                _vm.lists.permissions["delete_" + _vm.lists.dir]
-                                  ? _c(
-                                      "a",
-                                      {
-                                        staticClass: "dropdown-item",
-                                        attrs: { href: "javascript:void(0);" },
-                                        on: {
-                                          click: function($event) {
-                                            return _vm.deleteRecord(list.id)
-                                          }
-                                        }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass: "fa fa-trash",
-                                          staticStyle: { color: "red" },
-                                          attrs: {
-                                            "data-toggle": "tooltip",
-                                            "data-placement": "top",
-                                            title: "",
-                                            "data-original-title": "Delete"
-                                          }
-                                        }),
-                                        _vm._v(_vm._s(_vm.lists.common.delete))
-                                      ]
-                                    )
-                                  : _vm._e()
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "dropdown-menu",
+                                    attrs: {
+                                      role: "menu",
+                                      "x-placement": "top-start"
+                                    }
+                                  },
+                                  [
+                                    _vm.lists.permissions[
+                                      "update_" + _vm.lists.dir
+                                    ]
+                                      ? _c(
+                                          "a",
+                                          {
+                                            staticClass: "dropdown-item",
+                                            attrs: {
+                                              href:
+                                                _vm.module.edit_route +
+                                                "/" +
+                                                list.id
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                        " +
+                                                _vm._s(_vm.lists.common.edit) +
+                                                "\n                                    "
+                                            )
+                                          ]
+                                        )
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _c("div", {
+                                      staticClass: "dropdown-divider"
+                                    }),
+                                    _vm._v(" "),
+                                    _vm.lists.permissions[
+                                      "delete_" + _vm.lists.dir
+                                    ]
+                                      ? _c(
+                                          "a",
+                                          {
+                                            staticClass:
+                                              "dropdown-item text-danger",
+                                            attrs: {
+                                              href: "javascript:void(0);"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.deleteRecord(list.id)
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                        " +
+                                                _vm._s(
+                                                  _vm.lists.common.delete
+                                                ) +
+                                                "\n                                    "
+                                            )
+                                          ]
+                                        )
+                                      : _vm._e()
+                                  ]
+                                )
                               ]
                             )
                           ])
@@ -61209,8 +61237,8 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "col-md-12" }, [
+  return _c("div", { staticClass: "card-body" }, [
+    _c("div", [
       _c(
         "form",
         {
@@ -61237,11 +61265,7 @@ var render = function() {
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-md-12" }, [
               _c("div", { staticClass: "card" }, [
-                _c(
-                  "div",
-                  { staticClass: "card-header bg-primary text-white" },
-                  [_vm._v("General")]
-                ),
+                _c("div", { staticClass: "card-header" }, [_vm._v("General")]),
                 _vm._v(" "),
                 _c("div", { staticClass: "card-body" }, [
                   _c("div", { staticClass: "row" }, [
@@ -61438,11 +61462,9 @@ var render = function() {
               _c("div", { staticClass: "clearfix" }, [_vm._v(" ")]),
               _vm._v(" "),
               _c("div", { staticClass: "card" }, [
-                _c(
-                  "div",
-                  { staticClass: "card-header bg-primary text-white" },
-                  [_vm._v("Database table settings")]
-                ),
+                _c("div", { staticClass: "card-header" }, [
+                  _vm._v("Database table settings")
+                ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "card-body" }, [
                   _c(
@@ -61522,11 +61544,9 @@ var render = function() {
               _c("div", { staticClass: "clearfix" }, [_vm._v(" ")]),
               _vm._v(" "),
               _c("div", { staticClass: "card" }, [
-                _c(
-                  "div",
-                  { staticClass: "card-header bg-primary text-white" },
-                  [_vm._v("Input field settings")]
-                ),
+                _c("div", { staticClass: "card-header" }, [
+                  _vm._v("Input field settings")
+                ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "card-body" }, [
                   _c("div", { staticClass: "row" }, [
@@ -61548,7 +61568,7 @@ var render = function() {
                                       "p-check",
                                       {
                                         staticClass: "p-icon p-rotate p-bigger",
-                                        attrs: { color: "primary" },
+                                        attrs: { color: "info" },
                                         model: {
                                           value: _vm.form.visible[k],
                                           callback: function($$v) {
@@ -61899,7 +61919,7 @@ var render = function() {
               _c(
                 "button",
                 {
-                  staticClass: "btn btn-flat btn-primary",
+                  staticClass: "btn btn-info",
                   attrs: { type: "submit", disabled: _vm.form.errors.any() }
                 },
                 [_vm._v(_vm._s(this.module.common.save))]
@@ -61983,17 +62003,15 @@ var render = function() {
     [
       _c("list_header", { attrs: { lists: this.module } }),
       _vm._v(" "),
-      _c("div", { staticClass: "clearfix" }, [_vm._v(" ")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "table-scroll" }, [
+      _c("div", { staticClass: "card-body table-responsive p-0" }, [
         _c(
           "table",
           {
-            staticClass: "table table-striped table-bordered table-sm",
+            staticClass: "table table-hover",
             attrs: { cellspacing: "0", width: "100%" }
           },
           [
-            _c("thead", { staticClass: "thead-dark" }, [
+            _c("thead", [
               _c(
                 "tr",
                 [
@@ -62044,7 +62062,7 @@ var render = function() {
                                             ? list[value]
                                             : "-"
                                         ) +
-                                        "                                           \n                        "
+                                        "\n                        "
                                     )
                                   ]
                             ],
@@ -62057,83 +62075,96 @@ var render = function() {
                             _c(
                               "button",
                               {
+                                staticClass: "btn btn-default btn-sm",
+                                attrs: { type: "button" }
+                              },
+                              [_vm._v("Action")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "button",
+                              {
                                 staticClass:
-                                  "btn btn-default btn-sm btn-flat dropdown-toggle pull-right",
+                                  "btn btn-default btn-sm dropdown-toggle dropdown-icon",
                                 attrs: {
                                   type: "button",
                                   "data-toggle": "dropdown",
-                                  tabindex: "-1",
-                                  "aria-haspopup": "true",
                                   "aria-expanded": "false"
                                 }
                               },
                               [
-                                _vm._v(
-                                  "\n                                Action\n                            "
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass: "dropdown-menu dropdown-menu-right"
-                              },
-                              [
-                                _vm.lists.permissions["update_" + _vm.lists.dir]
-                                  ? _c(
-                                      "a",
-                                      {
-                                        staticClass: "dropdown-item",
-                                        attrs: {
-                                          href:
-                                            _vm.module.edit_route +
-                                            "/" +
-                                            list.id
-                                        }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass: "fa fa-edit",
-                                          staticStyle: { color: "green" },
-                                          attrs: {
-                                            "data-toggle": "tooltip",
-                                            "data-placement": "top",
-                                            "data-original-title": "Edit"
-                                          }
-                                        }),
-                                        _vm._v(_vm._s(_vm.lists.common.edit))
-                                      ]
-                                    )
-                                  : _vm._e(),
+                                _c("span", { staticClass: "sr-only" }, [
+                                  _vm._v("Toggle Dropdown")
+                                ]),
                                 _vm._v(" "),
-                                _vm.lists.permissions["delete_" + _vm.lists.dir]
-                                  ? _c(
-                                      "a",
-                                      {
-                                        staticClass: "dropdown-item",
-                                        attrs: { href: "javascript:void(0);" },
-                                        on: {
-                                          click: function($event) {
-                                            return _vm.deleteRecord(list.id)
-                                          }
-                                        }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass: "fa fa-trash",
-                                          staticStyle: { color: "red" },
-                                          attrs: {
-                                            "data-toggle": "tooltip",
-                                            "data-placement": "top",
-                                            title: "",
-                                            "data-original-title": "Delete"
-                                          }
-                                        }),
-                                        _vm._v(_vm._s(_vm.lists.common.delete))
-                                      ]
-                                    )
-                                  : _vm._e()
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "dropdown-menu",
+                                    attrs: {
+                                      role: "menu",
+                                      "x-placement": "top-start"
+                                    }
+                                  },
+                                  [
+                                    _vm.lists.permissions[
+                                      "update_" + _vm.lists.dir
+                                    ]
+                                      ? _c(
+                                          "a",
+                                          {
+                                            staticClass: "dropdown-item",
+                                            attrs: {
+                                              href:
+                                                _vm.module.edit_route +
+                                                "/" +
+                                                list.id
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                        " +
+                                                _vm._s(_vm.lists.common.edit) +
+                                                "\n                                    "
+                                            )
+                                          ]
+                                        )
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _c("div", {
+                                      staticClass: "dropdown-divider"
+                                    }),
+                                    _vm._v(" "),
+                                    _vm.lists.permissions[
+                                      "delete_" + _vm.lists.dir
+                                    ]
+                                      ? _c(
+                                          "a",
+                                          {
+                                            staticClass:
+                                              "dropdown-item text-danger",
+                                            attrs: {
+                                              href: "javascript:void(0);"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.deleteRecord(list.id)
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                        " +
+                                                _vm._s(
+                                                  _vm.lists.common.delete
+                                                ) +
+                                                "\n                                    "
+                                            )
+                                          ]
+                                        )
+                                      : _vm._e()
+                                  ]
+                                )
                               ]
                             )
                           ])
@@ -62451,7 +62482,7 @@ var render = function() {
               _c(
                 "button",
                 {
-                  staticClass: "btn btn-flat btn-primary",
+                  staticClass: "btn btn-primary",
                   attrs: { type: "submit", disabled: _vm.form.errors.any() }
                 },
                 [_vm._v(_vm._s(this.module.common.save))]
@@ -62586,7 +62617,7 @@ var render = function() {
                               "button",
                               {
                                 staticClass:
-                                  "btn btn-default btn-sm btn-flat dropdown-toggle pull-right",
+                                  "btn btn-default btn-sm dropdown-toggle pull-right",
                                 attrs: {
                                   type: "button",
                                   "data-toggle": "dropdown",
@@ -62754,8 +62785,8 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "col-md-12" }, [
+  return _c("div", { staticClass: "card-body" }, [
+    _c("div", [
       _c(
         "form",
         {
@@ -62835,7 +62866,7 @@ var render = function() {
               _c(
                 "button",
                 {
-                  staticClass: "btn btn-flat btn-primary",
+                  staticClass: "btn btn-info",
                   attrs: { type: "submit", disabled: _vm.form.errors.any() }
                 },
                 [_vm._v(_vm._s(this.module.common.save))]
@@ -62874,17 +62905,15 @@ var render = function() {
     [
       _c("list_header", { attrs: { lists: this.module } }),
       _vm._v(" "),
-      _c("div", { staticClass: "clearfix" }, [_vm._v(" ")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "table-scroll" }, [
+      _c("div", { staticClass: "card-body table-responsive p-0" }, [
         _c(
           "table",
           {
-            staticClass: "table table-striped table-bordered table-sm",
+            staticClass: "table table-hover",
             attrs: { cellspacing: "0", width: "100%" }
           },
           [
-            _c("thead", { staticClass: "thead-dark" }, [
+            _c("thead", [
               _c(
                 "tr",
                 [
@@ -62935,7 +62964,7 @@ var render = function() {
                                             ? list[value]
                                             : "-"
                                         ) +
-                                        "                                           \n                        "
+                                        "\n                        "
                                     )
                                   ]
                             ],
@@ -62948,83 +62977,96 @@ var render = function() {
                             _c(
                               "button",
                               {
+                                staticClass: "btn btn-default btn-sm",
+                                attrs: { type: "button" }
+                              },
+                              [_vm._v("Action")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "button",
+                              {
                                 staticClass:
-                                  "btn btn-default btn-sm btn-flat dropdown-toggle pull-right",
+                                  "btn btn-default btn-sm dropdown-toggle dropdown-icon",
                                 attrs: {
                                   type: "button",
                                   "data-toggle": "dropdown",
-                                  tabindex: "-1",
-                                  "aria-haspopup": "true",
                                   "aria-expanded": "false"
                                 }
                               },
                               [
-                                _vm._v(
-                                  "\n                                Action\n                            "
-                                )
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass: "dropdown-menu dropdown-menu-right"
-                              },
-                              [
-                                _vm.lists.permissions["update_" + _vm.lists.dir]
-                                  ? _c(
-                                      "a",
-                                      {
-                                        staticClass: "dropdown-item",
-                                        attrs: {
-                                          href:
-                                            _vm.module.edit_route +
-                                            "/" +
-                                            list.id
-                                        }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass: "fa fa-edit",
-                                          staticStyle: { color: "green" },
-                                          attrs: {
-                                            "data-toggle": "tooltip",
-                                            "data-placement": "top",
-                                            "data-original-title": "Edit"
-                                          }
-                                        }),
-                                        _vm._v(_vm._s(_vm.lists.common.edit))
-                                      ]
-                                    )
-                                  : _vm._e(),
+                                _c("span", { staticClass: "sr-only" }, [
+                                  _vm._v("Toggle Dropdown")
+                                ]),
                                 _vm._v(" "),
-                                _vm.lists.permissions["delete_" + _vm.lists.dir]
-                                  ? _c(
-                                      "a",
-                                      {
-                                        staticClass: "dropdown-item",
-                                        attrs: { href: "javascript:void(0);" },
-                                        on: {
-                                          click: function($event) {
-                                            return _vm.deleteRecord(list.id)
-                                          }
-                                        }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass: "fa fa-trash",
-                                          staticStyle: { color: "red" },
-                                          attrs: {
-                                            "data-toggle": "tooltip",
-                                            "data-placement": "top",
-                                            title: "",
-                                            "data-original-title": "Delete"
-                                          }
-                                        }),
-                                        _vm._v(_vm._s(_vm.lists.common.delete))
-                                      ]
-                                    )
-                                  : _vm._e()
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "dropdown-menu",
+                                    attrs: {
+                                      role: "menu",
+                                      "x-placement": "top-start"
+                                    }
+                                  },
+                                  [
+                                    _vm.lists.permissions[
+                                      "update_" + _vm.lists.dir
+                                    ]
+                                      ? _c(
+                                          "a",
+                                          {
+                                            staticClass: "dropdown-item",
+                                            attrs: {
+                                              href:
+                                                _vm.module.edit_route +
+                                                "/" +
+                                                list.id
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                        " +
+                                                _vm._s(_vm.lists.common.edit) +
+                                                "\n                                    "
+                                            )
+                                          ]
+                                        )
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    _c("div", {
+                                      staticClass: "dropdown-divider"
+                                    }),
+                                    _vm._v(" "),
+                                    _vm.lists.permissions[
+                                      "delete_" + _vm.lists.dir
+                                    ]
+                                      ? _c(
+                                          "a",
+                                          {
+                                            staticClass:
+                                              "dropdown-item text-danger",
+                                            attrs: {
+                                              href: "javascript:void(0);"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.deleteRecord(list.id)
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                        " +
+                                                _vm._s(
+                                                  _vm.lists.common.delete
+                                                ) +
+                                                "\n                                    "
+                                            )
+                                          ]
+                                        )
+                                      : _vm._e()
+                                  ]
+                                )
                               ]
                             )
                           ])
@@ -63455,7 +63497,7 @@ var render = function() {
               _c(
                 "button",
                 {
-                  staticClass: "btn btn-flat btn-primary btn-loading-state",
+                  staticClass: "btn btn-primary btn-loading-state",
                   attrs: {
                     type: "submit",
                     "data-loading-text":
@@ -63578,7 +63620,7 @@ var render = function() {
                               "button",
                               {
                                 staticClass:
-                                  "btn btn-default btn-sm btn-flat dropdown-toggle pull-right",
+                                  "btn btn-default btn-sm dropdown-toggle pull-right",
                                 attrs: {
                                   type: "button",
                                   "data-toggle": "dropdown",
@@ -63860,7 +63902,7 @@ var render = function() {
                   _c(
                     "button",
                     {
-                      staticClass: "btn btn-primary btn-flat btn-sm",
+                      staticClass: "btn btn-primary btn-sm",
                       attrs: { type: "button" },
                       on: {
                         click: function($event) {
@@ -64016,7 +64058,7 @@ var render = function() {
               _c(
                 "button",
                 {
-                  staticClass: "btn btn-flat btn-primary",
+                  staticClass: "btn btn-primary",
                   attrs: { type: "submit", disabled: _vm.form.errors.any() }
                 },
                 [_vm._v(_vm._s(this.module.common.save))]
@@ -64431,7 +64473,7 @@ var render = function() {
               _c(
                 "button",
                 {
-                  staticClass: "btn btn-flat btn-primary",
+                  staticClass: "btn btn-primary",
                   attrs: { type: "submit", disabled: _vm.form.errors.any() }
                 },
                 [_vm._v(_vm._s(this.module.common.save))]
@@ -64540,7 +64582,7 @@ var render = function() {
                             "button",
                             {
                               staticClass:
-                                "btn btn-default btn-sm btn-flat dropdown-toggle pull-right custom-default",
+                                "btn btn-default btn-sm dropdown-toggle pull-right custom-default",
                               attrs: {
                                 type: "button",
                                 "data-toggle": "dropdown",
@@ -65352,7 +65394,7 @@ var render = function() {
                               "button",
                               {
                                 staticClass:
-                                  "btn btn-default btn-sm btn-flat dropdown-toggle pull-right",
+                                  "btn btn-default btn-sm dropdown-toggle pull-right",
                                 attrs: {
                                   type: "button",
                                   "data-toggle": "dropdown",
@@ -65771,7 +65813,7 @@ var render = function() {
     _c(
       "label",
       {
-        staticClass: "btn btn-primary btn-sm btn-flat",
+        staticClass: "btn btn-info btn-sm",
         on: {
           click: function($event) {
             $event.preventDefault()
@@ -66153,7 +66195,7 @@ var render = function() {
       ? _c(
           "label",
           {
-            staticClass: "btn btn-primary btn-sm btn-flat",
+            staticClass: "btn btn-info btn-sm",
             on: {
               click: function($event) {
                 $event.preventDefault()
@@ -66188,11 +66230,11 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    this.$parent.q == ""
+  return _c("div", { staticClass: "card-footer" }, [
+    this.$parent.q == "" && _vm.pagination.last_page > 1
       ? _c(
           "ul",
-          { staticClass: "pagination" },
+          { staticClass: "pagination justify-content-center m-0" },
           [
             _vm.pagination.current_page > 1
               ? _c("li", { staticClass: "page-item" }, [
@@ -66297,119 +66339,131 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "row padding-lr-0" }, [
-    _c("div", { staticClass: "col-sm-6 py-1" }, [
-      _c("div", { staticClass: "input-group" }, [
-        _c(
-          "span",
-          {
-            staticClass: "btn search-icon",
+  return _c("div", [
+    _c("div", { staticClass: "card-header" }, [
+      _c("h3", { staticClass: "card-title" }, [
+        _vm._v(_vm._s(this.lists.lang.list))
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "card-tools" }, [
+        _c("div", { staticClass: "input-group input-group-sm" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.q,
+                expression: "q"
+              }
+            ],
+            staticClass: "filter-input form-control",
+            attrs: { type: "text", id: "q", placeholder: "Search" },
+            domProps: { value: _vm.q },
             on: {
-              click: function($event) {
+              keyup: function($event) {
+                if (
+                  !$event.type.indexOf("key") &&
+                  _vm._k($event.keyCode, "enter", 13, $event.key, "Enter")
+                ) {
+                  return null
+                }
                 $event.preventDefault()
                 return _vm.filterList($event)
+              },
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.q = $event.target.value
               }
             }
-          },
-          [_c("i", { staticClass: "fa fa-search" })]
-        ),
-        _vm._v(" "),
-        _c("input", {
-          directives: [
-            { name: "model", rawName: "v-model", value: _vm.q, expression: "q" }
-          ],
-          staticClass: "filter-input form-control",
-          attrs: { type: "text", id: "q", placeholder: "Search" },
-          domProps: { value: _vm.q },
-          on: {
-            keyup: function($event) {
-              if (
-                !$event.type.indexOf("key") &&
-                _vm._k($event.keyCode, "enter", 13, $event.key, "Enter")
-              ) {
-                return null
+          }),
+          _vm._v(" "),
+          _c(
+            "span",
+            {
+              staticClass: "btn btn-default input-group-append",
+              on: {
+                click: function($event) {
+                  $event.preventDefault()
+                  return _vm.filterList($event)
+                }
               }
-              $event.preventDefault()
-              return _vm.filterList($event)
             },
-            input: function($event) {
-              if ($event.target.composing) {
-                return
-              }
-              _vm.q = $event.target.value
-            }
-          }
-        })
-      ])
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "col-sm-6 py-1" }, [
-      this.lists.is_visible
-        ? _c(
-            "div",
-            { staticClass: "btn-group", staticStyle: { float: "right" } },
-            [
-              _c(
-                "button",
-                {
-                  staticClass: "btn theme-btn dropdown-toggle pull-right",
-                  attrs: {
-                    type: "button",
-                    "data-toggle": "dropdown",
-                    tabindex: "-1",
-                    "aria-haspopup": "true",
-                    "aria-expanded": "false"
-                  }
-                },
-                [
-                  _vm._v(
-                    "\n                " +
-                      _vm._s(this.lists.common.export) +
-                      "\n            "
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "dropdown-menu dropdown-menu-right" }, [
+            [_c("i", { staticClass: "fa fa-search" })]
+          ),
+          _vm._v(" "),
+          this.lists.is_visible
+            ? _c("div", { staticClass: "btn-group pull-right" }, [
                 _c(
-                  "a",
+                  "button",
                   {
-                    staticClass: "dropdown-item",
+                    staticClass:
+                      "btn btn-success btn-sm dropdown-toggle pull-right",
                     attrs: {
-                      target: "_blank",
-                      href: this.lists.paginate_route + "?q=" + _vm.q + "&pdf=1"
+                      type: "button",
+                      "data-toggle": "dropdown",
+                      tabindex: "-1",
+                      "aria-haspopup": "true",
+                      "aria-expanded": "false"
                     }
                   },
-                  [_vm._v(_vm._s(this.lists.common.pdf))]
+                  [
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(this.lists.common.export) +
+                        "\n                    "
+                    )
+                  ]
                 ),
                 _vm._v(" "),
                 _c(
-                  "a",
-                  {
-                    staticClass: "dropdown-item",
-                    attrs: {
-                      target: "_blank",
-                      href: this.lists.paginate_route + "?q=" + _vm.q + "&csv=1"
-                    }
-                  },
-                  [_vm._v(_vm._s(this.lists.common.csv))]
+                  "div",
+                  { staticClass: "dropdown-menu dropdown-menu-right" },
+                  [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: {
+                          target: "_blank",
+                          href:
+                            this.lists.paginate_route + "?q=" + _vm.q + "&pdf=1"
+                        }
+                      },
+                      [_vm._v(_vm._s(this.lists.common.pdf))]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: {
+                          target: "_blank",
+                          href:
+                            this.lists.paginate_route + "?q=" + _vm.q + "&csv=1"
+                        }
+                      },
+                      [_vm._v(_vm._s(this.lists.common.csv))]
+                    )
+                  ]
                 )
               ])
-            ]
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      this.lists.permissions["store_" + this.lists.dir]
-        ? _c(
-            "a",
-            {
-              staticClass: "btn theme-btn",
-              staticStyle: { float: "right", "margin-right": "5px" },
-              attrs: { href: this.lists.create_route }
-            },
-            [_vm._v(_vm._s(this.lists.lang.create_title))]
-          )
-        : _vm._e()
+            : _vm._e(),
+          _vm._v(" "),
+          this.lists.permissions["store_" + this.lists.dir]
+            ? _c(
+                "a",
+                {
+                  staticClass: "btn btn-info btn-sm pull-right",
+                  staticStyle: { "margin-left": "5px" },
+                  attrs: { href: this.lists.create_route }
+                },
+                [_vm._v(_vm._s(this.lists.lang.create_title))]
+              )
+            : _vm._e()
+        ])
+      ])
     ])
   ])
 }

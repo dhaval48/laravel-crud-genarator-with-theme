@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <ul class="pagination" v-if="this.$parent.q == ''">
+    <div class="card-footer">            
+        <ul class="pagination justify-content-center m-0" v-if="this.$parent.q == '' && pagination.last_page > 1">
             <li class="page-item" v-if='pagination.current_page > 1'>
                 <a href="javascript:void(0);" aria-label="Previous" class="page-link" 
                 @click="getPageData(pagination.current_page - 1)">
@@ -8,7 +8,7 @@
                 </a>
             </li>
 
-            <li  v-for="page in pagination.last_page"
+            <li v-for="page in pagination.last_page"
                 class="page-item" 
                 v-bind:class="[ page == pagination.current_page ? 'active' : '']"
             >

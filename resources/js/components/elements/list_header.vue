@@ -1,28 +1,29 @@
 <template>
-    <div class="row padding-lr-0">
+    <div>
+        <div class="card-header">
+            <h3 class="card-title">{{ this.lists.lang.list }}</h3>
 
-        <div class="col-sm-6 py-1">
-            <div class='input-group'>
-                <span class='btn search-icon' v-on:click.prevent="filterList"><i class='fa fa-search'></i></span>
-                <input type="text" id="q" placeholder="Search" v-on:keyup.enter.prevent="filterList" v-model="q" class="filter-input form-control">
-                
-            </div>
-        </div>
+            <div class="card-tools">
+                <div class='input-group input-group-sm'>
+                    <input type="text" id="q" placeholder="Search" v-on:keyup.enter.prevent="filterList" v-model="q" class="filter-input form-control">
+                    <span class='btn btn-default input-group-append' v-on:click.prevent="filterList"><i class='fa fa-search'></i></span>
 
-        <div class="col-sm-6 py-1">            
+                    <div v-if="this.lists.is_visible" class="btn-group pull-right">
+                        <button  type="button" class="btn btn-success btn-sm dropdown-toggle pull-right" data-toggle="dropdown" tabindex="-1" aria-haspopup="true" aria-expanded="false">
+                            {{this.lists.common.export}}
+                        </button>
 
-            <div v-if="this.lists.is_visible" class="btn-group"  style="float:right">
-                <button  type="button" class="btn theme-btn dropdown-toggle pull-right" data-toggle="dropdown" tabindex="-1" aria-haspopup="true" aria-expanded="false">
-                    {{this.lists.common.export}}
-                </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" target="_blank" :href='this.lists.paginate_route+"?q="+q+"&pdf=1"'>{{this.lists.common.pdf}}</a>
+                            <a class="dropdown-item" target="_blank" :href='this.lists.paginate_route+"?q="+q+"&csv=1"'>{{this.lists.common.csv}}</a>
+                        </div>
+                    </div>
 
-                <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" target="_blank" :href='this.lists.paginate_route+"?q="+q+"&pdf=1"'>{{this.lists.common.pdf}}</a>
-                    <a class="dropdown-item" target="_blank" :href='this.lists.paginate_route+"?q="+q+"&csv=1"'>{{this.lists.common.csv}}</a>
+                    <a v-if="this.lists.permissions['store_'+this.lists.dir]" :href="this.lists.create_route" class="btn btn-info btn-sm pull-right" style="margin-left:5px">{{this.lists.lang.create_title}}</a>
                 </div>
-            </div>
 
-            <a v-if="this.lists.permissions['store_'+this.lists.dir]" :href="this.lists.create_route" class="btn theme-btn" style="float:right; margin-right:5px">{{this.lists.lang.create_title}}</a>
+                <!--  -->
+            </div>
         </div>
     </div>
 </template>

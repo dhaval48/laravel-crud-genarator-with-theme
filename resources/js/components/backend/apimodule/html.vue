@@ -1,6 +1,6 @@
 <template>
-<div>
-    <div class="col-md-12">
+<div class="card-body">
+    <div>
         <form class="form" method="POST" :action='this.module.store_route' @submit.prevent="onSubmit" @keydown="form.errors.clear($event.target.name)">
 
             <input type="hidden" name="id" :value="this.module.id" v-if="this.module.id != 0">
@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card">
-                        <div class="card-header bg-primary text-white">General</div>
+                        <div class="card-header">General</div>
 
                         <div class="card-body">
                             <div class="row">
@@ -38,7 +38,7 @@
                                 <div class="col-md-2">{{this.module.lang.is_model}}</div>
                                 <div class='col-md-10'>
                                     <div :class='form.errors.has("is_model")?"form-group has-error":"form-group"'>
-                                        <p-input type='checkbox' class='p-icon p-rotate p-bigger' color='primary' v-bind:true-value='1' v-bind:false-value='0' v-model='form.is_model'>
+                                        <p-input type='checkbox' class='p-icon p-rotate p-bigger' color='info' v-bind:true-value='1' v-bind:false-value='0' v-model='form.is_model'>
                                             <i slot='extra' class='icon mdi mdi-check'></i>
                                         </p-input>
                                         <span class='help-block text-danger' 
@@ -50,7 +50,7 @@
                                 <div class="col-md-2">{{this.module.lang.is_public}}</div>
                                 <div class='col-md-10'>
                                     <div :class='form.errors.has("is_public")?"form-group has-error":"form-group"'>
-                                        <p-input type='checkbox' class='p-icon p-rotate p-bigger' color='primary' v-bind:true-value='1' v-bind:false-value='0' v-model='form.is_public'>
+                                        <p-input type='checkbox' class='p-icon p-rotate p-bigger' color='info' v-bind:true-value='1' v-bind:false-value='0' v-model='form.is_public'>
                                             <i slot='extra' class='icon mdi mdi-check'></i>
                                         </p-input>
                                         <span class='help-block text-danger' 
@@ -63,7 +63,7 @@
                     </div>
                     <div class="clearfix">&nbsp;</div>
                     <div class="card">
-                        <div class="card-header bg-primary text-white">Database table settings</div>
+                        <div class="card-header">Database table settings</div>
                         <div class="card-body">
 
                             <div class="row">
@@ -95,7 +95,7 @@
             <div class="clearfix">&nbsp;</div>
             <div class="card-actionbar">
                 <div class="card-actionbar-row">
-                    <button type="submit" class="btn btn-flat btn-primary" :disabled="form.errors.any()">{{this.module.common.save}}</button>
+                    <button type="submit" class="btn btn-info" :disabled="form.errors.any()">{{this.module.common.save}}</button>
                 </div>
             </div>
         </form>

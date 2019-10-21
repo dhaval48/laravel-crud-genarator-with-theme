@@ -44,7 +44,7 @@
                 </tbody>
             </table>
         </div>
-        <label class="btn btn-primary btn-sm btn-flat" v-on:click.prevent="addRow(grid,rows)">Add New</label>
+        <label class="btn btn-info btn-sm" v-on:click.prevent="addRow(grid,rows)">Add New</label>
     </div>
 </template>
 

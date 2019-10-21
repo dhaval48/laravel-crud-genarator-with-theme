@@ -2,10 +2,9 @@
     <div>
         <list_header :lists='this.module'></list_header>
         
-        <div class="clearfix">&nbsp;</div>
-        <div class="table-scroll">
-            <table class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
-                <thead class="thead-dark">
+        <div class="card-body table-responsive p-0">
+            <table class="table table-hover" cellspacing="0" width="100%">
+                <thead>
                     <tr>
                         <th v-for="(value,key) in lists.list_data">{{ key }}</th>
                         <th width="100">Action</th>
@@ -22,20 +21,27 @@
                                 {{ list | relation(value) }}
                             </template>
                             <template v-else>
-                                {{list[value] != null ? list[value] : '-'}}                                           
+                                {{list[value] != null ? list[value] : '-'}}
                             </template>
                         </td>
                         <td>
 
                             <div class="btn-group">
-                                <button  type="button" class="btn btn-default btn-sm btn-flat dropdown-toggle pull-right" data-toggle="dropdown" tabindex="-1" aria-haspopup="true" aria-expanded="false">
-                                    Action
-                                </button>
+                                <button type="button" class="btn btn-default btn-sm">Action</button>
+                                <button type="button" class="btn btn-default btn-sm dropdown-toggle dropdown-icon" data-toggle="dropdown" aria-expanded="false">
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                    <div class="dropdown-menu" role="menu" x-placement="top-start">
+                                        <a v-if="lists.permissions['update_'+lists.dir]" class="dropdown-item" :href='module.edit_route+"/"+list.id'>
+                                            {{lists.common.edit}}
+                                        </a>
 
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a v-if="lists.permissions['update_'+lists.dir]" class="dropdown-item" :href='module.edit_route+"/"+list.id'><i class="fa fa-edit" style="color: green;" data-toggle="tooltip" data-placement="top" data-original-title="Edit"></i>{{lists.common.edit}}</a>
-                                    <a v-if="lists.permissions['delete_'+lists.dir]" class="dropdown-item" href="javascript:void(0);" @click="deleteRecord(list.id)"><i class="fa fa-trash" style="color: red;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"></i>{{lists.common.delete}}</a>
-                                </div>
+                                        <div class="dropdown-divider"></div>
+
+                                        <a v-if="lists.permissions['delete_'+lists.dir]" class="dropdown-item text-danger" href="javascript:void(0);" @click="deleteRecord(list.id)">
+                                            {{lists.common.delete}}
+                                        </a>
+                                    </div>
+                                </button>
                             </div>
                         </td>
                     </tr>

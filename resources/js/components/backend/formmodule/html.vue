@@ -1,6 +1,6 @@
 <template>
-<div>
-    <div class="col-md-12">
+<div class="card-body">
+    <div>
         <form class="form" method="POST" :action='this.module.store_route' @submit.prevent="onSubmit" @keydown="form.errors.clear($event.target.name)">
 
             <input type="hidden" name="id" :value="this.module.id" v-if="this.module.id != 0">
@@ -8,7 +8,7 @@
 			<div class="row">
                 <div class="col-md-12">
                     <div class="card">
-                        <div class="card-header bg-primary text-white">General</div>
+                        <div class="card-header">General</div>
 
                         <div class="card-body">
                             <div class="row">
@@ -39,7 +39,7 @@
                     <div class="clearfix">&nbsp;</div>
 
                     <div class="card">
-                        <div class="card-header bg-primary text-white">Database table settings</div>
+                        <div class="card-header">Database table settings</div>
                         <div class="card-body">
 
                             <div class="row">
@@ -69,7 +69,7 @@
                     <div class="clearfix">&nbsp;</div>
 
                     <div class="card">
-                        <div class="card-header bg-primary text-white">Input field settings</div>
+                        <div class="card-header">Input field settings</div>
                         <div class="card-body">
 
                             <div class="row">
@@ -97,7 +97,7 @@
                                             <tbody>
                                                 <tr v-for="(n, k) in rows.length">
                                                     <td>
-                                                        <p-check class='p-icon p-rotate p-bigger' color='primary'
+                                                        <p-check class='p-icon p-rotate p-bigger' color='info'
                                                             v-model='form.visible[k]'>
                                                             <i slot='extra' class='icon mdi mdi-check'></i>
                                                         </p-check>
@@ -150,7 +150,7 @@
             
             <div class="card-actionbar">
                 <div class="card-actionbar-row">
-                    <button type="submit" class="btn btn-flat btn-primary" :disabled="form.errors.any()">{{this.module.common.save}}</button>
+                    <button type="submit" class="btn btn-info" :disabled="form.errors.any()">{{this.module.common.save}}</button>
                 </div>
             </div>
         </form>

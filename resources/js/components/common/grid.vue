@@ -43,7 +43,7 @@
                 </tbody>
             </table>
         </div>
-        <label v-if="this.module.dir != 'languagetranslet'" class="btn btn-primary btn-sm btn-flat" v-on:click.prevent="addRow(grid,rows)">{{this.module.common.add_new}}</label>
+        <label v-if="this.module.dir != 'languagetranslet'" class="btn btn-info btn-sm" v-on:click.prevent="addRow(grid,rows)">{{this.module.common.add_new}}</label>
     </div>
 </template>
 

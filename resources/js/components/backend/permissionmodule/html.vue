@@ -1,6 +1,6 @@
 <template>
-<div>
-    <div class="col-md-12">
+<div class="card-body">
+    <div>
         <form class="form" method="POST" :action='this.module.store_route' v-on:submit.prevent="onSubmit" @keydown="form.errors.clear($event.target.name)">
 
             <input type="hidden" name="id" :value="this.module.id" v-if="this.module.id != 0">
@@ -21,7 +21,7 @@
             
             <div class="card-actionbar">
                 <div class="card-actionbar-row">
-                    <button type="submit" class="btn btn-flat btn-primary" :disabled="form.errors.any()">{{this.module.common.save}}</button>
+                    <button type="submit" class="btn btn-info" :disabled="form.errors.any()">{{this.module.common.save}}</button>
                 </div>
             </div>
         </form>

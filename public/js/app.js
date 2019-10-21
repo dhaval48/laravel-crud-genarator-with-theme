@@ -80197,6 +80197,8 @@ var app = new Vue({
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_core_Form__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/core/Form */ "./resources/js/components/core/Form.js");
+/* harmony import */ var _components_core_Message__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/core/Message */ "./resources/js/components/core/Message.js");
+
 
 window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 /**
@@ -80221,6 +80223,7 @@ try {
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 window.Form = _components_core_Form__WEBPACK_IMPORTED_MODULE_0__["default"];
+window.Message = _components_core_Message__WEBPACK_IMPORTED_MODULE_1__["default"];
 /**
  * Next we will register the CSRF Token as a common header with Axios so that
  * all outgoing HTTP requests automatically have it attached. This is just
@@ -82977,6 +82980,61 @@ function () {
 
 /***/ }),
 
+/***/ "./resources/js/components/core/Message.js":
+/*!*************************************************!*\
+  !*** ./resources/js/components/core/Message.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var Message =
+/*#__PURE__*/
+function () {
+  function Message() {
+    _classCallCheck(this, Message);
+  }
+
+  _createClass(Message, [{
+    key: "successMessage",
+    value: function successMessage(message) {
+      Vue.toasted.show(message, {
+        theme: "toasted-primary",
+        type: 'success',
+        position: 'top-right',
+        icon: 'check',
+        iconPack: 'fontawesome',
+        duration: 5000
+      });
+    }
+  }, {
+    key: "errorMessage",
+    value: function errorMessage(message) {
+      Vue.toasted.show(message, {
+        theme: "toasted-primary",
+        type: 'error',
+        position: 'top-right',
+        icon: 'warning',
+        iconPack: 'fontawesome',
+        duration: 5000
+      });
+    }
+  }]);
+
+  return Message;
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (Message);
+
+/***/ }),
+
 /***/ "./resources/js/components/core/filter.js":
 /*!************************************************!*\
   !*** ./resources/js/components/core/filter.js ***!
@@ -83120,8 +83178,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/jignesh/sites/laravel-crud-genarator-with-theme/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/jignesh/sites/laravel-crud-genarator-with-theme/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/dhaval/sites/laravel-crud-genarator-with-theme/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/dhaval/sites/laravel-crud-genarator-with-theme/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

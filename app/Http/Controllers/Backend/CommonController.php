@@ -8,5 +8,6 @@ use Illuminate\Http\Request;
 
 class CommonController extends Controller
 {	
+
 	// [Function]
 }

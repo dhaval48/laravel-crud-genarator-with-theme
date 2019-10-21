@@ -12,6 +12,5 @@ class ModuleConfig {
         return include 'ModuleConfig/setting.php';
     }
 
-
 	// [Moduleconfig]
 }

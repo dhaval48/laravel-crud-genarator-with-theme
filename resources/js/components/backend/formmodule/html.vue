@@ -280,7 +280,9 @@ export default {
                 this.$root.$emit('form_modulesCreated', response);
                 this.$parent.activity_init();
 
-            }).catch(function(){});
+            }).catch(function(){
+                console.log('here');
+            });
         }
     },
     mounted() {

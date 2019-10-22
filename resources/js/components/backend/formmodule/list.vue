@@ -27,8 +27,7 @@
                         <td>
 
                             <div class="btn-group">
-                                <button type="button" class="btn btn-default btn-sm">Action</button>
-                                <button type="button" class="btn btn-default btn-sm dropdown-toggle dropdown-icon" data-toggle="dropdown" aria-expanded="false">
+                                <button type="button" class="btn btn-default btn-sm dropdown-toggle dropdown-icon" data-toggle="dropdown" aria-expanded="false">Action
                                     <span class="sr-only">Toggle Dropdown</span>
                                     <div class="dropdown-menu" role="menu" x-placement="top-start">
                                         <a v-if="lists.permissions['update_'+lists.dir]" class="dropdown-item" :href='module.edit_route+"/"+list.id'>

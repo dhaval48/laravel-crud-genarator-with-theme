@@ -2446,7 +2446,9 @@ __webpack_require__.r(__webpack_exports__);
         _this4.$root.$emit('form_modulesCreated', response);
 
         _this4.$parent.activity_init();
-      })["catch"](function () {});
+      })["catch"](function () {
+        console.log('here');
+      });
     }
   },
   mounted: function mounted() {
@@ -2525,7 +2527,6 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _elements_list_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../.././elements/list_header */ "./resources/js/components/elements/list_header.vue");
-//
 //
 //
 //
@@ -61055,15 +61056,6 @@ var render = function() {
                             _c(
                               "button",
                               {
-                                staticClass: "btn btn-default btn-sm",
-                                attrs: { type: "button" }
-                              },
-                              [_vm._v("Action")]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "button",
-                              {
                                 staticClass:
                                   "btn btn-default btn-sm dropdown-toggle dropdown-icon",
                                 attrs: {
@@ -61073,6 +61065,9 @@ var render = function() {
                                 }
                               },
                               [
+                                _vm._v(
+                                  "Action\n                                "
+                                ),
                                 _c("span", { staticClass: "sr-only" }, [
                                   _vm._v("Toggle Dropdown")
                                 ]),
@@ -66394,7 +66389,7 @@ var render = function() {
           ),
           _vm._v(" "),
           this.lists.is_visible
-            ? _c("div", { staticClass: "btn-group pull-right" }, [
+            ? _c("div", { staticClass: "btn-group pull-right margin-l-5" }, [
                 _c(
                   "button",
                   {
@@ -66455,8 +66450,7 @@ var render = function() {
             ? _c(
                 "a",
                 {
-                  staticClass: "btn btn-info btn-sm pull-right",
-                  staticStyle: { "margin-left": "5px" },
+                  staticClass: "btn btn-info btn-sm pull-right margin-l-5",
                   attrs: { href: this.lists.create_route }
                 },
                 [_vm._v(_vm._s(this.lists.lang.create_title))]
@@ -82939,20 +82933,18 @@ function () {
     value: function submit(requestType, url, formData) {
       var _this = this;
 
-      this.butonLoaing(true);
+      // this.butonLoaing(true);
       return new Promise(function (resolve, reject) {
         axios[requestType](url, formData).then(function (response) {
-          _this.butonLoaing(false);
-
+          // this.butonLoaing(false);
           _this.onSuccess(response.data);
 
           _this.successMessage(response.data.meta.message);
 
           resolve(response.data);
         })["catch"](function (error) {
-          _this.onFail(error.response.data);
+          _this.onFail(error.response.data); // this.butonLoaing(false);
 
-          _this.butonLoaing(false);
 
           if (error.response.data.meta) {
             _this.errorMessage(error.response.data.meta.message);

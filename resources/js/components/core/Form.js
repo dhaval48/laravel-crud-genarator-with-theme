@@ -116,18 +116,18 @@ class Form {
      * @param {string} url
      */
     submit(requestType, url,formData) {
-        this.butonLoaing(true);
+        // this.butonLoaing(true);
         return new Promise((resolve, reject) => {
             axios[requestType](url, formData)
                 .then(response => {               
-                    this.butonLoaing(false);     
+                    // this.butonLoaing(false);
                     this.onSuccess(response.data);
                     this.successMessage(response.data.meta.message);
                     resolve(response.data);
                 })
                 .catch(error => {
                     this.onFail(error.response.data);
-                    this.butonLoaing(false);
+                    // this.butonLoaing(false);
                     if(error.response.data.meta) {                    
                         this.errorMessage(error.response.data.meta.message);
                     } else {

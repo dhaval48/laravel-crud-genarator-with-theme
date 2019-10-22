@@ -8,7 +8,7 @@
                     <input type="text" id="q" placeholder="Search" v-on:keyup.enter.prevent="filterList" v-model="q" class="filter-input form-control">
                     <span class='btn btn-default input-group-append' v-on:click.prevent="filterList"><i class='fa fa-search'></i></span>
 
-                    <div v-if="this.lists.is_visible" class="btn-group pull-right">
+                    <div v-if="this.lists.is_visible" class="btn-group pull-right margin-l-5">
                         <button  type="button" class="btn btn-success btn-sm dropdown-toggle pull-right" data-toggle="dropdown" tabindex="-1" aria-haspopup="true" aria-expanded="false">
                             {{this.lists.common.export}}
                         </button>
@@ -19,7 +19,7 @@
                         </div>
                     </div>
 
-                    <a v-if="this.lists.permissions['store_'+this.lists.dir]" :href="this.lists.create_route" class="btn btn-info btn-sm pull-right" style="margin-left:5px">{{this.lists.lang.create_title}}</a>
+                    <a v-if="this.lists.permissions['store_'+this.lists.dir]" :href="this.lists.create_route" class="btn btn-info btn-sm pull-right margin-l-5">{{this.lists.lang.create_title}}</a>
                 </div>
 
                 <!--  -->

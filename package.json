@@ -26,7 +26,7 @@
     "dependencies": {
         "@mdi/font": "^3.6.95",
         "font-awesome": "^4.7.0",
-        "moment": "^2.24.0",
+        "moment": "^2.29.2",
         "pretty-checkbox-vue": "^1.1.9",
         "vue-sweetalert2": "^1.6.4",
         "vue-toasted": "^1.1.26",
